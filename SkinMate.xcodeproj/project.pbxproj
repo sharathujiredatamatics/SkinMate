@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505CA26392FF100808990 /* AppDelegate.swift */; };
 		4B3505CD26392FF100808990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505CC26392FF100808990 /* ViewController.swift */; };
-		4B3505D026392FF100808990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505CE26392FF100808990 /* Main.storyboard */; };
+		4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505CE26392FF100808990 /* MainTabController.storyboard */; };
 		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
+		4B3505F22639514200808990 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505F12639514200808990 /* MainTabController.swift */; };
+		4B3505F62639824500808990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505F52639824500808990 /* HomeViewController.swift */; };
+		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
+		4B3505FA2639A8EC00808990 /* SwitchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505F92639A8EC00808990 /* SwitchTabViewController.swift */; };
+		4B3505FC2639BE2300808990 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505FB2639BE2300808990 /* AccountViewController.swift */; };
+		4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505FD2639BEDB00808990 /* Account.storyboard */; };
+		4B81CD0B263C0250001EE6AE /* Button Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* Button Extension.swift */; };
+		4B81CD0F263C0C97001EE6AE /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81CD0E263C0C97001EE6AE /* SignIn.storyboard */; };
+		4B81CD11263C0EAB001EE6AE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD10263C0EAB001EE6AE /* SignInViewController.swift */; };
+		4B8E0A692642690F000F3D97 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A682642690F000F3D97 /* ForgotPasswordViewController.swift */; };
+		4B8E0A6B264295D4000F3D97 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A6A264295D4000F3D97 /* NewPasswordViewController.swift */; };
+		4B8E0A6D264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A6C264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift */; };
+		4B8E0A6F2643EB25000F3D97 /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A6E2643EB25000F3D97 /* VerifyEmailViewController.swift */; };
+		4B8E0A722643F1BD000F3D97 /* SignInViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */; };
+		4B8E0A74264416B9000F3D97 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A73264416B9000F3D97 /* Validation.swift */; };
+		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B019F68263AC98100864D8A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		4B019F69263AC98200864D8A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		4B019F6A263AC98300864D8A /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4B3505C726392FF100808990 /* SkinMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3505CA26392FF100808990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B3505CC26392FF100808990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B3505CF26392FF100808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B3505CF26392FF100808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabController.storyboard; sourceTree = "<group>"; };
 		4B3505D226392FF100808990 /* SkinMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkinMate.xcdatamodel; sourceTree = "<group>"; };
 		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3505F12639514200808990 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		4B3505F52639824500808990 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4B3505F92639A8EC00808990 /* SwitchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTabViewController.swift; sourceTree = "<group>"; };
+		4B3505FB2639BE2300808990 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		4B3505FD2639BEDB00808990 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		4B81CD0A263C0250001EE6AE /* Button Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Extension.swift"; sourceTree = "<group>"; };
+		4B81CD0E263C0C97001EE6AE /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		4B81CD10263C0EAB001EE6AE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4B8E0A67264260E0000F3D97 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		4B8E0A682642690F000F3D97 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		4B8E0A6A264295D4000F3D97 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		4B8E0A6C264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeSuccessPageViewController.swift; sourceTree = "<group>"; };
+		4B8E0A6E2643EB25000F3D97 /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B8E0A73264416B9000F3D97 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +73,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B019F66263AC94900864D8A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4B019F67263AC96300864D8A /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4B019F67263AC96300864D8A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4B019F69263AC98200864D8A /* Poppins-Regular.ttf */,
+				4B019F68263AC98100864D8A /* Poppins-Medium.ttf */,
+				4B8E0A67264260E0000F3D97 /* Poppins-Bold.ttf */,
+				4B019F6A263AC98300864D8A /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4B019F6B263AC9E600864D8A /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "App Icons";
+			sourceTree = "<group>";
+		};
+		4B019F6C263ACA0C00864D8A /* App Color */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "App Color";
+			sourceTree = "<group>";
+		};
 		4B3505BE26392FF100808990 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +125,218 @@
 		4B3505C926392FF100808990 /* SkinMate */ = {
 			isa = PBXGroup;
 			children = (
+				4B81CD09263C0223001EE6AE /* Extension */,
+				4B3505E0263946DD00808990 /* Model */,
+				4B3505E1263946ED00808990 /* View */,
+				4B3505E22639470300808990 /* Controller */,
+				4B019F66263AC94900864D8A /* Utils */,
 				4B3505CA26392FF100808990 /* AppDelegate.swift */,
 				4B3505CC26392FF100808990 /* ViewController.swift */,
-				4B3505CE26392FF100808990 /* Main.storyboard */,
 				4B3505D426392FF300808990 /* Assets.xcassets */,
+				4B019F6C263ACA0C00864D8A /* App Color */,
+				4B019F6B263AC9E600864D8A /* App Icons */,
 				4B3505D626392FF300808990 /* LaunchScreen.storyboard */,
 				4B3505D926392FF300808990 /* Info.plist */,
 				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
 			);
 			path = SkinMate;
+			sourceTree = "<group>";
+		};
+		4B3505E0263946DD00808990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B3505E1263946ED00808990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD0C263C0B9F001EE6AE /* Sign Up */,
+				4B3505E42639476900808990 /* Sign In */,
+				4B3505F32639820100808990 /* Home */,
+				4B3505E32639473F00808990 /* MainTabController */,
+				4B3505E9263947FE00808990 /* Booking Appoinments */,
+				4B3505E8263947DA00808990 /* My Appointments */,
+				4B3505E7263947C900808990 /* E-Check In */,
+				4B3505E6263947BC00808990 /* Notifications */,
+				4B3505E5263947A100808990 /* AccountAndMore */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B3505E22639470300808990 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD0D263C0BAB001EE6AE /* Sign Up */,
+				4B3505F026394B4100808990 /* Sign In */,
+				4B3505F42639821400808990 /* Home */,
+				4B3505EF26394B0C00808990 /* MainTabController */,
+				4B3505EE26394AFE00808990 /* Booking Appointments */,
+				4B3505ED26394AEB00808990 /* My Appointments */,
+				4B3505EC26394ADB00808990 /* E-Check In */,
+				4B3505EB26394AC800808990 /* Notifications */,
+				4B3505EA26394AAE00808990 /* AccountAndMore */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B3505E32639473F00808990 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505CE26392FF100808990 /* MainTabController.storyboard */,
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		4B3505E42639476900808990 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD0E263C0C97001EE6AE /* SignIn.storyboard */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		4B3505E5263947A100808990 /* AccountAndMore */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505FD2639BEDB00808990 /* Account.storyboard */,
+			);
+			path = AccountAndMore;
+			sourceTree = "<group>";
+		};
+		4B3505E6263947BC00808990 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4B3505E7263947C900808990 /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "E-Check In";
+			sourceTree = "<group>";
+		};
+		4B3505E8263947DA00808990 /* My Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505E9263947FE00808990 /* Booking Appoinments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Booking Appoinments";
+			sourceTree = "<group>";
+		};
+		4B3505EA26394AAE00808990 /* AccountAndMore */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505FB2639BE2300808990 /* AccountViewController.swift */,
+			);
+			path = AccountAndMore;
+			sourceTree = "<group>";
+		};
+		4B3505EB26394AC800808990 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4B3505EC26394ADB00808990 /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "E-Check In";
+			sourceTree = "<group>";
+		};
+		4B3505ED26394AEB00808990 /* My Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505EE26394AFE00808990 /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505EF26394B0C00808990 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505F12639514200808990 /* MainTabController.swift */,
+				4B3505F92639A8EC00808990 /* SwitchTabViewController.swift */,
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		4B3505F026394B4100808990 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD10263C0EAB001EE6AE /* SignInViewController.swift */,
+				4B8E0A682642690F000F3D97 /* ForgotPasswordViewController.swift */,
+				4B8E0A6A264295D4000F3D97 /* NewPasswordViewController.swift */,
+				4B8E0A6C264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift */,
+				4B8E0A6E2643EB25000F3D97 /* VerifyEmailViewController.swift */,
+				4B8E0A702643F176000F3D97 /* Extension */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		4B3505F32639820100808990 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505F72639825E00808990 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B3505F42639821400808990 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505F52639824500808990 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B81CD09263C0223001EE6AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD0A263C0250001EE6AE /* Button Extension.swift */,
+				4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B81CD0C263C0B9F001EE6AE /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4B81CD0D263C0BAB001EE6AE /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4B8E0A702643F176000F3D97 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */,
+				4B8E0A73264416B9000F3D97 /* Validation.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +399,10 @@
 			files = (
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
-				4B3505D026392FF100808990 /* Main.storyboard in Resources */,
+				4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */,
+				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
+				4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */,
+				4B81CD0F263C0C97001EE6AE /* SignIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +413,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8E0A722643F1BD000F3D97 /* SignInViewControllerExtension.swift in Sources */,
+				4B3505FA2639A8EC00808990 /* SwitchTabViewController.swift in Sources */,
+				4B3505F62639824500808990 /* HomeViewController.swift in Sources */,
+				4B8E0A6D264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift in Sources */,
+				4B81CD0B263C0250001EE6AE /* Button Extension.swift in Sources */,
+				4B3505FC2639BE2300808990 /* AccountViewController.swift in Sources */,
 				4B3505CD26392FF100808990 /* ViewController.swift in Sources */,
+				4B8E0A6B264295D4000F3D97 /* NewPasswordViewController.swift in Sources */,
+				4B81CD11263C0EAB001EE6AE /* SignInViewController.swift in Sources */,
+				4B8E0A692642690F000F3D97 /* ForgotPasswordViewController.swift in Sources */,
 				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
+				4B8E0A6F2643EB25000F3D97 /* VerifyEmailViewController.swift in Sources */,
+				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
+				4B3505F22639514200808990 /* MainTabController.swift in Sources */,
+				4B8E0A74264416B9000F3D97 /* Validation.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,12 +435,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B3505CE26392FF100808990 /* Main.storyboard */ = {
+		4B3505CE26392FF100808990 /* MainTabController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4B3505CF26392FF100808990 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainTabController.storyboard;
 			sourceTree = "<group>";
 		};
 		4B3505D626392FF300808990 /* LaunchScreen.storyboard */ = {
