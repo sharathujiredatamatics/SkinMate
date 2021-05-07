@@ -282,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8m-89-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484" y="-69"/>
+            <point key="canvasLocation" x="-914" y="-564"/>
         </scene>
         <!--Password Change Success Page View Controller-->
         <scene sceneID="nbV-cg-wjG">
@@ -383,7 +383,7 @@ Please login!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZq-nr-q6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383.19999999999999" y="-23.645320197044335"/>
+            <point key="canvasLocation" x="369" y="-624"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="CcL-xY-qR7">
@@ -421,7 +421,7 @@ Please login!</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="backToMainButttton:" destination="ZPy-OX-iRr" eventType="touchUpInside" id="sPD-l7-bZr"/>
+                                            <action selector="backButton:" destination="ZPy-OX-iRr" eventType="touchUpInside" id="Pap-Xf-bjx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -462,6 +462,9 @@ Please login!</string>
                                                                 <integer key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="phoneNumberEditChange:" destination="ZPy-OX-iRr" eventType="editingChanged" id="GEv-wJ-NFH"/>
+                                                        </connections>
                                                     </textField>
                                                     <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-EF-Hgk">
                                                         <rect key="frame" x="0.0" y="68" width="335" height="20"/>
@@ -489,6 +492,9 @@ Please login!</string>
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueForgotPassword:" destination="ZPy-OX-iRr" eventType="touchUpInside" id="hbv-7b-rTS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -525,15 +531,19 @@ Please login!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p8x-lq-ZVc"/>
                     </view>
+                    <connections>
+                        <outlet property="continueForgotPasswordButton" destination="XMw-VY-ZZn" id="esa-C3-Yp2"/>
+                        <outlet property="errorPhoneNumber" destination="hpG-EF-Hgk" id="FlV-EF-jId"/>
+                        <outlet property="phoneNumberField" destination="7lu-ye-a1b" id="lfU-3a-1Ps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pyf-Jg-2l4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="149.26108374384236"/>
+            <point key="canvasLocation" x="-914" y="190"/>
         </scene>
         <!--New Password View Controller-->
         <scene sceneID="QNJ-g1-swY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RrV-Ft-b28" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="NewPasswordViewController" id="qbJ-A2-dtt" customClass="NewPasswordViewController" customModule="SkinMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIF-O8-bBd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -566,6 +576,9 @@ Please login!</string>
                                                 <color key="value" name="blackpearl"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backButton:" destination="qbJ-A2-dtt" eventType="touchUpInside" id="bjH-m9-wiD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -605,6 +618,9 @@ Please login!</string>
                                                                 <integer key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="passwordDidTypeFinish:" destination="qbJ-A2-dtt" eventType="editingChanged" id="GlO-qd-ev1"/>
+                                                        </connections>
                                                     </textField>
                                                     <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tm-eC-p08">
                                                         <rect key="frame" x="0.0" y="68" width="335" height="20"/>
@@ -634,6 +650,9 @@ Please login!</string>
                                                                 <integer key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="confirmPaswwordDidTypeFinish:" destination="qbJ-A2-dtt" eventType="editingChanged" id="Ihi-uL-8QR"/>
+                                                        </connections>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZV-io-nFN">
                                                         <rect key="frame" x="0.0" y="158" width="335" height="20"/>
@@ -653,7 +672,7 @@ Please login!</string>
                                                     <constraint firstAttribute="height" constant="50" id="OW8-xQ-aKS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="15"/>
-                                                <state key="normal" title="SIGN IN">
+                                                <state key="normal" title="CHANGE PASSWORD">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -661,6 +680,9 @@ Please login!</string>
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="changePassword:" destination="qbJ-A2-dtt" eventType="touchUpInside" id="9Lk-bM-cMG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -697,9 +719,17 @@ Please login!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MGa-Wg-9o4"/>
                     </view>
+                    <connections>
+                        <outlet property="changePasswordButton" destination="5tp-DR-jiZ" id="27u-bv-aU3"/>
+                        <outlet property="confirmPassword" destination="ypr-0l-slj" id="PaM-1u-Tww"/>
+                        <outlet property="errorConfirmPassword" destination="dZV-io-nFN" id="Ivl-ES-PFD"/>
+                        <outlet property="errorPassword" destination="8Tm-eC-p08" id="7dQ-Lf-Xg2"/>
+                        <outlet property="password" destination="AdW-k2-WXS" id="k8z-q1-mmf"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrV-Ft-b28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="149.26108374384236"/>
+            <point key="canvasLocation" x="369" y="137"/>
         </scene>
     </scenes>
     <resources>

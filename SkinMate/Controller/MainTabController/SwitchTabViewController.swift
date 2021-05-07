@@ -9,10 +9,10 @@
 import UIKit
 
 class SwitchTabViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-NotificationCenter.default.addObserver(self, selector: #selector(loadHomePage), name: NSNotification.Name(rawValue: "loadHome"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(loadHomePage), name: NSNotification.Name(rawValue: "loadHome"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(loadAccountPage), name: NSNotification.Name(rawValue: "loadAccount"), object: nil)
     }
     @objc func loadHomePage(notification: NSNotification){

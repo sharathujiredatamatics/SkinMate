@@ -32,9 +32,12 @@ class SignInViewController: UIViewController {
         signInPasswordField.rightView = lookPassword
         signInPasswordField.rightViewMode = .always
     }
-
+    
     @IBAction func phoneNumberChanged(_ sender: UITextField) {
         checkUserId()
+        if validUserId == true{
+            phoneNumberError.text = " "
+        }
     }
     @IBAction func passwordChanged(_ sender: UITextField) {
         checkPassword() 
@@ -44,7 +47,7 @@ class SignInViewController: UIViewController {
             lookPassword.setImage(UIImage(named: "HidePassword"), for: .normal)
             signInPasswordField.isSecureTextEntry = false
             passwordSate = false
-        
+            
         }
         else if passwordSate == false{
             lookPassword.setImage(UIImage(named: "ShowPassword"), for: .normal)
@@ -56,11 +59,11 @@ class SignInViewController: UIViewController {
     }
     @IBAction func forgotPassword(_ sender: Any) {
         let forgotPasswordViewController = UIStoryboard.init(name: "SignIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController
+        self.present(forgotPasswordViewController!, animated: true, completion: nil)
         
     }
     @IBAction func signIn(_ sender: UIButton) {
-        
-        guard let userId = self.signInPhoneNumberFiled.text else { return }
+           guard let userId = self.signInPhoneNumberFiled.text else { return }
         guard let password = self.signInPasswordField.text else { return }
         
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts/auth"){
@@ -87,7 +90,7 @@ class SignInViewController: UIViewController {
                         let statusCode = response.statusCode
                         print("Status code :- \(statusCode)")
                         print(response)
-
+                        
                         
                         if statusCode == 403{
                             self.alert(tittle: "Alert", message: " Requires user-agent")
@@ -104,7 +107,11 @@ class SignInViewController: UIViewController {
                         else if statusCode == 500{
                             self.passwordError.text = "Couldn't authenticate"
                         }
-                
+                        else{
+                            let mainTab = UIStoryboard.init(name: "MainTabController", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainTabController") as? MainTabController
+                            self.present(mainTab!, animated: true, completion: nil)
+                        }
+                        
                         return
                     }
                 }
@@ -119,8 +126,13 @@ class SignInViewController: UIViewController {
         }
     }
     @IBAction func signUp(_ sender: UIButton) {
+        let signUp = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignUp") as? SignupViewController
+        self.present(signUp!, animated: true, completion: nil)
+        
     }
     @IBAction func termsAndCondition(_ sender: UIButton) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as? ViewController
+        self.present(vc!, animated: true, completion: nil)
     }
     
 }

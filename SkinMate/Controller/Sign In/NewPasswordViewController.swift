@@ -9,22 +9,33 @@
 import UIKit
 
 class NewPasswordViewController: UIViewController {
-
+    
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var errorPassword: UILabel!
+    @IBOutlet weak var confirmPassword: UITextField!
+    @IBOutlet weak var errorConfirmPassword: UILabel!
+    @IBOutlet weak var changePasswordButton: UIButton!
+    var validPassword = false
+    var passwordSate = true
+    var validConfimPassword = false
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func passwordDidTypeFinish(_ sender: UITextField) {
+        checkPassword()
     }
-    */
-
+    
+    @IBAction func confirmPaswwordDidTypeFinish(_ sender: UITextField) {
+        checkConfirmPassword()
+    }
+    @IBAction func changePassword(_ sender: UIButton) {
+    }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        let forgotPasswordViewController = UIStoryboard.init(name: "SignIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController
+        self.present(forgotPasswordViewController!, animated: true, completion: nil)
+        
+    }
 }

@@ -29,7 +29,7 @@ class MainTabController: UIViewController, UITabBarDelegate {
     }
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if(item.tag == 1) {
-           NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadHome"), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadHome"), object: nil)
         } else if(item.tag == 2) {
             
         }
@@ -37,7 +37,7 @@ class MainTabController: UIViewController, UITabBarDelegate {
             
         }
         else if(item.tag == 4) {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadAccount"), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadAccount"), object: nil)
         }
     }
 }

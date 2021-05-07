@@ -8,26 +8,8 @@
 
 import UIKit
 extension SignInViewController{
-    
-}
-extension Dictionary {
-    func percentEscaped() -> String {
-        return map { (key, value) in
-            let escapedKey = "\(key)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
-            let escapedValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
-            return escapedKey + "=" + escapedValue
-            }
-            .joined(separator: "&")
+    func signInValidation(){
+        let mainTab = UIStoryboard.init(name: "MainTabController", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainTabController") as? MainTabController
+        self.present(mainTab!, animated: true, completion: nil)
     }
-}
-
-extension CharacterSet {
-    static let urlQueryValueAllowed: CharacterSet = {
-        let generalDelimitersToEncode = ":#[]@" // does not include "?" or "/" due to RFC 3986 - Section 3.4
-        let subDelimitersToEncode = "!$&'()*+,;="
-        
-        var allowed = CharacterSet.urlQueryAllowed
-        allowed.remove(charactersIn: "\(generalDelimitersToEncode)\(subDelimitersToEncode)")
-        return allowed
-    }()
 }

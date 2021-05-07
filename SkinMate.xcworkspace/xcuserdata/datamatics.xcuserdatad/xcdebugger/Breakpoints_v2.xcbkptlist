@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkinMate/Controller/Sign Up/OTPErrorViewController.swift"
+            timestampString = "642083367.23245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "OTPErrorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkinMate.OTPErrorViewController.lblInvalid.getter : weak Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SkinMate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/datamatics/Documents/Project2021AprilMay/SkinMate/SkinMate/Controller/Sign%20Up/OTPErrorViewController.swift"
+                  timestampString = "642083367.835292"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkinMate.OTPErrorViewController.lblInvalid.setter : weak Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SkinMate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/datamatics/Documents/Project2021AprilMay/SkinMate/SkinMate/Controller/Sign%20Up/OTPErrorViewController.swift"
+                  timestampString = "642083367.83803"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkinMate.OTPErrorViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SkinMate.OTPErrorViewController"
+                  moduleName = "SkinMate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/datamatics/Documents/Project2021AprilMay/SkinMate/SkinMate/Controller/Sign%20Up/OTPErrorViewController.swift"
+                  timestampString = "642083367.840338"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkinMate.OTPErrorViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SkinMate.OTPErrorViewController&gt;"
+                  moduleName = "SkinMate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/datamatics/Documents/Project2021AprilMay/SkinMate/SkinMate/Controller/Sign%20Up/OTPErrorViewController.swift"
+                  timestampString = "642083367.842663"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "355">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkinMate/Controller/Sign Up/OTPErrorViewController.swift"
+            timestampString = "642083378.147014"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
