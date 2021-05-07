@@ -28,6 +28,7 @@
 		4B8E0A722643F1BD000F3D97 /* SignInViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */; };
 		4B8E0A74264416B9000F3D97 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A73264416B9000F3D97 /* Validation.swift */; };
 		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
+		4B8E0A80264507E3000F3D97 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7F264507E3000F3D97 /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtension.swift; sourceTree = "<group>"; };
 		4B8E0A73264416B9000F3D97 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
+		4B8E0A7F264507E3000F3D97 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 		4B3505EB26394AC800808990 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				4B8E0A7F264507E3000F3D97 /* NotificationsViewController.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				4B3505F22639514200808990 /* MainTabController.swift in Sources */,
 				4B8E0A74264416B9000F3D97 /* Validation.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
+				4B8E0A80264507E3000F3D97 /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
