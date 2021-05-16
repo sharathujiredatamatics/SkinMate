@@ -11,28 +11,251 @@
     </dependencies>
     <scenes>
         <!--Home View Controller-->
-        <scene sceneID="BOD-N0-WaE">
+        <scene sceneID="pMX-3G-fqH">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="PA8-I3-AsI" customClass="HomeViewController" customModule="SkinMate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GYE-za-dxS">
+                <viewController storyboardIdentifier="HomeViewController" id="kVg-w1-qLc" customClass="HomeViewController" customModule="SkinMate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S1a-Ml-wcF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf1-qc-lGx">
-                                <rect key="frame" x="142" y="80" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResponsiveLogo" translatesAutoresizingMaskIntoConstraints="NO" id="TlY-5r-6EG">
+                                <rect key="frame" x="72.5" y="45" width="230" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="CoB-ZL-oFS">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="230" id="hDy-T5-lyB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Appointment for Skinmate Services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mat-58-X4N">
+                                <rect key="frame" x="71" y="180" width="233" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0XS-fw-VKs">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="233" id="lsa-cj-p0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="0.16862745100000001" green="0.25098039220000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="okx-9u-vN2">
+                                <rect key="frame" x="53" y="235" width="269" height="123"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCb-kz-fjd">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="123"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap-1" translatesAutoresizingMaskIntoConstraints="NO" id="dyu-Sf-W13">
+                                                <rect key="frame" x="40" y="20" width="45" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="sLI-up-OCM"/>
+                                                    <constraint firstAttribute="height" constant="40" id="zHr-sa-4hN">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telehealth Video Visits" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjn-Di-bfq">
+                                                <rect key="frame" x="-7.5" y="78" width="140" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0Dy-w1-iPP">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="132" id="LL1-yv-n25">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="140"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.61176470589999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Jjn-Di-bfq" firstAttribute="centerX" secondItem="bCb-kz-fjd" secondAttribute="centerX" id="Cwd-Yc-rtY"/>
+                                            <constraint firstItem="dyu-Sf-W13" firstAttribute="top" secondItem="bCb-kz-fjd" secondAttribute="top" constant="20" id="aNL-hP-SAX"/>
+                                            <constraint firstItem="dyu-Sf-W13" firstAttribute="centerX" secondItem="bCb-kz-fjd" secondAttribute="centerX" id="tBM-aF-HWA"/>
+                                            <constraint firstItem="Jjn-Di-bfq" firstAttribute="top" secondItem="dyu-Sf-W13" secondAttribute="bottom" constant="20" id="xn6-NA-Fzp">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="23"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVK-N7-rTO">
+                                        <rect key="frame" x="144.5" y="0.0" width="124.5" height="123"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder Doctor" translatesAutoresizingMaskIntoConstraints="NO" id="uNC-fO-K0j">
+                                                <rect key="frame" x="40" y="20" width="45" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="4kd-EQ-S63">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="45" id="kvY-Ij-PsE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOY-9C-9tB">
+                                                <rect key="frame" x="-3.5" y="75" width="132" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="cPQ-K8-grh">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="132" id="o6w-kg-8ey">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="132"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.61176470589999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AOY-9C-9tB" firstAttribute="centerX" secondItem="PVK-N7-rTO" secondAttribute="centerX" id="4qX-Bj-eku"/>
+                                            <constraint firstItem="uNC-fO-K0j" firstAttribute="centerX" secondItem="PVK-N7-rTO" secondAttribute="centerX" id="F9f-eY-GCU"/>
+                                            <constraint firstItem="AOY-9C-9tB" firstAttribute="top" secondItem="uNC-fO-K0j" secondAttribute="bottom" constant="20" id="FOx-yY-dqM"/>
+                                            <constraint firstItem="uNC-fO-K0j" firstAttribute="top" secondItem="PVK-N7-rTO" secondAttribute="top" constant="20" id="uuJ-yu-Be7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Gb1-o6-aPd">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="269"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="140" id="X8R-8A-IiC">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="123"/>
+                                    </constraint>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Eh8-3u-Ers">
+                                <rect key="frame" x="53" y="393" width="269" height="137"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJh-rh-riD">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="137"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="O8d-dW-0zN">
+                                                <rect key="frame" x="40" y="20" width="45" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="QXv-QX-anY"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ZU7-2R-3Aw">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX5-B3-zPC">
+                                                <rect key="frame" x="-7.5" y="73" width="140" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="T4a-oI-sQ8">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="140" id="eak-Rc-P0R">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="140"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <string key="text">Cosmetic Appointment
+Botox, Fillers, and other</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.61176470589999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="O8d-dW-0zN" firstAttribute="centerX" secondItem="zJh-rh-riD" secondAttribute="centerX" id="2Rw-Pe-ooD"/>
+                                            <constraint firstItem="QX5-B3-zPC" firstAttribute="centerX" secondItem="zJh-rh-riD" secondAttribute="centerX" id="5Ni-Df-Mp7"/>
+                                            <constraint firstItem="QX5-B3-zPC" firstAttribute="top" secondItem="O8d-dW-0zN" secondAttribute="bottom" constant="18" id="LXu-WT-s2Q"/>
+                                            <constraint firstItem="O8d-dW-0zN" firstAttribute="top" secondItem="zJh-rh-riD" secondAttribute="top" constant="20" id="LrU-Yh-OSk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flR-vG-Y9F">
+                                        <rect key="frame" x="144.5" y="0.0" width="124.5" height="137"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skincare" translatesAutoresizingMaskIntoConstraints="NO" id="DPV-jG-3Vk">
+                                                <rect key="frame" x="40" y="20" width="45" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="1ot-Vu-o4h"/>
+                                                    <constraint firstAttribute="height" constant="40" id="BVG-xP-Prq">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Care Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phv-fu-klj">
+                                                <rect key="frame" x="-2.5" y="75" width="130" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7QK-QX-1Ac">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="135" id="BDV-Sn-YM2">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="130"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.61176470589999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Phv-fu-klj" firstAttribute="centerX" secondItem="flR-vG-Y9F" secondAttribute="centerX" id="X9p-Mq-T9Z"/>
+                                            <constraint firstItem="DPV-jG-3Vk" firstAttribute="centerX" secondItem="flR-vG-Y9F" secondAttribute="centerX" id="dDA-kM-ycu"/>
+                                            <constraint firstItem="DPV-jG-3Vk" firstAttribute="top" secondItem="flR-vG-Y9F" secondAttribute="top" constant="20" id="mkq-Pd-Aia"/>
+                                            <constraint firstItem="Phv-fu-klj" firstAttribute="top" secondItem="DPV-jG-3Vk" secondAttribute="bottom" constant="20" id="zV6-G6-2BD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="9Rm-7T-2nT">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="137"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="320" id="Q6N-MZ-bLu">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="269"/>
+                                    </constraint>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="dMx-fz-tAe"/>
+                        <constraints>
+                            <constraint firstItem="okx-9u-vN2" firstAttribute="centerX" secondItem="S1a-Ml-wcF" secondAttribute="centerX" id="6Tg-gt-6sS"/>
+                            <constraint firstItem="Eh8-3u-Ers" firstAttribute="centerX" secondItem="S1a-Ml-wcF" secondAttribute="centerX" id="AnJ-QC-eUD"/>
+                            <constraint firstItem="mat-58-X4N" firstAttribute="top" secondItem="TlY-5r-6EG" secondAttribute="bottom" constant="30" id="Khd-2B-pG7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                            </constraint>
+                            <constraint firstItem="TlY-5r-6EG" firstAttribute="top" secondItem="vJm-Sn-Fel" secondAttribute="top" constant="25" id="kjl-Pb-ZgA"/>
+                            <constraint firstItem="okx-9u-vN2" firstAttribute="top" secondItem="mat-58-X4N" secondAttribute="bottom" constant="25" id="lqo-V4-8cC"/>
+                            <constraint firstItem="TlY-5r-6EG" firstAttribute="centerX" secondItem="S1a-Ml-wcF" secondAttribute="centerX" id="mNW-PU-cQn"/>
+                            <constraint firstItem="Eh8-3u-Ers" firstAttribute="top" secondItem="okx-9u-vN2" secondAttribute="bottom" constant="25" id="q9Q-QC-0q4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                            </constraint>
+                            <constraint firstItem="mat-58-X4N" firstAttribute="centerX" secondItem="S1a-Ml-wcF" secondAttribute="centerX" id="uVW-c5-bqh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vJm-Sn-Fel"/>
                     </view>
+                    <connections>
+                        <outlet property="SecondStack" destination="Eh8-3u-Ers" id="TCk-Ze-59R"/>
+                        <outlet property="cosmaticcView" destination="zJh-rh-riD" id="Aip-1V-tUz"/>
+                        <outlet property="firstStack" destination="okx-9u-vN2" id="qA1-xu-1eF"/>
+                        <outlet property="imgCosmatic" destination="O8d-dW-0zN" id="3yz-k4-Ajv"/>
+                        <outlet property="imgMedical" destination="uNC-fO-K0j" id="v5C-5P-Eum"/>
+                        <outlet property="imgSkin" destination="DPV-jG-3Vk" id="tVl-VT-tKa"/>
+                        <outlet property="imgTeleVideo" destination="dyu-Sf-W13" id="wAw-XM-Osu"/>
+                        <outlet property="imgView" destination="TlY-5r-6EG" id="eHS-oP-8ll"/>
+                        <outlet property="lblCosmatics" destination="QX5-B3-zPC" id="HmB-jH-Xxj"/>
+                        <outlet property="lblMedical" destination="AOY-9C-9tB" id="UHD-x4-Tho"/>
+                        <outlet property="lblSchedule" destination="mat-58-X4N" id="1hA-uZ-soM"/>
+                        <outlet property="lblSkin" destination="Phv-fu-klj" id="nzP-BM-cLw"/>
+                        <outlet property="lblTeleVideo" destination="Jjn-Di-bfq" id="E4g-MC-nJl"/>
+                        <outlet property="medicalView" destination="PVK-N7-rTO" id="jWO-SG-kwi"/>
+                        <outlet property="skinCareView" destination="flR-vG-Y9F" id="Ck8-sq-laV"/>
+                        <outlet property="teleView" destination="bCb-kz-fjd" id="YXd-B3-GW5"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fkD-rj-cJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXf-fz-PTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="147"/>
+            <point key="canvasLocation" x="-945" y="-385"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bitmap-1" width="49" height="46"/>
+        <image name="Group 10" width="49" height="50"/>
+        <image name="Placeholder Doctor" width="90" height="100"/>
+        <image name="ResponsiveLogo" width="600" height="600"/>
+        <image name="Skincare" width="47" height="50"/>
+    </resources>
 </document>
