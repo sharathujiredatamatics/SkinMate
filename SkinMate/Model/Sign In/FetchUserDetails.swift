@@ -31,7 +31,7 @@ class FetchUserDetails{
                         let statusCode = response.statusCode
                         print("Status code :- \(statusCode)")
                          print(response)
-                       if statusCode == 401{
+                       if statusCode == 403{
                             DispatchQueue.main.async {
                                VerifyEmailRequest.shared.verifyEmail(tokenId: SystemVerification.shared.tokenId, deviceId: SystemVerification.shared.deviceId)
                                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadVerifyEmailViewController"), object: nil)

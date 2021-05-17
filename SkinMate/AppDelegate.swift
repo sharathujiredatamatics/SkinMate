@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             FetchUserDetails.shared.fetchUserDetails(tokenId: tokenId!, deviceId: deviceId!)
             let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "MainTabController", bundle: nil)
             let mainTabController : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+            mainTabController.viewId = "home"
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.rootViewController = mainTabController
             self.window?.makeKeyAndVisible()

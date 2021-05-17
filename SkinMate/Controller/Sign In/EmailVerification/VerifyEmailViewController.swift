@@ -23,12 +23,7 @@ class VerifyEmailViewController: UIViewController {
     var activeTextField : UITextField? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtOTP.delegate = self
         
-        NotificationCenter.default.addObserver(self, selector: #selector(VerifyEmailViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        
-        // call the 'keyboardWillHide' function when the view controlelr receive notification that keyboard is going to be hidden
-        NotificationCenter.default.addObserver(self, selector: #selector(VerifyEmailViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
         txtOTP.defaultTextAttributes.updateValue(5.0, forKey: NSAttributedString.Key.kern)
         runTimer()
@@ -79,7 +74,7 @@ class VerifyEmailViewController: UIViewController {
         let seconds = Int(time) % 60
         return String(format: "%02im %02is", minutes,seconds)
     }
-
+    
     @IBAction func Resend(_ sender: UIButton) {
         runTimer()
         
@@ -95,7 +90,7 @@ class VerifyEmailViewController: UIViewController {
         VerifyOTP()
         
     }
-        
+    
     func  VerifyOTP() {
         var parameters = String()
         let otp:Int = Int(txtOTP.text!)!
