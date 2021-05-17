@@ -49,7 +49,6 @@
 		4B67750C265223A700DC7099 /* DeleteFamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B677502265223A700DC7099 /* DeleteFamilyMember.swift */; };
 		4B67750D265223A700DC7099 /* MemberInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B677503265223A700DC7099 /* MemberInformation.swift */; };
 		4B67750E265223A700DC7099 /* AddFamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B677504265223A700DC7099 /* AddFamilyMember.swift */; };
-		4B677510265223E000DC7099 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B67750F265223E000DC7099 /* Account.storyboard */; };
 		4B6775122652245800DC7099 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775112652245800DC7099 /* MainTabController.swift */; };
 		4B67752F2652250500DC7099 /* TermsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775132652250400DC7099 /* TermsAndConditionViewController.swift */; };
 		4B6775302652250500DC7099 /* UserUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775142652250400DC7099 /* UserUpdateViewController.swift */; };
@@ -104,6 +103,8 @@
 		4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */; };
 		4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */; };
 		4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */; };
+		4BE7313B2652A24400711A3F /* SwitchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7313A2652A24400711A3F /* SwitchTabViewController.swift */; };
+		4BE7313D2652A30E00711A3F /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE7313C2652A30D00711A3F /* Account.storyboard */; };
 		4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D7264FF3A200395EDF /* DatePicker.swift */; };
 		F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */; };
 /* End PBXBuildFile section */
@@ -154,7 +155,6 @@
 		4B677502265223A700DC7099 /* DeleteFamilyMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteFamilyMember.swift; sourceTree = "<group>"; };
 		4B677503265223A700DC7099 /* MemberInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberInformation.swift; sourceTree = "<group>"; };
 		4B677504265223A700DC7099 /* AddFamilyMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyMember.swift; sourceTree = "<group>"; };
-		4B67750F265223E000DC7099 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		4B6775112652245800DC7099 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		4B6775132652250400DC7099 /* TermsAndConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionViewController.swift; sourceTree = "<group>"; };
 		4B6775142652250400DC7099 /* UserUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpdateViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +210,8 @@
 		4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
 		4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		4BE7313A2652A24400711A3F /* SwitchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTabViewController.swift; sourceTree = "<group>"; };
+		4BE7313C2652A30D00711A3F /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		4BFE10D7264FF3A200395EDF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
 		BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -365,7 +367,7 @@
 		4B3505E5263947A100808990 /* AccountAndMore */ = {
 			isa = PBXGroup;
 			children = (
-				4B67750F265223E000DC7099 /* Account.storyboard */,
+				4BE7313C2652A30D00711A3F /* Account.storyboard */,
 			);
 			path = AccountAndMore;
 			sourceTree = "<group>";
@@ -447,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				4B6775112652245800DC7099 /* MainTabController.swift */,
+				4BE7313A2652A24400711A3F /* SwitchTabViewController.swift */,
 			);
 			path = MainTabController;
 			sourceTree = "<group>";
@@ -798,7 +801,7 @@
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
 				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
-				4B677510265223E000DC7099 /* Account.storyboard in Resources */,
+				4BE7313D2652A30E00711A3F /* Account.storyboard in Resources */,
 				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,7 +861,11 @@
 				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
+<<<<<<< HEAD
 				4B6774F026521E3900DC7099 /* ValidationForgotPassword.swift in Sources */,
+=======
+				4BE7313B2652A24400711A3F /* SwitchTabViewController.swift in Sources */,
+>>>>>>> features/account
 				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
 <<<<<<< HEAD

@@ -138,7 +138,7 @@ class AddFamilyMemberViewController: UIViewController , UITextViewDelegate, CLLo
         
         // call the 'keyboardWillHide' function when the view controlelr receive notification that keyboard is going to be hidden
         NotificationCenter.default.addObserver(self, selector: #selector(AddFamilyMemberViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-    
+        
         
         applyDesign()
         NotificationCenter.default.addObserver(self, selector: #selector(loadSuceesAddFamilyViewController), name: NSNotification.Name(rawValue: "loadSuceesAddFamilyViewController"), object: nil)
@@ -226,7 +226,7 @@ class AddFamilyMemberViewController: UIViewController , UITextViewDelegate, CLLo
         checkEmerganceName()
     }
     @IBAction func datOfBirthAction(_ sender: UITextField) {
-       //checkDOB()
+        //checkDOB()
     }
     @IBAction func phoneChanged(_ sender: UITextField) {
         checkPhone()
@@ -238,7 +238,7 @@ class AddFamilyMemberViewController: UIViewController , UITextViewDelegate, CLLo
         formatter.timeStyle = .none
         formatter.dateFormat = "dd-MM-yyyy"
         let strDate = formatter.string(from: datePicker.date)
-     
+        
         txtDate.text = strDate
     }
     
@@ -489,8 +489,8 @@ class AddFamilyMemberViewController: UIViewController , UITextViewDelegate, CLLo
         formatter.timeStyle = .none
         formatter.dateFormat = "MM-dd-yyyy"
         
-//        let Dob = formatter.date(from: txtDate.text!)
-//        print(Dob!)
+        //        let Dob = formatter.date(from: txtDate.text!)
+        //        print(Dob!)
         AddFamilyMember.shared.addFamilyMember(fName: txtFirst.text!, lName: txtLast.text!, relation: relation.text!, gender: UserDetails.shared.gender, dBirth: txtDate.text!, bGroup: txtBlood.text!, address: txtAddress.text!, insurance: txtInsur.text!, eName: txtContact.text!, eNumber: txtNumber.text!, viewController: AddFamilyMemberViewController())
     }
     @objc func loadSuceesAddFamilyViewController(notification: NSNotification){

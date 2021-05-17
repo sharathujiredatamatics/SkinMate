@@ -72,7 +72,7 @@ extension AddFamilyMemberViewController : UITextFieldDelegate {
             
         }
     }
-
+    
     func checkLastName(){
         if txtLast.text == ""{
             txtLast.layer.borderWidth = 0.50
@@ -90,58 +90,58 @@ extension AddFamilyMemberViewController : UITextFieldDelegate {
             
         }
     }
-
-func checkRelation(){
-    if relation.text == ""{
-        relation.layer.borderWidth = 0.50
-        relation.layer.masksToBounds = true
-        relation.layer.borderColor = UIColor.red.cgColor
-        validRelationship = false
-        validCredentials()
+    
+    func checkRelation(){
+        if relation.text == ""{
+            relation.layer.borderWidth = 0.50
+            relation.layer.masksToBounds = true
+            relation.layer.borderColor = UIColor.red.cgColor
+            validRelationship = false
+            validCredentials()
+        }
+        else{
+            relation.layer.borderWidth = 0.15
+            relation.layer.masksToBounds = true
+            relation.layer.borderColor = UIColor.lightGray.cgColor
+            validRelationship = true
+            validCredentials()
+            
+        }
     }
-    else{
-        relation.layer.borderWidth = 0.15
-        relation.layer.masksToBounds = true
-        relation.layer.borderColor = UIColor.lightGray.cgColor
-        validRelationship = true
-        validCredentials()
-        
-    }
-}
-//    func checkBlood(){
-//        if txtBlood.text == ""{
-//            txtBlood.layer.borderWidth = 0.50
-//            txtBlood.layer.masksToBounds = true
-//            txtBlood.layer.borderColor = UIColor.red.cgColor
-//            validBloodGroup = false
-//            validCredentials()
-//        }
-//        else{
-//            txtBlood.layer.borderWidth = 0.15
-//            txtBlood.layer.masksToBounds = true
-//            txtBlood.layer.borderColor = UIColor.lightGray.cgColor
-//            validBloodGroup = true
-//            validCredentials()
-//            
-//        }
-//    }
-//    func checkDOB(){
-//        if txtDate.text == ""{
-//            txtDate.layer.borderWidth = 0.50
-//            txtDate.layer.masksToBounds = true
-//            txtDate.layer.borderColor = UIColor.red.cgColor
-//            validDOB = false
-//            validCredentials()
-//        }
-//        else{
-//            txtDate.layer.borderWidth = 0.15
-//            txtDate.layer.masksToBounds = true
-//            txtDate.layer.borderColor = UIColor.lightGray.cgColor
-//            validDOB = true
-//            validCredentials()
-//
-//        }
-//    }
+    //    func checkBlood(){
+    //        if txtBlood.text == ""{
+    //            txtBlood.layer.borderWidth = 0.50
+    //            txtBlood.layer.masksToBounds = true
+    //            txtBlood.layer.borderColor = UIColor.red.cgColor
+    //            validBloodGroup = false
+    //            validCredentials()
+    //        }
+    //        else{
+    //            txtBlood.layer.borderWidth = 0.15
+    //            txtBlood.layer.masksToBounds = true
+    //            txtBlood.layer.borderColor = UIColor.lightGray.cgColor
+    //            validBloodGroup = true
+    //            validCredentials()
+    //
+    //        }
+    //    }
+    //    func checkDOB(){
+    //        if txtDate.text == ""{
+    //            txtDate.layer.borderWidth = 0.50
+    //            txtDate.layer.masksToBounds = true
+    //            txtDate.layer.borderColor = UIColor.red.cgColor
+    //            validDOB = false
+    //            validCredentials()
+    //        }
+    //        else{
+    //            txtDate.layer.borderWidth = 0.15
+    //            txtDate.layer.masksToBounds = true
+    //            txtDate.layer.borderColor = UIColor.lightGray.cgColor
+    //            validDOB = true
+    //            validCredentials()
+    //
+    //        }
+    //    }
     func checkInsurance(){
         if txtInsur.text == ""{
             txtInsur.layer.borderWidth = 0.50
@@ -220,7 +220,7 @@ func checkRelation(){
     }
     
     func validCredentials() {
-        if  validPhone == true && validEName == true && validInsurance == true && validGender == true && validFirstName == true && valilidLastName == true && validRelationship == true{
+        if  validPhone == true && validEName == true && validInsurance == true && validFirstName == true && valilidLastName == true && validRelationship == true{
             btnCreate.isEnabled = true
             btnCreate.alpha  = 1.0
             btnCreate.backgroundColor = #colorLiteral(red: 0.4588235294, green: 0.6117647059, blue: 0.6784313725, alpha: 1)

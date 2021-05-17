@@ -31,7 +31,7 @@ class EditFamilyMemberViewController: UIViewController , UITextViewDelegate, CLL
     
     @IBOutlet weak var lblLast: UILabel!
     
-     @IBOutlet weak var relation: UITextField!
+    @IBOutlet weak var relation: UITextField!
     @IBOutlet weak var lblGender: UILabel!
     @IBOutlet weak var txtLast: UITextField!
     
@@ -127,7 +127,7 @@ class EditFamilyMemberViewController: UIViewController , UITextViewDelegate, CLL
         
         applyDesign()
         addDetails()
-       NotificationCenter.default.addObserver(self, selector: #selector(loadSuceesAddFamilyViewController), name: NSNotification.Name(rawValue: "loadSuceesUpdateFamilyViewController"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(loadSuceesAddFamilyViewController), name: NSNotification.Name(rawValue: "loadSuceesUpdateFamilyViewController"), object: nil)
         
         // Getting user permision for accessing location
         btnLocation.addTarget(self, action: #selector(Enable), for: .touchUpInside)
@@ -202,8 +202,8 @@ class EditFamilyMemberViewController: UIViewController , UITextViewDelegate, CLL
         }
         
     }
-   @objc func datePickerChanged(datePicker:UIDatePicker) {
-     
+    @objc func datePickerChanged(datePicker:UIDatePicker) {
+        
         let dateFormatter = DateFormatter()
         
         dateFormatter.timeStyle = DateFormatter.Style.medium
@@ -435,7 +435,7 @@ class EditFamilyMemberViewController: UIViewController , UITextViewDelegate, CLL
         formatter.dateFormat = " MM-dd-yyyy"
         
         //let Dob = formatter.date(from: txtDate.text!)
-      // print(Dob!)
+        // print(Dob!)
         
         UpdateFamilyMember.shared.addFamilyMember(fName: txtFirst.text!, lName: txtLast.text!, relation: relation.text!, gender: MemberInformation.shared.gender, dBirth: txtDate.text!, bGroup: txtBlood.text!, address: txtAddress.text!, insurance: txtInsur.text!, eName: txtContact.text!, eNumber: txtNumber.text!)
         
