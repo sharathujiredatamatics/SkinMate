@@ -14,6 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let userLoginStatus = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        
+        let deviceId: String? = KeychainWrapper.standard.string(forKey: "deviceId")
+        let tokenId: String? = KeychainWrapper.standard.string(forKey: "tokenId")
+        if(userLoginStatus)
+        {
+            FetchUserDetails.shared.fetchUserDetails(tokenId: tokenId!, deviceId: deviceId!)
+            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "MainTabController", bundle: nil)
+            let mainTabController : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = mainTabController
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
     
