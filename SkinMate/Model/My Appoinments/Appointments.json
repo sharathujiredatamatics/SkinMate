@@ -1,0 +1,31 @@
+
+[
+    {
+        "date": "18 - Aug - 2020   ",
+        "time": "1:00 PM",
+        "doctorName": "abhijith, ",
+        "doctorEducation": "MBBS",
+        "appointmentid": "ID- 98723"
+    },
+    {
+        "date": "18 - Aug - 2020   ",
+        "time": "2:00 PM",
+        "doctorName": "abhijith, ",
+        "doctorEducation": "MBBS",
+        "appointmentid": "ID- 98745"
+    },
+    {
+        "date": "19 - Aug - 2020   ",
+        "time": "3:00 PM",
+        "doctorName": "abhijith, ",
+        "doctorEducation": "MBBS",
+        "appointmentid": "ID- 88645"
+    },
+    {
+        "date": "19 - Aug - 2020   ",
+        "time": "4:00",
+        "doctorName": "abhijith, ",
+        "doctorEducation": "MBBS",
+        "appointmentid": "ID- 98654"
+    }
+]
