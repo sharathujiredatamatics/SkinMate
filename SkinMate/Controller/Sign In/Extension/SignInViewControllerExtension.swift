@@ -25,7 +25,7 @@ extension SignInViewController{
             //                "password": password
             //            ]
             
-//            request.httpBody = parameters.percentEscaped().data(using: .utf8)
+            //            request.httpBody = parameters.percentEscaped().data(using: .utf8)
             request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
             request.httpBody = parameters.data(using: String.Encoding.utf8)
             URLSession.shared.dataTask(with: request) { (data, response, error) in

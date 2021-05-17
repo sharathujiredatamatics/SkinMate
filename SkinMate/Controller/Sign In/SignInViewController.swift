@@ -24,9 +24,9 @@ class SignInViewController: UIViewController {
     var userIdEmail = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.backToMain.layer.masksToBounds = true
-//        self.backToMain.layer.cornerRadius = 6
-//        self.backToMain.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMaxYCorner]
+        //        self.backToMain.layer.masksToBounds = true
+        //        self.backToMain.layer.cornerRadius = 6
+        //        self.backToMain.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMaxYCorner]
         lookPassword.setImage(UIImage(named: "ShowPassword"), for: .normal)
         lookPassword.imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 5)
         lookPassword.frame = CGRect(x: CGFloat(signInPasswordField.frame.size.width - 25), y: CGFloat(5), width: CGFloat(23), height: CGFloat(14))
@@ -41,7 +41,7 @@ class SignInViewController: UIViewController {
         checkUserId()
     }
     @IBAction func passwordChanged(_ sender: UITextField) {
-        checkPassword() 
+        checkPassword()
     }
     @objc func lookPasswordAction(sender: UIButton){
         if passwordSate == true{
@@ -69,7 +69,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func backToMainButttton(_ sender: UIButton) {
-        let mainTab = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as? ViewController    
+        let mainTab = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as? ViewController
         self.present(mainTab!, animated: true, completion: nil)
     }
     @IBAction func forgotPassword(_ sender: Any) {
@@ -79,9 +79,9 @@ class SignInViewController: UIViewController {
     }
     @IBAction func signIn(_ sender: UIButton) {
         let password = self.signInPasswordField.text!
-       
+        
         checkPhoneOrEmail()
-      
+        
         signIn(userIdEmail: userIdEmail,userIdPhone: userIdPhone, password: password)
         
     }
