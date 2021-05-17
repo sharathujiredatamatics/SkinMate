@@ -12,6 +12,7 @@
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
 <<<<<<< HEAD
 		4B6774C726521CFD00DC7099 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C526521CFD00DC7099 /* UserDetails.swift */; };
@@ -71,6 +72,8 @@
 		4B6775882652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775862652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift */; };
 		4B6775892652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775872652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift */; };
 >>>>>>> features/account
+=======
+>>>>>>> features/homeandnotifications
 =======
 >>>>>>> features/homeandnotifications
 		4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */; };
@@ -146,6 +149,7 @@
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 <<<<<<< HEAD
 		4B6774C526521CFD00DC7099 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 		4B6775862652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyMemberViewControllerExtension.swift; sourceTree = "<group>"; };
 		4B6775872652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFamilyMemberViewControllerExtension.swift; sourceTree = "<group>"; };
 >>>>>>> features/account
+=======
+>>>>>>> features/homeandnotifications
 =======
 >>>>>>> features/homeandnotifications
 		4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
@@ -1012,6 +1018,7 @@
 				4B6774ED26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				4B6774F426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift in Sources */,
 =======
 				4B6775492652250500DC7099 /* AddInsuranceViewController.swift in Sources */,
@@ -1022,6 +1029,9 @@
 				4B67750C265223A700DC7099 /* DeleteFamilyMember.swift in Sources */,
 				4B6775482652250500DC7099 /* ProfilePictureUploadViewController.swift in Sources */,
 >>>>>>> features/account
+=======
+				4BBD1A932652AE780055B7BD /* NotificationTableViewCell.swift in Sources */,
+>>>>>>> features/homeandnotifications
 =======
 				4BBD1A932652AE780055B7BD /* NotificationTableViewCell.swift in Sources */,
 >>>>>>> features/homeandnotifications
@@ -1063,11 +1073,15 @@
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				4B6774F626521E3900DC7099 /* SignInViewController.swift in Sources */,
 				4B6774EE26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift in Sources */,
 =======
 				4B677508265223A700DC7099 /* ProfilePhotoUpload.swift in Sources */,
 >>>>>>> features/account
+=======
+				4BBD1A8F2652AE690055B7BD /* HomeViewController.swift in Sources */,
+>>>>>>> features/homeandnotifications
 =======
 				4BBD1A8F2652AE690055B7BD /* HomeViewController.swift in Sources */,
 >>>>>>> features/homeandnotifications
