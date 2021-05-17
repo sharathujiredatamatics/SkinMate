@@ -12,6 +12,30 @@
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
 		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
+		4B6774C726521CFD00DC7099 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C526521CFD00DC7099 /* UserDetails.swift */; };
+		4B6774C826521CFD00DC7099 /* SystemVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C626521CFD00DC7099 /* SystemVerification.swift */; };
+		4B6774CE26521D1700DC7099 /* SignInAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C926521D1600DC7099 /* SignInAPI.swift */; };
+		4B6774CF26521D1700DC7099 /* FetchUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774CA26521D1700DC7099 /* FetchUserDetails.swift */; };
+		4B6774D026521D1700DC7099 /* VerifyEmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774CB26521D1700DC7099 /* VerifyEmailRequest.swift */; };
+		4B6774D126521D1700DC7099 /* SignInAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774CC26521D1700DC7099 /* SignInAPICall.swift */; };
+		4B6774D226521D1700DC7099 /* VerifyForgotPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774CD26521D1700DC7099 /* VerifyForgotPasswordRequest.swift */; };
+		4B6774D526521D8300DC7099 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6774D326521D8200DC7099 /* SignIn.storyboard */; };
+		4B6774D626521D8300DC7099 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6774D426521D8300DC7099 /* ForgotPassword.storyboard */; };
+		4B6774EA26521E3900DC7099 /* ErrorEmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774D826521E3900DC7099 /* ErrorEmailVerificationViewController.swift */; };
+		4B6774EB26521E3900DC7099 /* SuccessEmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774D926521E3900DC7099 /* SuccessEmailVerificationViewController.swift */; };
+		4B6774EC26521E3900DC7099 /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774DA26521E3900DC7099 /* VerifyEmailViewController.swift */; };
+		4B6774ED26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774DB26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift */; };
+		4B6774EE26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774DD26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift */; };
+		4B6774EF26521E3900DC7099 /* ForgotPasswordViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774DF26521E3900DC7099 /* ForgotPasswordViewControllerExtension.swift */; };
+		4B6774F026521E3900DC7099 /* ValidationForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E026521E3900DC7099 /* ValidationForgotPassword.swift */; };
+		4B6774F126521E3900DC7099 /* ValidationPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E126521E3900DC7099 /* ValidationPassword.swift */; };
+		4B6774F226521E3900DC7099 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E226521E3900DC7099 /* ForgotPasswordViewController.swift */; };
+		4B6774F326521E3900DC7099 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E326521E3900DC7099 /* NewPasswordViewController.swift */; };
+		4B6774F426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift */; };
+		4B6774F526521E3900DC7099 /* VerifyForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E526521E3900DC7099 /* VerifyForgotPasswordViewController.swift */; };
+		4B6774F626521E3900DC7099 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E626521E3900DC7099 /* SignInViewController.swift */; };
+		4B6774F726521E3900DC7099 /* SignInViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E826521E3900DC7099 /* SignInViewControllerExtension.swift */; };
+		4B6774F826521E3900DC7099 /* ValidationSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774E926521E3900DC7099 /* ValidationSignIn.swift */; };
 		4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */; };
 		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
 		4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */; };
@@ -58,6 +82,30 @@
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4B6774C526521CFD00DC7099 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		4B6774C626521CFD00DC7099 /* SystemVerification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemVerification.swift; sourceTree = "<group>"; };
+		4B6774C926521D1600DC7099 /* SignInAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAPI.swift; sourceTree = "<group>"; };
+		4B6774CA26521D1700DC7099 /* FetchUserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchUserDetails.swift; sourceTree = "<group>"; };
+		4B6774CB26521D1700DC7099 /* VerifyEmailRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailRequest.swift; sourceTree = "<group>"; };
+		4B6774CC26521D1700DC7099 /* SignInAPICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAPICall.swift; sourceTree = "<group>"; };
+		4B6774CD26521D1700DC7099 /* VerifyForgotPasswordRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyForgotPasswordRequest.swift; sourceTree = "<group>"; };
+		4B6774D326521D8200DC7099 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		4B6774D426521D8300DC7099 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		4B6774D826521E3900DC7099 /* ErrorEmailVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEmailVerificationViewController.swift; sourceTree = "<group>"; };
+		4B6774D926521E3900DC7099 /* SuccessEmailVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessEmailVerificationViewController.swift; sourceTree = "<group>"; };
+		4B6774DA26521E3900DC7099 /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		4B6774DB26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B6774DD26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorVerifyForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		4B6774DF26521E3900DC7099 /* ForgotPasswordViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B6774E026521E3900DC7099 /* ValidationForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationForgotPassword.swift; sourceTree = "<group>"; };
+		4B6774E126521E3900DC7099 /* ValidationPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPassword.swift; sourceTree = "<group>"; };
+		4B6774E226521E3900DC7099 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		4B6774E326521E3900DC7099 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		4B6774E426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangeSuccessPageViewController.swift; sourceTree = "<group>"; };
+		4B6774E526521E3900DC7099 /* VerifyForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		4B6774E626521E3900DC7099 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4B6774E826521E3900DC7099 /* SignInViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B6774E926521E3900DC7099 /* ValidationSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationSignIn.swift; sourceTree = "<group>"; };
 		4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
 		4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
@@ -181,6 +229,8 @@
 				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
 				4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */,
 				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
+				4B6774C626521CFD00DC7099 /* SystemVerification.swift */,
+				4B6774C526521CFD00DC7099 /* UserDetails.swift */,
 				4B8E0A7E2645017F000F3D97 /* Sign Up */,
 				4B8E0A7D26450176000F3D97 /* Sign In */,
 				4B8E0A7C26450160000F3D97 /* MainTabController */,
@@ -235,6 +285,8 @@
 		4B3505E42639476900808990 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				4B6774D426521D8300DC7099 /* ForgotPassword.storyboard */,
+				4B6774D326521D8200DC7099 /* SignIn.storyboard */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -321,9 +373,10 @@
 		4B3505F026394B4100808990 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
-				4B8964812648407700E7BC31 /* ForgotPassword */,
-				4B8964802648404300E7BC31 /* EmailVerification */,
-				4B8E0A702643F176000F3D97 /* Extension */,
+				4B6774D726521E3900DC7099 /* EmailVerification */,
+				4B6774E726521E3900DC7099 /* Extension */,
+				4B6774DC26521E3900DC7099 /* ForgotPassword */,
+				4B6774E626521E3900DC7099 /* SignInViewController.swift */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -348,6 +401,49 @@
 			children = (
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		4B6774D726521E3900DC7099 /* EmailVerification */ = {
+			isa = PBXGroup;
+			children = (
+				4B6774D826521E3900DC7099 /* ErrorEmailVerificationViewController.swift */,
+				4B6774D926521E3900DC7099 /* SuccessEmailVerificationViewController.swift */,
+				4B6774DA26521E3900DC7099 /* VerifyEmailViewController.swift */,
+				4B6774DB26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift */,
+			);
+			path = EmailVerification;
+			sourceTree = "<group>";
+		};
+		4B6774DC26521E3900DC7099 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				4B6774DD26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift */,
+				4B6774DE26521E3900DC7099 /* Extension */,
+				4B6774E226521E3900DC7099 /* ForgotPasswordViewController.swift */,
+				4B6774E326521E3900DC7099 /* NewPasswordViewController.swift */,
+				4B6774E426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift */,
+				4B6774E526521E3900DC7099 /* VerifyForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		4B6774DE26521E3900DC7099 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B6774DF26521E3900DC7099 /* ForgotPasswordViewControllerExtension.swift */,
+				4B6774E026521E3900DC7099 /* ValidationForgotPassword.swift */,
+				4B6774E126521E3900DC7099 /* ValidationPassword.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B6774E726521E3900DC7099 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B6774E826521E3900DC7099 /* SignInViewControllerExtension.swift */,
+				4B6774E926521E3900DC7099 /* ValidationSignIn.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		4B81CD09263C0223001EE6AE /* Extension */ = {
@@ -376,35 +472,6 @@
 				4B32BB1B264B789E00C34E5A /* Extension */,
 			);
 			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B8964802648404300E7BC31 /* EmailVerification */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EmailVerification;
-			sourceTree = "<group>";
-		};
-		4B8964812648407700E7BC31 /* ForgotPassword */ = {
-			isa = PBXGroup;
-			children = (
-				4B896482264840AD00E7BC31 /* Extension */,
-			);
-			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
-		4B896482264840AD00E7BC31 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		4B8E0A702643F176000F3D97 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		4B8E0A7726450102000F3D97 /* AccountAndMore */ = {
@@ -452,6 +519,11 @@
 		4B8E0A7D26450176000F3D97 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				4B6774CA26521D1700DC7099 /* FetchUserDetails.swift */,
+				4B6774C926521D1600DC7099 /* SignInAPI.swift */,
+				4B6774CC26521D1700DC7099 /* SignInAPICall.swift */,
+				4B6774CB26521D1700DC7099 /* VerifyEmailRequest.swift */,
+				4B6774CD26521D1700DC7099 /* VerifyForgotPasswordRequest.swift */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -612,9 +684,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6774D526521D8300DC7099 /* SignIn.storyboard in Resources */,
 				4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */,
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
 				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
+				4B6774D626521D8300DC7099 /* ForgotPassword.storyboard in Resources */,
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
 				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
@@ -675,34 +749,56 @@
 				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
+				4B6774F026521E3900DC7099 /* ValidationForgotPassword.swift in Sources */,
 				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
+				4B6774F126521E3900DC7099 /* ValidationPassword.swift in Sources */,
 				4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */,
+				4B6774D026521D1700DC7099 /* VerifyEmailRequest.swift in Sources */,
+				4B6774F526521E3900DC7099 /* VerifyForgotPasswordViewController.swift in Sources */,
 				4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */,
+				4B6774EA26521E3900DC7099 /* ErrorEmailVerificationViewController.swift in Sources */,
 				4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */,
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
 				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
 				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
+				4B6774F326521E3900DC7099 /* NewPasswordViewController.swift in Sources */,
 				4B8E0AE226453574000F3D97 /* IQBarButtonItem.swift in Sources */,
 				4B8E0AD126453574000F3D97 /* IQNSArray+Sort.swift in Sources */,
+				4B6774EC26521E3900DC7099 /* VerifyEmailViewController.swift in Sources */,
+				4B6774CE26521D1700DC7099 /* SignInAPI.swift in Sources */,
 				4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */,
 				4B8E0ADA26453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
 				4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */,
+				4B6774EB26521E3900DC7099 /* SuccessEmailVerificationViewController.swift in Sources */,
+				4B6774C726521CFD00DC7099 /* UserDetails.swift in Sources */,
 				4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				4B8E0ADE26453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
+				4B6774ED26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				4B6774F426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift in Sources */,
 				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
 				4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */,
 				4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
+				4B6774F226521E3900DC7099 /* ForgotPasswordViewController.swift in Sources */,
+				4B6774F826521E3900DC7099 /* ValidationSignIn.swift in Sources */,
 				4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */,
 				4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */,
+				4B6774CF26521D1700DC7099 /* FetchUserDetails.swift in Sources */,
+				4B6774D126521D1700DC7099 /* SignInAPICall.swift in Sources */,
 				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
 				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
+				4B6774F626521E3900DC7099 /* SignInViewController.swift in Sources */,
+				4B6774EE26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift in Sources */,
 				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */,
+				4B6774D226521D1700DC7099 /* VerifyForgotPasswordRequest.swift in Sources */,
 				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
+				4B6774C826521CFD00DC7099 /* SystemVerification.swift in Sources */,
+				4B6774F726521E3900DC7099 /* SignInViewControllerExtension.swift in Sources */,
+				4B6774EF26521E3900DC7099 /* ForgotPasswordViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
