@@ -11,6 +11,7 @@
 		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
 <<<<<<< HEAD
 		4B6774C726521CFD00DC7099 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C526521CFD00DC7099 /* UserDetails.swift */; };
@@ -70,6 +71,8 @@
 		4B6775882652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775862652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift */; };
 		4B6775892652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6775872652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift */; };
 >>>>>>> features/account
+=======
+>>>>>>> features/homeandnotifications
 		4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */; };
 		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
 		4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */; };
@@ -97,6 +100,11 @@
 		4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */; };
 		4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACF26453574000F3D97 /* IQToolbar.swift */; };
 		4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */; };
+		4BBD1A8B2652AE2A0055B7BD /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD1A8A2652AE2A0055B7BD /* Notification.storyboard */; };
+		4BBD1A8D2652AE440055B7BD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD1A8C2652AE440055B7BD /* Home.storyboard */; };
+		4BBD1A8F2652AE690055B7BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD1A8E2652AE690055B7BD /* HomeViewController.swift */; };
+		4BBD1A922652AE780055B7BD /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD1A902652AE770055B7BD /* NotificationsViewController.swift */; };
+		4BBD1A932652AE780055B7BD /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD1A912652AE770055B7BD /* NotificationTableViewCell.swift */; };
 		4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27A264A68CC009BA717 /* Poppins-Bold.ttf */; };
 		4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27B264A68CC009BA717 /* Poppins-Medium.ttf */; };
 		4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27C264A68CC009BA717 /* Poppins-Regular.ttf */; };
@@ -137,6 +145,7 @@
 		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 <<<<<<< HEAD
 		4B6774C526521CFD00DC7099 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
@@ -196,6 +205,8 @@
 		4B6775862652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyMemberViewControllerExtension.swift; sourceTree = "<group>"; };
 		4B6775872652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFamilyMemberViewControllerExtension.swift; sourceTree = "<group>"; };
 >>>>>>> features/account
+=======
+>>>>>>> features/homeandnotifications
 		4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
 		4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
@@ -224,6 +235,11 @@
 		4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
 		4B8E0ACF26453574000F3D97 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		4BBD1A8A2652AE2A0055B7BD /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		4BBD1A8C2652AE440055B7BD /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4BBD1A8E2652AE690055B7BD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4BBD1A902652AE770055B7BD /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		4BBD1A912652AE770055B7BD /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		4BCCF27A264A68CC009BA717 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		4BCCF27B264A68CC009BA717 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		4BCCF27C264A68CC009BA717 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
@@ -415,6 +431,7 @@
 		4B3505E6263947BC00808990 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				4BBD1A8A2652AE2A0055B7BD /* Notification.storyboard */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -461,6 +478,8 @@
 		4B3505EB26394AC800808990 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				4BBD1A902652AE770055B7BD /* NotificationsViewController.swift */,
+				4BBD1A912652AE770055B7BD /* NotificationTableViewCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -516,7 +535,7 @@
 		4B3505F32639820100808990 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4B3505F72639825E00808990 /* Home.storyboard */,
+				4BBD1A8C2652AE440055B7BD /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -524,6 +543,7 @@
 		4B3505F42639821400808990 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4BBD1A8E2652AE690055B7BD /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -861,10 +881,11 @@
 				4BE731492652A9A500711A3F /* Appointments.json in Resources */,
 >>>>>>> features/myappointments
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
-				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
 				4BE7313D2652A30E00711A3F /* Account.storyboard in Resources */,
 				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
+				4BBD1A8B2652AE2A0055B7BD /* Notification.storyboard in Resources */,
+				4BBD1A8D2652AE440055B7BD /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,6 +969,7 @@
 				4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */,
 				4B6774EA26521E3900DC7099 /* ErrorEmailVerificationViewController.swift in Sources */,
 				4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */,
+				4BBD1A922652AE780055B7BD /* NotificationsViewController.swift in Sources */,
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
 				4B6775462652250500DC7099 /* PrivacyPolicyViewController.swift in Sources */,
 				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
@@ -989,6 +1011,7 @@
 <<<<<<< HEAD
 				4B6774ED26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+<<<<<<< HEAD
 				4B6774F426521E3900DC7099 /* PasswordChangeSuccessPageViewController.swift in Sources */,
 =======
 				4B6775492652250500DC7099 /* AddInsuranceViewController.swift in Sources */,
@@ -999,6 +1022,9 @@
 				4B67750C265223A700DC7099 /* DeleteFamilyMember.swift in Sources */,
 				4B6775482652250500DC7099 /* ProfilePictureUploadViewController.swift in Sources */,
 >>>>>>> features/account
+=======
+				4BBD1A932652AE780055B7BD /* NotificationTableViewCell.swift in Sources */,
+>>>>>>> features/homeandnotifications
 				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
 <<<<<<< HEAD
 				4B6775812652260900DC7099 /* EditFamilyMemberViewController.swift in Sources */,
@@ -1036,11 +1062,15 @@
 				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				4B6774F626521E3900DC7099 /* SignInViewController.swift in Sources */,
 				4B6774EE26521E3900DC7099 /* ErrorVerifyForgotPasswordViewController.swift in Sources */,
 =======
 				4B677508265223A700DC7099 /* ProfilePhotoUpload.swift in Sources */,
 >>>>>>> features/account
+=======
+				4BBD1A8F2652AE690055B7BD /* HomeViewController.swift in Sources */,
+>>>>>>> features/homeandnotifications
 				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
 <<<<<<< HEAD
 				4B6775842652260900DC7099 /* FamilyViewController.swift in Sources */,
