@@ -183,7 +183,7 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
             }
             
         }
-        
+            
         else if UserDetails.shared.gender == "other" || UserDetails.shared.gender == "Other"{
             self.OtherSelected.isHidden = false
             // btnMale.isEnabled = false
@@ -197,7 +197,7 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
             }
             
         }
-      
+        
     }
     
     //MARK:- Check location permission.
@@ -280,10 +280,10 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
         
         
         iconView.isUserInteractionEnabled = true
-
+        
         
     }
-
+    
     
     
     func setIcon2(_ image: UIImage) {
@@ -302,7 +302,7 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
         iconView.isUserInteractionEnabled = true
         
     }
- 
+    
     
     func applyDesign() {
         
@@ -323,7 +323,7 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
         //Specifieng border color and width to the address textview up button.
         txtAddress.layer.borderWidth = 1
         txtAddress.layer.borderColor = #colorLiteral(red: 0.8, green: 0.8156862745, blue: 0.8352941176, alpha: 1)
-
+        
         txtAddress.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 0.2040346747)
         
         //Corner radius for male, female, oher views.
@@ -367,7 +367,7 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
             textView.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 1)
         }
     }
-
+    
     @IBAction func btnPrev(_ sender: UIButton) {
         let mainTabController = UIStoryboard.init(name: "MainTabController", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainTabController") as? MainTabController
         mainTabController?.viewId = "account"
@@ -389,11 +389,11 @@ class UserUpdateViewController: UIViewController, UITextViewDelegate, CLLocation
         formatter.timeStyle = .none
         formatter.dateFormat = "MM-dd-yyyy"
         
-//        let Dob = formatter.date(from: txtDate.text!)
-//        print(Dob!)
-//
+        //        let Dob = formatter.date(from: txtDate.text!)
+        //        print(Dob!)
+        //
         
-    UserDetailsUpdate.shared.userUpdateDetails(fName: txtFirst.text!, lName: txtLast.text!, gender: UserDetails.shared.gender, dBirth: txtDate.text!, bGroup: txtBlood.text!, address: txtAddress.text!, insurance: txtInsur.text!, eName: txtContact.text!, eNumber: txtNumber.text!)
+        UserDetailsUpdate.shared.userUpdateDetails(fName: txtFirst.text!, lName: txtLast.text!, gender: UserDetails.shared.gender, dBirth: txtDate.text!, bGroup: txtBlood.text!, address: txtAddress.text!, insurance: txtInsur.text!, eName: txtContact.text!, eNumber: txtNumber.text!)
     }
     @objc func loadUserUpdateViewController(notification: NSNotification){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Account", bundle: nil)

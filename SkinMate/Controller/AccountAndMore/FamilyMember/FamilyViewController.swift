@@ -14,7 +14,7 @@ class FamilyViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var addMember: UIButton!
     var viewControllerId = "familyview"
     @IBOutlet weak var familyTable: NSLayoutConstraint!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         familyTableView.reloadData()
@@ -22,16 +22,16 @@ class FamilyViewController: UIViewController, UITableViewDelegate, UITableViewDa
         NotificationCenter.default.addObserver(self, selector: #selector(loadFamilyView), name: NSNotification.Name(rawValue: "loadFamilyViewTable"), object: nil)
     }
     @objc func loadFamilyView(notification: NSNotification){
-       familyTableView.reloadData()
+        familyTableView.reloadData()
     }
-  
+    
     @IBAction func addFamilyMember(_ sender: UIButton) {
         let addFamilyMemberViewController = UIStoryboard.init(name: "Account", bundle: Bundle.main).instantiateViewController(withIdentifier: "AddFamilyMemberViewController") as? AddFamilyMemberViewController
         self.present(addFamilyMemberViewController!, animated: true)
     }
     @IBAction func backToMain(_ sender: UIButton) {
-       DispatchQueue.main.async {
-        FamilyMembers.shared.familyMembersData = []
+        DispatchQueue.main.async {
+            FamilyMembers.shared.familyMembersData = []
         }
         let mainTabController = UIStoryboard.init(name: "MainTabController", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainTabController") as? MainTabController
         mainTabController?.viewId = "account"
@@ -57,9 +57,9 @@ class FamilyViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let hitPoint = sender.convert(CGPoint.zero, to: familyTableView)
         if let indexPath = familyTableView.indexPathForRow(at: hitPoint) {
-          familyDeleteViewController?.userId = FamilyMembers.shared.familyMembersData[indexPath.row]._id
-        familyDeleteViewController?.userName = "\(FamilyMembers.shared.familyMembersData[indexPath.row].firstName)  \(FamilyMembers.shared.familyMembersData[indexPath.row].lastName)"
+            familyDeleteViewController?.userId = FamilyMembers.shared.familyMembersData[indexPath.row]._id
+            familyDeleteViewController?.userName = "\(FamilyMembers.shared.familyMembersData[indexPath.row].firstName)  \(FamilyMembers.shared.familyMembersData[indexPath.row].lastName)"
         }
-       self.present(familyDeleteViewController!, animated: true, completion: nil)
+        self.present(familyDeleteViewController!, animated: true, completion: nil)
     }
 }
