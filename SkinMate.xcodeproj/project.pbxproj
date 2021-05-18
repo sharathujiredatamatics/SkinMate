@@ -134,32 +134,11 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		4B32BB1B264B789E00C34E5A /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		4B34B70D265426420033CEFD /* Sign In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sign In";
-			sourceTree = "<group>";
-		};
 		4B34B70E2654265F0033CEFD /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B34B70F265426710033CEFD /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AccountAndMore;
 			sourceTree = "<group>";
 		};
 		4B34B7102654268F0033CEFD /* AccountAndMore */ = {
@@ -177,18 +156,11 @@
 			path = AccountAndMore;
 			sourceTree = "<group>";
 		};
-		4B34B712265426AB0033CEFD /* Sign In */ = {
+		4B34B71426542A3F0033CEFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B34B713265426B50033CEFD /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AccountAndMore;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4B3505BE26392FF100808990 = {
@@ -215,7 +187,7 @@
 				4B81CD09263C0223001EE6AE /* Extension */,
 				4B3505E0263946DD00808990 /* Model */,
 				4B3505E1263946ED00808990 /* View */,
-				4B3505E22639470300808990 /* Controller */,
+				4B34B71426542A3F0033CEFD /* Controller */,
 				4B019F66263AC94900864D8A /* Utils */,
 				4B3505D926392FF300808990 /* Info.plist */,
 				4B3505CA26392FF100808990 /* AppDelegate.swift */,
@@ -231,14 +203,6 @@
 				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
 				4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */,
 				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
-				4B8E0A7E2645017F000F3D97 /* Sign Up */,
-				4B34B70D265426420033CEFD /* Sign In */,
-				4B8E0A7C26450160000F3D97 /* MainTabController */,
-				4B8E0A7B26450140000F3D97 /* Booking Appointments */,
-				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
-				4B8E0A7926450121000F3D97 /* E-Check In */,
-				4B8E0A782645010F000F3D97 /* Notifications */,
-				4B34B70F265426710033CEFD /* AccountAndMore */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,21 +221,6 @@
 				4B3505E8263947DA00808990 /* My Appointments */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		4B3505E22639470300808990 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4B34B712265426AB0033CEFD /* Sign In */,
-				4B81CD0D263C0BAB001EE6AE /* Sign Up */,
-				4B3505F42639821400808990 /* Home */,
-				4B3505EE26394AFE00808990 /* Booking Appointments */,
-				4B3505ED26394AEB00808990 /* My Appointments */,
-				4B3505EC26394ADB00808990 /* E-Check In */,
-				4B3505EB26394AC800808990 /* Notifications */,
-				4B34B713265426B50033CEFD /* AccountAndMore */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		4B3505E32639473F00808990 /* MainTabController */ = {
@@ -309,45 +258,10 @@
 			path = "Booking Appointments";
 			sourceTree = "<group>";
 		};
-		4B3505EB26394AC800808990 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		4B3505EC26394ADB00808990 /* E-Check In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B3505ED26394AEB00808990 /* My Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EE26394AFE00808990 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
 		4B3505F32639820100808990 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				4B3505F72639825E00808990 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		4B3505F42639821400808990 /* Home */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -369,56 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				4B34B70E2654265F0033CEFD /* Sign In */,
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B81CD0D263C0BAB001EE6AE /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				4B32BB1B264B789E00C34E5A /* Extension */,
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B8E0A782645010F000F3D97 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		4B8E0A7926450121000F3D97 /* E-Check In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B8E0A7A2645012F000F3D97 /* My Appoinments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appoinments";
-			sourceTree = "<group>";
-		};
-		4B8E0A7B26450140000F3D97 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B8E0A7C26450160000F3D97 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
-		4B8E0A7E2645017F000F3D97 /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
