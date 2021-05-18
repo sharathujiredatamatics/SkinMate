@@ -102,12 +102,12 @@ class VerifyForgotPasswordViewController: UIViewController {
             request.httpMethod = "POST"
             //request.setValue(SystemVerification.shared.userAgent, forHTTPHeaderField: "user-agent")
             
-            let parameters: [String : Any] = [
-                "code": otp,
-                "requestId": SignInAPICall.shared.requestId,
-                ]
-            
-            request.httpBody = parameters.percentEscaped().data(using: .utf8)
+//            let parameters: [String : Any] = [
+//                "code": otp,
+//                "requestId": SignInAPICall.shared.requestId,
+//                ]
+//            
+//            request.httpBody = parameters.percentEscaped().data(using: .utf8)
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let data = data else {

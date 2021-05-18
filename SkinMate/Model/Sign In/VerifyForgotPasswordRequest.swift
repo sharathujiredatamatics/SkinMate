@@ -30,8 +30,8 @@ if let url = URL(string: SignInAPI.shared.signInAPI){
     //                "password": password
     //            ]
     //request.setValue(SystemVerification.shared.userAgent, forHTTPHeaderField: "user-agent")
-    request.httpBody = parameters.percentEscaped().data(using: .utf8)
-    
+//    request.httpBody = parameters.percentEscaped().data(using: .utf8)
+//    
     URLSession.shared.dataTask(with: request) { (data, response, error) in
         guard let data = data else {
             if error == nil{
