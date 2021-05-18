@@ -7,25 +7,37 @@
 		<key>DropDown.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>0</integer>
+=======
+			<integer>2</integer>
+>>>>>>> features/signup
 		</dict>
 		<key>FSCalendar.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>1</integer>
 =======
 			<integer>2</integer>
 >>>>>>> features/bookingappointments
+=======
+			<integer>1</integer>
+>>>>>>> features/signup
 		</dict>
 		<key>Pods-SkinMate.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>2</integer>
 =======
 			<integer>3</integer>
 >>>>>>> features/bookingappointments
+=======
+			<integer>3</integer>
+>>>>>>> features/signup
 		</dict>
 	</dict>
 </dict>

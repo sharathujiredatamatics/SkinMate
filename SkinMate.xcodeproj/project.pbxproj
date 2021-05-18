@@ -137,6 +137,7 @@
 		4BE7315F2652A9EA00711A3F /* CanceledAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE731582652A9EA00711A3F /* CanceledAppointmentViewController.swift */; };
 >>>>>>> features/myappointments
 		4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D7264FF3A200395EDF /* DatePicker.swift */; };
+<<<<<<< HEAD
 		9BE82B2626537993000230D7 /* ButtonDesignClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE82B2226537993000230D7 /* ButtonDesignClass.swift */; };
 		9BE82B2726537993000230D7 /* ComformationAppointmentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE82B2326537993000230D7 /* ComformationAppointmentDetails.swift */; };
 		9BE82B2826537993000230D7 /* DesignColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE82B2426537993000230D7 /* DesignColor.swift */; };
@@ -152,6 +153,30 @@
 		9BE82B4126537A13000230D7 /* BookingFamilyMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE82B3726537A12000230D7 /* BookingFamilyMemberTableViewCell.swift */; };
 		9BE82B4226537A13000230D7 /* DoctorSlectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE82B3826537A12000230D7 /* DoctorSlectionTableViewCell.swift */; };
 		9BE82B4326537A13000230D7 /* MorningTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE82B3926537A12000230D7 /* MorningTimeCollectionViewCell.swift */; };
+=======
+		9BAF24992653A47900AAC026 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24932653A47900AAC026 /* RequestAPI.swift */; };
+		9BAF249A2653A47900AAC026 /* Varification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24942653A47900AAC026 /* Varification.swift */; };
+		9BAF249B2653A47900AAC026 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24952653A47900AAC026 /* VerifyAPI.swift */; };
+		9BAF249C2653A47900AAC026 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24962653A47900AAC026 /* Validation.swift */; };
+		9BAF249D2653A47900AAC026 /* RegisterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24972653A47900AAC026 /* RegisterAPI.swift */; };
+		9BAF249E2653A47900AAC026 /* CreateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24982653A47900AAC026 /* CreateAPI.swift */; };
+		9BAF24A52653A49200AAC026 /* OtpSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24A02653A49200AAC026 /* OtpSuccess.swift */; };
+		9BAF24A62653A49200AAC026 /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24A12653A49200AAC026 /* OtpView.swift */; };
+		9BAF24A72653A49200AAC026 /* OtpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF24A22653A49200AAC026 /* OtpView.xib */; };
+		9BAF24A82653A49200AAC026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF24A32653A49200AAC026 /* Main.storyboard */; };
+		9BAF24A92653A49200AAC026 /* OtpSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF24A42653A49200AAC026 /* OtpSuccess.xib */; };
+		9BAF24B72653A4B500AAC026 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24AB2653A4B400AAC026 /* SignupViewController.swift */; };
+		9BAF24B82653A4B500AAC026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24AC2653A4B400AAC026 /* ViewController.swift */; };
+		9BAF24B92653A4B500AAC026 /* SetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24AD2653A4B400AAC026 /* SetProfileViewController.swift */; };
+		9BAF24BA2653A4B500AAC026 /* OTPErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24AE2653A4B400AAC026 /* OTPErrorViewController.swift */; };
+		9BAF24BB2653A4B500AAC026 /* SetupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B02653A4B400AAC026 /* SetupExtension.swift */; };
+		9BAF24BC2653A4B500AAC026 /* SignUpExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B12653A4B400AAC026 /* SignUpExtension.swift */; };
+		9BAF24BD2653A4B500AAC026 /* OTPEnterViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B22653A4B400AAC026 /* OTPEnterViewControllerExtension.swift */; };
+		9BAF24BE2653A4B500AAC026 /* SignUpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B32653A4B400AAC026 /* SignUpSuccessViewController.swift */; };
+		9BAF24BF2653A4B500AAC026 /* OtpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B42653A4B400AAC026 /* OtpSuccessViewController.swift */; };
+		9BAF24C02653A4B500AAC026 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B52653A4B400AAC026 /* Presentation.swift */; };
+		9BAF24C12653A4B500AAC026 /* OtpEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF24B62653A4B400AAC026 /* OtpEnterViewController.swift */; };
+>>>>>>> features/signup
 		F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */; };
 /* End PBXBuildFile section */
 
@@ -291,6 +316,7 @@
 >>>>>>> features/myappointments
 		4BFE10D7264FF3A200395EDF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9BE82B2226537993000230D7 /* ButtonDesignClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonDesignClass.swift; sourceTree = "<group>"; };
 		9BE82B2326537993000230D7 /* ComformationAppointmentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComformationAppointmentDetails.swift; sourceTree = "<group>"; };
 		9BE82B2426537993000230D7 /* DesignColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignColor.swift; sourceTree = "<group>"; };
@@ -306,6 +332,30 @@
 		9BE82B3726537A12000230D7 /* BookingFamilyMemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingFamilyMemberTableViewCell.swift; sourceTree = "<group>"; };
 		9BE82B3826537A12000230D7 /* DoctorSlectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorSlectionTableViewCell.swift; sourceTree = "<group>"; };
 		9BE82B3926537A12000230D7 /* MorningTimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorningTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+=======
+		9BAF24932653A47900AAC026 /* RequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
+		9BAF24942653A47900AAC026 /* Varification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Varification.swift; sourceTree = "<group>"; };
+		9BAF24952653A47900AAC026 /* VerifyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+		9BAF24962653A47900AAC026 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		9BAF24972653A47900AAC026 /* RegisterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAPI.swift; sourceTree = "<group>"; };
+		9BAF24982653A47900AAC026 /* CreateAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAPI.swift; sourceTree = "<group>"; };
+		9BAF24A02653A49200AAC026 /* OtpSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccess.swift; sourceTree = "<group>"; };
+		9BAF24A12653A49200AAC026 /* OtpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		9BAF24A22653A49200AAC026 /* OtpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpView.xib; sourceTree = "<group>"; };
+		9BAF24A32653A49200AAC026 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9BAF24A42653A49200AAC026 /* OtpSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpSuccess.xib; sourceTree = "<group>"; };
+		9BAF24AB2653A4B400AAC026 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		9BAF24AC2653A4B400AAC026 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BAF24AD2653A4B400AAC026 /* SetProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetProfileViewController.swift; sourceTree = "<group>"; };
+		9BAF24AE2653A4B400AAC026 /* OTPErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPErrorViewController.swift; sourceTree = "<group>"; };
+		9BAF24B02653A4B400AAC026 /* SetupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupExtension.swift; sourceTree = "<group>"; };
+		9BAF24B12653A4B400AAC026 /* SignUpExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpExtension.swift; sourceTree = "<group>"; };
+		9BAF24B22653A4B400AAC026 /* OTPEnterViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPEnterViewControllerExtension.swift; sourceTree = "<group>"; };
+		9BAF24B32653A4B400AAC026 /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
+		9BAF24B42653A4B400AAC026 /* OtpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccessViewController.swift; sourceTree = "<group>"; };
+		9BAF24B52653A4B400AAC026 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
+		9BAF24B62653A4B400AAC026 /* OtpEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpEnterViewController.swift; sourceTree = "<group>"; };
+>>>>>>> features/signup
 		BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -370,7 +420,11 @@
 				4B81CD09263C0223001EE6AE /* Extension */,
 				4B3505E0263946DD00808990 /* Model */,
 				4B3505E1263946ED00808990 /* View */,
+<<<<<<< HEAD
 				9BE82B2D265379F0000230D7 /* Controller */,
+=======
+				9BAF24912653A39500AAC026 /* Controller */,
+>>>>>>> features/signup
 				4B019F66263AC94900864D8A /* Utils */,
 				4B3505D926392FF300808990 /* Info.plist */,
 				4B3505CA26392FF100808990 /* AppDelegate.swift */,
@@ -386,9 +440,13 @@
 				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
 				4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */,
 				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
+<<<<<<< HEAD
 				4B6774C626521CFD00DC7099 /* SystemVerification.swift */,
 				4B6774C526521CFD00DC7099 /* UserDetails.swift */,
 				4B8E0A7E2645017F000F3D97 /* Sign Up */,
+=======
+				9BAF24922653A47900AAC026 /* Sign Up */,
+>>>>>>> features/signup
 				4B8E0A7D26450176000F3D97 /* Sign In */,
 				4B8E0A7C26450160000F3D97 /* MainTabController */,
 				9BE82B202653795B000230D7 /* Booking Appointments */,
@@ -403,7 +461,7 @@
 		4B3505E1263946ED00808990 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4B81CD0C263C0B9F001EE6AE /* Sign Up */,
+				9BAF249F2653A49200AAC026 /* Sign Up */,
 				4B3505E42639476900808990 /* Sign In */,
 				4B3505F32639820100808990 /* Home */,
 				4B3505E32639473F00808990 /* MainTabController */,
@@ -472,6 +530,7 @@
 			path = "Booking Appointments";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		4B3505EA26394AAE00808990 /* AccountAndMore */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +607,8 @@
 		};
 =======
 >>>>>>> features/bookingappointments
+=======
+>>>>>>> features/signup
 		4B3505F32639820100808990 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +617,7 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		4B3505F42639821400808990 /* Home */ = {
 			isa = PBXGroup;
@@ -581,6 +643,8 @@
 		};
 		4B6775722652259C00DC7099 /* Extension */ = {
 =======
+=======
+>>>>>>> features/signup
 		4B81CD09263C0223001EE6AE /* Extension */ = {
 >>>>>>> features/bookingappointments
 			isa = PBXGroup;
@@ -592,6 +656,7 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		4B6775852652265000DC7099 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,6 +740,8 @@
 		};
 =======
 >>>>>>> features/bookingappointments
+=======
+>>>>>>> features/signup
 		4B8E0A7726450102000F3D97 /* AccountAndMore */ = {
 			isa = PBXGroup;
 			children = (
@@ -739,13 +806,6 @@
 				4B6774CD26521D1700DC7099 /* VerifyForgotPasswordRequest.swift */,
 			);
 			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B8E0A7E2645017F000F3D97 /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 		4B8E0AB426453574000F3D97 /* IQKeyboardManagerSwift */ = {
@@ -823,6 +883,7 @@
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		9BE82B202653795B000230D7 /* Booking Appointments */ = {
 			isa = PBXGroup;
@@ -841,6 +902,65 @@
 				9BE82B2526537993000230D7 /* DoctorDetails.swift */,
 			);
 			path = HelperClasses;
+=======
+		9BAF24912653A39500AAC026 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BAF24AA2653A4B400AAC026 /* Sign Up */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9BAF24922653A47900AAC026 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				9BAF24932653A47900AAC026 /* RequestAPI.swift */,
+				9BAF24942653A47900AAC026 /* Varification.swift */,
+				9BAF24952653A47900AAC026 /* VerifyAPI.swift */,
+				9BAF24962653A47900AAC026 /* Validation.swift */,
+				9BAF24972653A47900AAC026 /* RegisterAPI.swift */,
+				9BAF24982653A47900AAC026 /* CreateAPI.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		9BAF249F2653A49200AAC026 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				9BAF24A02653A49200AAC026 /* OtpSuccess.swift */,
+				9BAF24A12653A49200AAC026 /* OtpView.swift */,
+				9BAF24A22653A49200AAC026 /* OtpView.xib */,
+				9BAF24A32653A49200AAC026 /* Main.storyboard */,
+				9BAF24A42653A49200AAC026 /* OtpSuccess.xib */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		9BAF24AA2653A4B400AAC026 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				9BAF24AB2653A4B400AAC026 /* SignupViewController.swift */,
+				9BAF24AC2653A4B400AAC026 /* ViewController.swift */,
+				9BAF24AD2653A4B400AAC026 /* SetProfileViewController.swift */,
+				9BAF24AE2653A4B400AAC026 /* OTPErrorViewController.swift */,
+				9BAF24AF2653A4B400AAC026 /* Extension */,
+				9BAF24B32653A4B400AAC026 /* SignUpSuccessViewController.swift */,
+				9BAF24B42653A4B400AAC026 /* OtpSuccessViewController.swift */,
+				9BAF24B52653A4B400AAC026 /* Presentation.swift */,
+				9BAF24B62653A4B400AAC026 /* OtpEnterViewController.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		9BAF24AF2653A4B400AAC026 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BAF24B02653A4B400AAC026 /* SetupExtension.swift */,
+				9BAF24B12653A4B400AAC026 /* SignUpExtension.swift */,
+				9BAF24B22653A4B400AAC026 /* OTPEnterViewControllerExtension.swift */,
+			);
+			path = Extension;
+>>>>>>> features/signup
 			sourceTree = "<group>";
 		};
 		9BE82B2A265379D1000230D7 /* Booking Appointments */ = {
@@ -947,8 +1067,13 @@
 			files = (
 				4B6774D526521D8300DC7099 /* SignIn.storyboard in Resources */,
 				4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */,
+				9BAF24A92653A49200AAC026 /* OtpSuccess.xib in Resources */,
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
+<<<<<<< HEAD
 				4BE731512652A9C400711A3F /* MyAppointment.storyboard in Resources */,
+=======
+				9BAF24A72653A49200AAC026 /* OtpView.xib in Resources */,
+>>>>>>> features/signup
 				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -964,7 +1089,11 @@
 =======
 				9BE82B2C265379D1000230D7 /* BookingAppointment.storyboard in Resources */,
 				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
+<<<<<<< HEAD
 >>>>>>> features/bookingappointments
+=======
+				9BAF24A82653A49200AAC026 /* Main.storyboard in Resources */,
+>>>>>>> features/signup
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
 				4BE7313D2652A30E00711A3F /* Account.storyboard in Resources */,
 				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
@@ -1024,6 +1153,7 @@
 			files = (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				4B67750D265223A700DC7099 /* MemberInformation.swift in Sources */,
 				4B677578265225E200DC7099 /* UserUpdateExtension.swift in Sources */,
 =======
@@ -1032,11 +1162,15 @@
 =======
 				9BE82B2726537993000230D7 /* ComformationAppointmentDetails.swift in Sources */,
 >>>>>>> features/bookingappointments
+=======
+				9BAF24A52653A49200AAC026 /* OtpSuccess.swift in Sources */,
+>>>>>>> features/signup
 				4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */,
 				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
 				4BE7314C2652A9A500711A3F /* CancelAppointment.swift in Sources */,
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				4B6774F026521E3900DC7099 /* ValidationForgotPassword.swift in Sources */,
@@ -1046,6 +1180,9 @@
 =======
 				9BE82B3F26537A13000230D7 /* SummaryViewController.swift in Sources */,
 >>>>>>> features/bookingappointments
+=======
+				9BAF24BB2653A4B500AAC026 /* SetupExtension.swift in Sources */,
+>>>>>>> features/signup
 				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
 <<<<<<< HEAD
@@ -1064,11 +1201,18 @@
 				4BBD1A922652AE780055B7BD /* NotificationsViewController.swift in Sources */,
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				4B6775462652250500DC7099 /* PrivacyPolicyViewController.swift in Sources */,
 =======
 				9BE82B3C26537A13000230D7 /* ScheduleConfirmViewController.swift in Sources */,
 >>>>>>> features/bookingappointments
+=======
+				9BAF24B92653A4B500AAC026 /* SetProfileViewController.swift in Sources */,
+				9BAF24992653A47900AAC026 /* RequestAPI.swift in Sources */,
+				9BAF24BD2653A4B500AAC026 /* OTPEnterViewControllerExtension.swift in Sources */,
+>>>>>>> features/signup
 				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
+				9BAF249B2653A47900AAC026 /* VerifyAPI.swift in Sources */,
 				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1098,6 +1242,7 @@
 =======
 				9BE82B2926537993000230D7 /* DoctorDetails.swift in Sources */,
 				4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */,
+<<<<<<< HEAD
 				9BE82B3E26537A13000230D7 /* ServiceViewController.swift in Sources */,
 				9BE82B3A26537A13000230D7 /* AppointFamilyMemberViewController.swift in Sources */,
 >>>>>>> features/bookingappointments
@@ -1115,6 +1260,16 @@
 				9BE82B4326537A13000230D7 /* MorningTimeCollectionViewCell.swift in Sources */,
 				9BE82B4026537A13000230D7 /* AfternoonTimeCollectionViewCell.swift in Sources */,
 >>>>>>> features/bookingappointments
+=======
+				9BAF24B82653A4B500AAC026 /* ViewController.swift in Sources */,
+				4B8E0ADA26453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
+				9BAF24C02653A4B500AAC026 /* Presentation.swift in Sources */,
+				9BAF24C12653A4B500AAC026 /* OtpEnterViewController.swift in Sources */,
+				4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */,
+				9BAF249D2653A47900AAC026 /* RegisterAPI.swift in Sources */,
+				4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				9BAF24BF2653A4B500AAC026 /* OtpSuccessViewController.swift in Sources */,
+>>>>>>> features/signup
 				4B8E0ADE26453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
 <<<<<<< HEAD
 				4B6774ED26521E3900DC7099 /* VerifyEmailViewControllerExtension.swift in Sources */,
@@ -1128,6 +1283,7 @@
 				4B677507265223A700DC7099 /* AccountAPI.swift in Sources */,
 				4B6775802652260900DC7099 /* AddFamilyMemberViewController.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+<<<<<<< HEAD
 				4B6775822652260900DC7099 /* DeleteConformationViewController.swift in Sources */,
 				4B67750C265223A700DC7099 /* DeleteFamilyMember.swift in Sources */,
 				4B6775482652250500DC7099 /* ProfilePictureUploadViewController.swift in Sources */,
@@ -1141,6 +1297,9 @@
 =======
 				9BE82B4126537A13000230D7 /* BookingFamilyMemberTableViewCell.swift in Sources */,
 >>>>>>> features/bookingappointments
+=======
+				9BAF249C2653A47900AAC026 /* Validation.swift in Sources */,
+>>>>>>> features/signup
 				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
 <<<<<<< HEAD
 				4B6775812652260900DC7099 /* EditFamilyMemberViewController.swift in Sources */,
@@ -1161,7 +1320,9 @@
 				9BE82B3B26537A13000230D7 /* DateTimeViewController.swift in Sources */,
 >>>>>>> features/bookingappointments
 				4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				9BAF24A62653A49200AAC026 /* OtpView.swift in Sources */,
 				4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				4B6774CF26521D1700DC7099 /* FetchUserDetails.swift in Sources */,
@@ -1196,6 +1357,16 @@
 =======
 				4BBD1A8F2652AE690055B7BD /* HomeViewController.swift in Sources */,
 >>>>>>> features/homeandnotifications
+=======
+				9BAF24B72653A4B500AAC026 /* SignupViewController.swift in Sources */,
+				9BAF24BA2653A4B500AAC026 /* OTPErrorViewController.swift in Sources */,
+				9BAF249E2653A47900AAC026 /* CreateAPI.swift in Sources */,
+				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
+				9BAF24BC2653A4B500AAC026 /* SignUpExtension.swift in Sources */,
+				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
+				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
+				9BAF249A2653A47900AAC026 /* Varification.swift in Sources */,
+>>>>>>> features/signup
 				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
 <<<<<<< HEAD
 				4B6775842652260900DC7099 /* FamilyViewController.swift in Sources */,
@@ -1205,6 +1376,7 @@
 >>>>>>> features/myappointments
 				4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				4B6774D226521D1700DC7099 /* VerifyForgotPasswordRequest.swift in Sources */,
 				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
 				4B6774C826521CFD00DC7099 /* SystemVerification.swift in Sources */,
@@ -1212,6 +1384,9 @@
 				4B6774EF26521E3900DC7099 /* ForgotPasswordViewControllerExtension.swift in Sources */,
 =======
 				4B677576265225E200DC7099 /* ValidationChangePassword.swift in Sources */,
+=======
+				9BAF24BE2653A4B500AAC026 /* SignUpSuccessViewController.swift in Sources */,
+>>>>>>> features/signup
 				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
 <<<<<<< HEAD
 				4B6775312652250500DC7099 /* ChangePasswordViewController.swift in Sources */,

@@ -7,7 +7,11 @@
 		<key>SkinMate.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>0</integer>
+>>>>>>> features/signup
 		</dict>
 	</dict>
 </dict>
