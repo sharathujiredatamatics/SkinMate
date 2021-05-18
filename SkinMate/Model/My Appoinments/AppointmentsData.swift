@@ -6,10 +6,7 @@
 //  Copyright © 2021 Datamatics. All rights reserved.
 //
 
-import UIKit
-class AppointmentsData{
-    static let shared = AppointmentsData()
-    init() {
-    }
-
+struct AppointmentsData: Codable {
+    let date, time, doctorName, doctorEducation: String
+    let appointmentid: String
 }

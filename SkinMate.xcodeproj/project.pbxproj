@@ -473,14 +473,14 @@
 		4B8E0A7A2645012F000F3D97 /* My Appoinments */ = {
 			isa = PBXGroup;
 			children = (
+				4BE731422652A9A500711A3F /* MyAppointmentAPI.swift */,
+				4BE731462652A9A500711A3F /* AppointmentsData.swift */,
 				4BE7313E2652A9A400711A3F /* AllAppointment.swift */,
 				4BE731412652A9A500711A3F /* APICall.swift */,
 				4BE731402652A9A500711A3F /* Appointments.json */,
 				4BE731442652A9A500711A3F /* Appointments.swift */,
-				4BE731462652A9A500711A3F /* AppointmentsData.swift */,
 				4BE731432652A9A500711A3F /* CancelAppointment.swift */,
 				4BE731452652A9A500711A3F /* FetchApointments.swift */,
-				4BE731422652A9A500711A3F /* MyAppointmentAPI.swift */,
 				4BE7313F2652A9A400711A3F /* RescheduleAppoitnment.swift */,
 			);
 			path = "My Appoinments";
