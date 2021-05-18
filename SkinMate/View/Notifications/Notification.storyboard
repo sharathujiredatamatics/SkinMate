@@ -55,23 +55,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100.66666666666667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 8" translatesAutoresizingMaskIntoConstraints="NO" id="DI1-Vv-iCJ">
-                                                    <rect key="frame" x="25" y="30.333333333333329" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="PIe-Wo-Ea8"/>
-                                                        <constraint firstAttribute="width" constant="40" id="sTW-9W-Dui"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3 Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="2U4-2J-n5D">
-                                                    <rect key="frame" x="37" y="40.333333333333336" width="15" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="loz-LC-msA"/>
-                                                        <constraint firstAttribute="width" constant="15" id="vft-wh-Vsc"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGF-W8-rAm">
-                                                    <rect key="frame" x="279" y="35.333333333333336" width="76" height="30.000000000000007"/>
+                                                    <rect key="frame" x="289.33333333333331" y="35.333333333333336" width="50.666666666666686" height="30.000000000000007"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="50.670000000000002" id="VPZ-2E-gou"/>
                                                         <constraint firstAttribute="height" constant="30" id="oiv-bp-xty"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -79,31 +66,34 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Walk-In to the waiting room for the appointment" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-5M-Ugw">
-                                                    <rect key="frame" x="75" y="28" width="194" height="45"/>
+                                                    <rect key="frame" x="92.333333333333314" y="28" width="194" height="45"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="194" id="GRF-di-9E6"/>
                                                         <constraint firstAttribute="height" constant="45" id="tns-Ua-FME"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mW-eh-4fk">
+                                                    <rect key="frame" x="35" y="30.333333333333329" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="iAX-E1-dqQ"/>
+                                                        <constraint firstAttribute="height" constant="40" id="izA-88-EGi"/>
+                                                    </constraints>
+                                                    <state key="normal" image="NotificationBell" backgroundImage="NotificationBackground"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="NGF-W8-rAm" secondAttribute="trailing" constant="5" id="2WL-qe-SB0"/>
-                                                <constraint firstItem="NGF-W8-rAm" firstAttribute="leading" secondItem="cGN-5M-Ugw" secondAttribute="trailing" constant="10" id="4EV-zy-25c"/>
-                                                <constraint firstItem="cGN-5M-Ugw" firstAttribute="leading" secondItem="DI1-Vv-iCJ" secondAttribute="trailing" constant="10" id="WjH-qz-o9f"/>
+                                                <constraint firstItem="0mW-eh-4fk" firstAttribute="centerY" secondItem="PeR-bV-xiz" secondAttribute="centerY" id="19Z-RI-emY"/>
+                                                <constraint firstItem="0mW-eh-4fk" firstAttribute="leading" secondItem="PeR-bV-xiz" secondAttribute="leadingMargin" constant="20" id="1wy-Nv-Thi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NGF-W8-rAm" secondAttribute="trailing" constant="20" id="2WL-qe-SB0"/>
+                                                <constraint firstItem="NGF-W8-rAm" firstAttribute="leading" secondItem="cGN-5M-Ugw" secondAttribute="trailing" constant="3" id="5Hc-HL-dMU"/>
                                                 <constraint firstItem="cGN-5M-Ugw" firstAttribute="centerY" secondItem="PeR-bV-xiz" secondAttribute="centerY" id="Y3Q-Bt-Qie"/>
                                                 <constraint firstItem="NGF-W8-rAm" firstAttribute="centerY" secondItem="PeR-bV-xiz" secondAttribute="centerY" id="ZGH-uU-fgo"/>
-                                                <constraint firstItem="DI1-Vv-iCJ" firstAttribute="leading" secondItem="PeR-bV-xiz" secondAttribute="leadingMargin" constant="10" id="d5q-8o-p0j"/>
-                                                <constraint firstItem="DI1-Vv-iCJ" firstAttribute="centerY" secondItem="PeR-bV-xiz" secondAttribute="centerY" id="f9K-DL-48J"/>
-                                                <constraint firstItem="2U4-2J-n5D" firstAttribute="leading" secondItem="PeR-bV-xiz" secondAttribute="leadingMargin" constant="22" id="pqV-ty-xvY"/>
-                                                <constraint firstItem="2U4-2J-n5D" firstAttribute="centerY" secondItem="PeR-bV-xiz" secondAttribute="centerY" id="zPe-7r-lla"/>
+                                                <constraint firstItem="cGN-5M-Ugw" firstAttribute="leading" secondItem="0mW-eh-4fk" secondAttribute="trailing" priority="999" constant="17.333333333333314" id="egj-mX-VVj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="notificationBackground" destination="DI1-Vv-iCJ" id="7S4-RO-88A"/>
-                                            <outlet property="notificationBell" destination="2U4-2J-n5D" id="ANn-yH-rnA"/>
                                             <outlet property="notificatoinMessage" destination="cGN-5M-Ugw" id="k57-2g-j6R"/>
                                             <outlet property="reminderLabel" destination="NGF-W8-rAm" id="jia-Zg-CjO"/>
                                         </connections>
@@ -140,7 +130,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 3 Copy 3" width="20" height="20"/>
-        <image name="Group 8" width="68" height="68"/>
+        <image name="NotificationBackground" width="40" height="40"/>
+        <image name="NotificationBell" width="17" height="20"/>
     </resources>
 </document>
