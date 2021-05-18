@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505CA26392FF100808990 /* AppDelegate.swift */; };
+		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
+		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
+		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
+		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
+		4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */; };
+		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
+		4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */; };
+		4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */; };
+		4B8E0AD126453574000F3D97 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AB626453574000F3D97 /* IQNSArray+Sort.swift */; };
+		4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AB726453574000F3D97 /* IQUIScrollView+Additions.swift */; };
+		4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AB826453574000F3D97 /* IQUITextFieldView+Additions.swift */; };
+		4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AB926453574000F3D97 /* IQUIView+Hierarchy.swift */; };
+		4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ABA26453574000F3D97 /* IQUIViewController+Additions.swift */; };
+		4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ABC26453574000F3D97 /* IQKeyboardManagerConstants.swift */; };
+		4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ABD26453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift */; };
+		4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ABE26453574000F3D97 /* IQKeyboardManager+Debug.swift */; };
+		4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ABF26453574000F3D97 /* IQKeyboardManager+Internal.swift */; };
+		4B8E0ADA26453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC026453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift */; };
+		4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC126453574000F3D97 /* IQKeyboardManager+Position.swift */; };
+		4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC226453574000F3D97 /* IQKeyboardManager+Toolbar.swift */; };
+		4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC326453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift */; };
+		4B8E0ADE26453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC426453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC526453574000F3D97 /* IQKeyboardManager.swift */; };
+		4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC726453574000F3D97 /* IQKeyboardReturnKeyHandler.swift */; };
+		4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AC926453574000F3D97 /* IQTextView.swift */; };
+		4B8E0AE226453574000F3D97 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACB26453574000F3D97 /* IQBarButtonItem.swift */; };
+		4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACC26453574000F3D97 /* IQInvocation.swift */; };
+		4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACD26453574000F3D97 /* IQPreviousNextView.swift */; };
+		4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */; };
+		4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACF26453574000F3D97 /* IQToolbar.swift */; };
+		4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */; };
+		4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27A264A68CC009BA717 /* Poppins-Bold.ttf */; };
+		4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27B264A68CC009BA717 /* Poppins-Medium.ttf */; };
+		4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27C264A68CC009BA717 /* Poppins-Regular.ttf */; };
+		4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */; };
+		4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */; };
+		4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */; };
+		4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D7264FF3A200395EDF /* DatePicker.swift */; };
+		F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2724F330B0929DFB202B96CA /* Pods-SkinMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.debug.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.debug.xcconfig"; sourceTree = "<group>"; };
+		4B3505C726392FF100808990 /* SkinMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3505CA26392FF100808990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B3505D226392FF100808990 /* SkinMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkinMate.xcdatamodel; sourceTree = "<group>"; };
+		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
+		4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		4B8E0AB626453574000F3D97 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		4B8E0AB726453574000F3D97 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		4B8E0AB826453574000F3D97 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		4B8E0AB926453574000F3D97 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		4B8E0ABA26453574000F3D97 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		4B8E0ABC26453574000F3D97 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		4B8E0ABD26453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		4B8E0ABE26453574000F3D97 /* IQKeyboardManager+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Debug.swift"; sourceTree = "<group>"; };
+		4B8E0ABF26453574000F3D97 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
+		4B8E0AC026453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
+		4B8E0AC126453574000F3D97 /* IQKeyboardManager+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Position.swift"; sourceTree = "<group>"; };
+		4B8E0AC226453574000F3D97 /* IQKeyboardManager+Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Toolbar.swift"; sourceTree = "<group>"; };
+		4B8E0AC326453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UIKeyboardNotification.swift"; sourceTree = "<group>"; };
+		4B8E0AC426453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
+		4B8E0AC526453574000F3D97 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		4B8E0AC626453574000F3D97 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		4B8E0AC726453574000F3D97 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		4B8E0AC926453574000F3D97 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		4B8E0ACB26453574000F3D97 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		4B8E0ACC26453574000F3D97 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		4B8E0ACD26453574000F3D97 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		4B8E0ACF26453574000F3D97 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		4BCCF27A264A68CC009BA717 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		4BCCF27B264A68CC009BA717 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		4BCCF27C264A68CC009BA717 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
+		4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		4BFE10D7264FF3A200395EDF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
+		BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3505C426392FF100808990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28CC9D4280DF2827C6360742 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CB775A76DAA64ACE523A377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2724F330B0929DFB202B96CA /* Pods-SkinMate.debug.xcconfig */,
+				669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4B019F66263AC94900864D8A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4BCCF279264A68CC009BA717 /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4B32BB1B264B789E00C34E5A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B3505BE26392FF100808990 = {
+			isa = PBXGroup;
+			children = (
+				4B3505C926392FF100808990 /* SkinMate */,
+				4B3505C826392FF100808990 /* Products */,
+				2CB775A76DAA64ACE523A377 /* Pods */,
+				28CC9D4280DF2827C6360742 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B3505C826392FF100808990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505C726392FF100808990 /* SkinMate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3505C926392FF100808990 /* SkinMate */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD09263C0223001EE6AE /* Extension */,
+				4B3505E0263946DD00808990 /* Model */,
+				4B3505E1263946ED00808990 /* View */,
+				4B3505E22639470300808990 /* Controller */,
+				4B019F66263AC94900864D8A /* Utils */,
+				4B3505D926392FF300808990 /* Info.plist */,
+				4B3505CA26392FF100808990 /* AppDelegate.swift */,
+				4B3505D426392FF300808990 /* Assets.xcassets */,
+				4B3505D626392FF300808990 /* LaunchScreen.storyboard */,
+			);
+			path = SkinMate;
+			sourceTree = "<group>";
+		};
+		4B3505E0263946DD00808990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
+				4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */,
+				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
+				4B8E0A7E2645017F000F3D97 /* Sign Up */,
+				4B8E0A7D26450176000F3D97 /* Sign In */,
+				4B8E0A7C26450160000F3D97 /* MainTabController */,
+				4B8E0A7B26450140000F3D97 /* Booking Appointments */,
+				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
+				4B8E0A7926450121000F3D97 /* E-Check In */,
+				4B8E0A782645010F000F3D97 /* Notifications */,
+				4B8E0A7726450102000F3D97 /* AccountAndMore */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B3505E1263946ED00808990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD0C263C0B9F001EE6AE /* Sign Up */,
+				4B3505E42639476900808990 /* Sign In */,
+				4B3505F32639820100808990 /* Home */,
+				4B3505E32639473F00808990 /* MainTabController */,
+				4B3505E9263947FE00808990 /* Booking Appointments */,
+				4B3505E8263947DA00808990 /* My Appointments */,
+				4B3505E7263947C900808990 /* E-Check In */,
+				4B3505E6263947BC00808990 /* Notifications */,
+				4B3505E5263947A100808990 /* AccountAndMore */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B3505E22639470300808990 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B81CD0D263C0BAB001EE6AE /* Sign Up */,
+				4B3505F026394B4100808990 /* Sign In */,
+				4B3505F42639821400808990 /* Home */,
+				4B3505EF26394B0C00808990 /* MainTabController */,
+				4B3505EE26394AFE00808990 /* Booking Appointments */,
+				4B3505ED26394AEB00808990 /* My Appointments */,
+				4B3505EC26394ADB00808990 /* E-Check In */,
+				4B3505EB26394AC800808990 /* Notifications */,
+				4B3505EA26394AAE00808990 /* AccountAndMore */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B3505E32639473F00808990 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		4B3505E42639476900808990 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		4B3505E5263947A100808990 /* AccountAndMore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountAndMore;
+			sourceTree = "<group>";
+		};
+		4B3505E6263947BC00808990 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4B3505E7263947C900808990 /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "E-Check In";
+			sourceTree = "<group>";
+		};
+		4B3505E8263947DA00808990 /* My Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505E9263947FE00808990 /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505EA26394AAE00808990 /* AccountAndMore */ = {
+			isa = PBXGroup;
+			children = (
+				4BE2D706264BEA8E00A83F02 /* FamilyMember */,
+				4B65472526498B930048B9EE /* Extension */,
+			);
+			path = AccountAndMore;
+			sourceTree = "<group>";
+		};
+		4B3505EB26394AC800808990 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4B3505EC26394ADB00808990 /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "E-Check In";
+			sourceTree = "<group>";
+		};
+		4B3505ED26394AEB00808990 /* My Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505EE26394AFE00808990 /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
+		4B3505EF26394B0C00808990 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		4B3505F026394B4100808990 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				4B8964812648407700E7BC31 /* ForgotPassword */,
+				4B8964802648404300E7BC31 /* EmailVerification */,
+				4B8E0A702643F176000F3D97 /* Extension */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		4B3505F32639820100808990 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B3505F72639825E00808990 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B3505F42639821400808990 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B65472526498B930048B9EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		4B81CD09263C0223001EE6AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0AB426453574000F3D97 /* IQKeyboardManagerSwift */,
+				4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */,
+				4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */,
+				4BFE10D7264FF3A200395EDF /* DatePicker.swift */,
+				4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */,
+				4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B81CD0C263C0B9F001EE6AE /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4B81CD0D263C0BAB001EE6AE /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				4B32BB1B264B789E00C34E5A /* Extension */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4B8964802648404300E7BC31 /* EmailVerification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmailVerification;
+			sourceTree = "<group>";
+		};
+		4B8964812648407700E7BC31 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				4B896482264840AD00E7BC31 /* Extension */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		4B896482264840AD00E7BC31 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B8E0A702643F176000F3D97 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B8E0A7726450102000F3D97 /* AccountAndMore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountAndMore;
+			sourceTree = "<group>";
+		};
+		4B8E0A782645010F000F3D97 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4B8E0A7926450121000F3D97 /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "E-Check In";
+			sourceTree = "<group>";
+		};
+		4B8E0A7A2645012F000F3D97 /* My Appoinments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Appoinments";
+			sourceTree = "<group>";
+		};
+		4B8E0A7B26450140000F3D97 /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
+		4B8E0A7C26450160000F3D97 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		4B8E0A7D26450176000F3D97 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		4B8E0A7E2645017F000F3D97 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4B8E0AB426453574000F3D97 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0AB526453574000F3D97 /* Categories */,
+				4B8E0ABB26453574000F3D97 /* Constants */,
+				4B8E0ABE26453574000F3D97 /* IQKeyboardManager+Debug.swift */,
+				4B8E0ABF26453574000F3D97 /* IQKeyboardManager+Internal.swift */,
+				4B8E0AC026453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift */,
+				4B8E0AC126453574000F3D97 /* IQKeyboardManager+Position.swift */,
+				4B8E0AC226453574000F3D97 /* IQKeyboardManager+Toolbar.swift */,
+				4B8E0AC326453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift */,
+				4B8E0AC426453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift */,
+				4B8E0AC526453574000F3D97 /* IQKeyboardManager.swift */,
+				4B8E0AC626453574000F3D97 /* IQKeyboardManagerSwift.h */,
+				4B8E0AC726453574000F3D97 /* IQKeyboardReturnKeyHandler.swift */,
+				4B8E0AC826453574000F3D97 /* IQTextView */,
+				4B8E0ACA26453574000F3D97 /* IQToolbar */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		4B8E0AB526453574000F3D97 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0AB626453574000F3D97 /* IQNSArray+Sort.swift */,
+				4B8E0AB726453574000F3D97 /* IQUIScrollView+Additions.swift */,
+				4B8E0AB826453574000F3D97 /* IQUITextFieldView+Additions.swift */,
+				4B8E0AB926453574000F3D97 /* IQUIView+Hierarchy.swift */,
+				4B8E0ABA26453574000F3D97 /* IQUIViewController+Additions.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4B8E0ABB26453574000F3D97 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0ABC26453574000F3D97 /* IQKeyboardManagerConstants.swift */,
+				4B8E0ABD26453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4B8E0AC826453574000F3D97 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0AC926453574000F3D97 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		4B8E0ACA26453574000F3D97 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E0ACB26453574000F3D97 /* IQBarButtonItem.swift */,
+				4B8E0ACC26453574000F3D97 /* IQInvocation.swift */,
+				4B8E0ACD26453574000F3D97 /* IQPreviousNextView.swift */,
+				4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */,
+				4B8E0ACF26453574000F3D97 /* IQToolbar.swift */,
+				4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		4BCCF279264A68CC009BA717 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BCCF27A264A68CC009BA717 /* Poppins-Bold.ttf */,
+				4BCCF27B264A68CC009BA717 /* Poppins-Medium.ttf */,
+				4BCCF27C264A68CC009BA717 /* Poppins-Regular.ttf */,
+				4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4BE2D706264BEA8E00A83F02 /* FamilyMember */ = {
+			isa = PBXGroup;
+			children = (
+				4BE2D707264BEABB00A83F02 /* Extension */,
+			);
+			name = FamilyMember;
+			sourceTree = "<group>";
+		};
+		4BE2D707264BEABB00A83F02 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B3505C626392FF100808990 /* SkinMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3505DC26392FF300808990 /* Build configuration list for PBXNativeTarget "SkinMate" */;
+			buildPhases = (
+				A19F0FE9AB9B93FB6554DD72 /* [CP] Check Pods Manifest.lock */,
+				4B3505C326392FF100808990 /* Sources */,
+				4B3505C426392FF100808990 /* Frameworks */,
+				4B3505C526392FF100808990 /* Resources */,
+				9F510A0E496915DA7CC0DEC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkinMate;
+			productName = SkinMate;
+			productReference = 4B3505C726392FF100808990 /* SkinMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B3505BF26392FF100808990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Datamatics;
+				TargetAttributes = {
+					4B3505C626392FF100808990 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4B3505C226392FF100808990 /* Build configuration list for PBXProject "SkinMate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B3505BE26392FF100808990;
+			productRefGroup = 4B3505C826392FF100808990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B3505C626392FF100808990 /* SkinMate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3505C526392FF100808990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */,
+				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
+				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
+				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
+				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
+				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
+				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F510A0E496915DA7CC0DEC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkinMate/Pods-SkinMate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkinMate/Pods-SkinMate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkinMate/Pods-SkinMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A19F0FE9AB9B93FB6554DD72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkinMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B3505C326392FF100808990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */,
+				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
+				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
+				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
+				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
+				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
+				4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */,
+				4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */,
+				4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */,
+				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
+				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
+				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
+				4B8E0AE226453574000F3D97 /* IQBarButtonItem.swift in Sources */,
+				4B8E0AD126453574000F3D97 /* IQNSArray+Sort.swift in Sources */,
+				4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */,
+				4B8E0ADA26453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
+				4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */,
+				4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				4B8E0ADE26453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
+				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
+				4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */,
+				4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
+				4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */,
+				4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */,
+				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
+				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
+				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
+				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
+				4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */,
+				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B3505D626392FF300808990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3505D726392FF300808990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B3505DA26392FF300808990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B3505DB26392FF300808990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B3505DD26392FF300808990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2724F330B0929DFB202B96CA /* Pods-SkinMate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkinMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = datamatics.com.SkinMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B3505DE26392FF300808990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkinMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = datamatics.com.SkinMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B3505C226392FF100808990 /* Build configuration list for PBXProject "SkinMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3505DA26392FF300808990 /* Debug */,
+				4B3505DB26392FF300808990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3505DC26392FF300808990 /* Build configuration list for PBXNativeTarget "SkinMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3505DD26392FF300808990 /* Debug */,
+				4B3505DE26392FF300808990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B3505D226392FF100808990 /* SkinMate.xcdatamodel */,
+			);
+			currentVersion = 4B3505D226392FF100808990 /* SkinMate.xcdatamodel */;
+			path = SkinMate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4B3505BF26392FF100808990 /* Project object */;
+}
