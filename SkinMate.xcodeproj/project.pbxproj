@@ -11,7 +11,6 @@
 		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
-		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
 		4B6774C726521CFD00DC7099 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C526521CFD00DC7099 /* UserDetails.swift */; };
 		4B6774C826521CFD00DC7099 /* SystemVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C626521CFD00DC7099 /* SystemVerification.swift */; };
 		4B6774CE26521D1700DC7099 /* SignInAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6774C926521D1600DC7099 /* SignInAPI.swift */; };
@@ -81,7 +80,6 @@
 		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4B6774C526521CFD00DC7099 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		4B6774C626521CFD00DC7099 /* SystemVerification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemVerification.swift; sourceTree = "<group>"; };
 		4B6774C926521D1600DC7099 /* SignInAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAPI.swift; sourceTree = "<group>"; };
@@ -182,13 +180,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		4B32BB1B264B789E00C34E5A /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		4B3505BE26392FF100808990 = {
 			isa = PBXGroup;
 			children = (
@@ -231,14 +222,7 @@
 				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
 				4B6774C626521CFD00DC7099 /* SystemVerification.swift */,
 				4B6774C526521CFD00DC7099 /* UserDetails.swift */,
-				4B8E0A7E2645017F000F3D97 /* Sign Up */,
 				4B8E0A7D26450176000F3D97 /* Sign In */,
-				4B8E0A7C26450160000F3D97 /* MainTabController */,
-				4B8E0A7B26450140000F3D97 /* Booking Appointments */,
-				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
-				4B8E0A7926450121000F3D97 /* E-Check In */,
-				4B8E0A782645010F000F3D97 /* Notifications */,
-				4B8E0A7726450102000F3D97 /* AccountAndMore */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,15 +230,7 @@
 		4B3505E1263946ED00808990 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4B81CD0C263C0B9F001EE6AE /* Sign Up */,
 				4B3505E42639476900808990 /* Sign In */,
-				4B3505F32639820100808990 /* Home */,
-				4B3505E32639473F00808990 /* MainTabController */,
-				4B3505E9263947FE00808990 /* Booking Appointments */,
-				4B3505E8263947DA00808990 /* My Appointments */,
-				4B3505E7263947C900808990 /* E-Check In */,
-				4B3505E6263947BC00808990 /* Notifications */,
-				4B3505E5263947A100808990 /* AccountAndMore */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,24 +238,9 @@
 		4B3505E22639470300808990 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4B81CD0D263C0BAB001EE6AE /* Sign Up */,
 				4B3505F026394B4100808990 /* Sign In */,
-				4B3505F42639821400808990 /* Home */,
-				4B3505EF26394B0C00808990 /* MainTabController */,
-				4B3505EE26394AFE00808990 /* Booking Appointments */,
-				4B3505ED26394AEB00808990 /* My Appointments */,
-				4B3505EC26394ADB00808990 /* E-Check In */,
-				4B3505EB26394AC800808990 /* Notifications */,
-				4B3505EA26394AAE00808990 /* AccountAndMore */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4B3505E32639473F00808990 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabController;
 			sourceTree = "<group>";
 		};
 		4B3505E42639476900808990 /* Sign In */ = {
@@ -291,85 +252,6 @@
 			path = "Sign In";
 			sourceTree = "<group>";
 		};
-		4B3505E5263947A100808990 /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AccountAndMore;
-			sourceTree = "<group>";
-		};
-		4B3505E6263947BC00808990 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		4B3505E7263947C900808990 /* E-Check In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B3505E8263947DA00808990 /* My Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505E9263947FE00808990 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EA26394AAE00808990 /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-				4BE2D706264BEA8E00A83F02 /* FamilyMember */,
-				4B65472526498B930048B9EE /* Extension */,
-			);
-			path = AccountAndMore;
-			sourceTree = "<group>";
-		};
-		4B3505EB26394AC800808990 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		4B3505EC26394ADB00808990 /* E-Check In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B3505ED26394AEB00808990 /* My Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EE26394AFE00808990 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EF26394B0C00808990 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
 		4B3505F026394B4100808990 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,28 +261,6 @@
 				4B6774E626521E3900DC7099 /* SignInViewController.swift */,
 			);
 			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B3505F32639820100808990 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505F72639825E00808990 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		4B3505F42639821400808990 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		4B65472526498B930048B9EE /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extension;
 			sourceTree = "<group>";
 		};
 		4B6774D726521E3900DC7099 /* EmailVerification */ = {
@@ -459,63 +319,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		4B81CD0C263C0B9F001EE6AE /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B81CD0D263C0BAB001EE6AE /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				4B32BB1B264B789E00C34E5A /* Extension */,
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B8E0A7726450102000F3D97 /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AccountAndMore;
-			sourceTree = "<group>";
-		};
-		4B8E0A782645010F000F3D97 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		4B8E0A7926450121000F3D97 /* E-Check In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B8E0A7A2645012F000F3D97 /* My Appoinments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appoinments";
-			sourceTree = "<group>";
-		};
-		4B8E0A7B26450140000F3D97 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B8E0A7C26450160000F3D97 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
 		4B8E0A7D26450176000F3D97 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,13 +329,6 @@
 				4B6774CD26521D1700DC7099 /* VerifyForgotPasswordRequest.swift */,
 			);
 			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B8E0A7E2645017F000F3D97 /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 		4B8E0AB426453574000F3D97 /* IQKeyboardManagerSwift */ = {
@@ -609,21 +405,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		4BE2D706264BEA8E00A83F02 /* FamilyMember */ = {
-			isa = PBXGroup;
-			children = (
-				4BE2D707264BEABB00A83F02 /* Extension */,
-			);
-			name = FamilyMember;
-			sourceTree = "<group>";
-		};
-		4BE2D707264BEABB00A83F02 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -690,7 +471,6 @@
 				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
 				4B6774D626521D8300DC7099 /* ForgotPassword.storyboard in Resources */,
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
-				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
 				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
 			);
