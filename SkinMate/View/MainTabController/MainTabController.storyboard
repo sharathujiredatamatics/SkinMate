@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainTabController" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="MainTabController" customModule="SkinMate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="hUo-NV-HqQ">
+                                <rect key="frame" x="0.0" y="695" width="375" height="83"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.25098039215686274" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="rch-73-3bK"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem tag="1" title="Home" image="Tab1" id="Ele-TL-mFU">
+                                        <inset key="imageInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-25"/>
+                                    </tabBarItem>
+                                    <tabBarItem tag="2" title="Appointment" image="Tab2" id="eMg-ch-3q2">
+                                        <inset key="imageInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-25"/>
+                                    </tabBarItem>
+                                    <tabBarItem tag="3" title="Notitfications" image="Tab3" id="JJY-f7-n5q">
+                                        <inset key="imageInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-25"/>
+                                    </tabBarItem>
+                                    <tabBarItem tag="4" title="Account" image="Tab4" id="1RZ-H3-clm">
+                                        <inset key="imageInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-25"/>
+                                    </tabBarItem>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SAh-B9-RhO"/>
+                                </connections>
+                            </tabBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeY-Jg-Idc">
+                                <rect key="frame" x="0.0" y="44" width="375" height="650"/>
+                                <connections>
+                                    <segue destination="HzQ-pa-mlZ" kind="embed" id="Mdo-xo-MxG"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hUo-NV-HqQ" secondAttribute="bottom" id="2o7-J2-1I9"/>
+                            <constraint firstItem="hUo-NV-HqQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Be0-tp-vJ4"/>
+                            <constraint firstItem="hUo-NV-HqQ" firstAttribute="top" secondItem="GeY-Jg-Idc" secondAttribute="bottom" constant="1" id="ERM-w5-yl7"/>
+                            <constraint firstItem="hUo-NV-HqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qnb-tg-TtG"/>
+                            <constraint firstItem="GeY-Jg-Idc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vs8-XD-nM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GeY-Jg-Idc" secondAttribute="trailing" id="x89-Pg-RJu"/>
+                            <constraint firstItem="GeY-Jg-Idc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z24-Lm-fTQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountTab" destination="1RZ-H3-clm" id="u6g-qV-aIX"/>
+                        <outlet property="homeTab" destination="Ele-TL-mFU" id="OoH-8Y-S16"/>
+                        <outlet property="mainTabView" destination="hUo-NV-HqQ" id="dkN-HD-6gf"/>
+                        <outlet property="myAppointmentsab" destination="eMg-ch-3q2" id="y8q-ZU-Eq5"/>
+                        <outlet property="notificationTab" destination="JJY-f7-n5q" id="7N1-Ck-bQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Switch Tab View Controller-->
+        <scene sceneID="uRq-eQ-l7k">
+            <objects>
+                <viewController storyboardIdentifier="SwitchTabViewController" modalTransitionStyle="crossDissolve" id="HzQ-pa-mlZ" customClass="SwitchTabViewController" customModule="SkinMate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ao-Dh-Wht">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2hg-jm-qnV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uer-6k-NbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tab1" width="20" height="20"/>
+        <image name="Tab2" width="22" height="21"/>
+        <image name="Tab3" width="17" height="20"/>
+        <image name="Tab4" width="20" height="21"/>
+    </resources>
+</document>

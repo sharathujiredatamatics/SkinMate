@@ -11,6 +11,7 @@
 		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
+
 		4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */; };
 		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
 		4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */; };
@@ -49,6 +50,8 @@
 		4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */; };
 		4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */; };
 		4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */; };
+		4BE7313B2652A24400711A3F /* SwitchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7313A2652A24400711A3F /* SwitchTabViewController.swift */; };
+		4BE7313D2652A30E00711A3F /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE7313C2652A30D00711A3F /* Account.storyboard */; };
 		4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D7264FF3A200395EDF /* DatePicker.swift */; };
 		F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,7 @@
 		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 		4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
 		4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
 		4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		4BE7313A2652A24400711A3F /* SwitchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTabViewController.swift; sourceTree = "<group>"; };
+		4BE7313C2652A30D00711A3F /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		4BFE10D7264FF3A200395EDF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
 		BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +242,7 @@
 		4B3505E32639473F00808990 /* MainTabController */ = {
 			isa = PBXGroup;
 			children = (
+				4B6774F92652238200DC7099 /* MainTabController.storyboard */,
 			);
 			path = MainTabController;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 		4B3505E5263947A100808990 /* AccountAndMore */ = {
 			isa = PBXGroup;
 			children = (
+				4BE7313C2652A30D00711A3F /* Account.storyboard */,
 			);
 			path = AccountAndMore;
 			sourceTree = "<group>";
@@ -286,8 +294,16 @@
 		4B3505EA26394AAE00808990 /* AccountAndMore */ = {
 			isa = PBXGroup;
 			children = (
-				4BE2D706264BEA8E00A83F02 /* FamilyMember */,
-				4B65472526498B930048B9EE /* Extension */,
+				4B6775722652259C00DC7099 /* Extension */,
+				4B6775712652258E00DC7099 /* FamilyMember */,
+				4B67752C2652250500DC7099 /* AccountViewController.swift */,
+				4B67752E2652250500DC7099 /* AddInsuranceViewController.swift */,
+				4B6775152652250400DC7099 /* ChangePasswordViewController.swift */,
+				4B67752B2652250500DC7099 /* PrivacyPolicyViewController.swift */,
+				4B67752D2652250500DC7099 /* ProfilePictureUploadViewController.swift */,
+				4B6775162652250400DC7099 /* SuccessfullyUpdatedViewController.swift */,
+				4B6775132652250400DC7099 /* TermsAndConditionViewController.swift */,
+				4B6775142652250400DC7099 /* UserUpdateViewController.swift */,
 			);
 			path = AccountAndMore;
 			sourceTree = "<group>";
@@ -325,6 +341,8 @@
 		4B3505EF26394B0C00808990 /* MainTabController */ = {
 			isa = PBXGroup;
 			children = (
+				4B6775112652245800DC7099 /* MainTabController.swift */,
+				4BE7313A2652A24400711A3F /* SwitchTabViewController.swift */,
 			);
 			path = MainTabController;
 			sourceTree = "<group>";
@@ -355,11 +373,37 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		4B65472526498B930048B9EE /* Extension */ = {
+		4B6775712652258E00DC7099 /* FamilyMember */ = {
 			isa = PBXGroup;
 			children = (
+				4B6775852652265000DC7099 /* Extension */,
+				4B67757A2652260800DC7099 /* AddFamilyMemberViewController.swift */,
+				4B67757C2652260900DC7099 /* DeleteConformationViewController.swift */,
+				4B67757B2652260900DC7099 /* EditFamilyMemberViewController.swift */,
+				4B67757D2652260900DC7099 /* FamilyDeleteViewController.swift */,
+				4B6775792652260800DC7099 /* FamilyMemberTableViewCell.swift */,
+				4B67757E2652260900DC7099 /* FamilyViewController.swift */,
 			);
-			name = Extension;
+			path = FamilyMember;
+			sourceTree = "<group>";
+		};
+		4B6775722652259C00DC7099 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B677574265225E200DC7099 /* SignOutExtension.swift */,
+				4B677575265225E200DC7099 /* UserUpdateExtension.swift */,
+				4B677573265225E100DC7099 /* ValidationChangePassword.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B6775852652265000DC7099 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B6775862652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift */,
+				4B6775872652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		4B81CD09263C0223001EE6AE /* Extension */ = {
@@ -422,6 +466,16 @@
 		4B8E0A7726450102000F3D97 /* AccountAndMore */ = {
 			isa = PBXGroup;
 			children = (
+				4B6774FD265223A600DC7099 /* AccountAPI.swift */,
+				4B677504265223A700DC7099 /* AddFamilyMember.swift */,
+				4B677502265223A700DC7099 /* DeleteFamilyMember.swift */,
+				4B6774FF265223A600DC7099 /* FamilyData.swift */,
+				4B677500265223A700DC7099 /* FamilyMembers.swift */,
+				4B677503265223A700DC7099 /* MemberInformation.swift */,
+				4B6774FC265223A600DC7099 /* PasswordChange.swift */,
+				4B6774FE265223A600DC7099 /* ProfilePhotoUpload.swift */,
+				4B677501265223A700DC7099 /* UpdateFamilMember.swift */,
+				4B6774FB265223A600DC7099 /* UserUpdateDetails.swift */,
 			);
 			path = AccountAndMore;
 			sourceTree = "<group>";
@@ -549,21 +603,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		4BE2D706264BEA8E00A83F02 /* FamilyMember */ = {
-			isa = PBXGroup;
-			children = (
-				4BE2D707264BEABB00A83F02 /* Extension */,
-			);
-			name = FamilyMember;
-			sourceTree = "<group>";
-		};
-		4BE2D707264BEABB00A83F02 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -627,8 +666,10 @@
 				4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */,
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
 				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
+				4B6774FA2652238200DC7099 /* MainTabController.storyboard in Resources */,
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
+				4BE7313D2652A30E00711A3F /* Account.storyboard in Resources */,
 				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
 				4BBD1A8B2652AE2A0055B7BD /* Notification.storyboard in Resources */,
 				4BBD1A8D2652AE440055B7BD /* Home.storyboard in Resources */,
@@ -684,41 +725,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B67750D265223A700DC7099 /* MemberInformation.swift in Sources */,
+				4B677578265225E200DC7099 /* UserUpdateExtension.swift in Sources */,
 				4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */,
 				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
+				4BE7313B2652A24400711A3F /* SwitchTabViewController.swift in Sources */,
 				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
+				4B6775832652260900DC7099 /* FamilyDeleteViewController.swift in Sources */,
+				4B677509265223A700DC7099 /* FamilyData.swift in Sources */,
+				4B6775322652250500DC7099 /* SuccessfullyUpdatedViewController.swift in Sources */,
 				4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */,
 				4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */,
 				4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */,
 				4BBD1A922652AE780055B7BD /* NotificationsViewController.swift in Sources */,
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
+				4B6775462652250500DC7099 /* PrivacyPolicyViewController.swift in Sources */,
 				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
 				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
+				4B67750A265223A700DC7099 /* FamilyMembers.swift in Sources */,
 				4B8E0AE226453574000F3D97 /* IQBarButtonItem.swift in Sources */,
+				4B6775892652267200DC7099 /* EditFamilyMemberViewControllerExtension.swift in Sources */,
 				4B8E0AD126453574000F3D97 /* IQNSArray+Sort.swift in Sources */,
+				4B6775302652250500DC7099 /* UserUpdateViewController.swift in Sources */,
+				4B67750E265223A700DC7099 /* AddFamilyMember.swift in Sources */,
+				4B67757F2652260900DC7099 /* FamilyMemberTableViewCell.swift in Sources */,
 				4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */,
 				4B8E0ADA26453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
 				4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */,
 				4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				4B67750B265223A700DC7099 /* UpdateFamilMember.swift in Sources */,
+				4B677577265225E200DC7099 /* SignOutExtension.swift in Sources */,
 				4B8E0ADE26453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
+				4B6775492652250500DC7099 /* AddInsuranceViewController.swift in Sources */,
+				4B677507265223A700DC7099 /* AccountAPI.swift in Sources */,
+				4B6775802652260900DC7099 /* AddFamilyMemberViewController.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
-				4BBD1A932652AE780055B7BD /* NotificationTableViewCell.swift in Sources */,
+
 				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
+				4B6775812652260900DC7099 /* EditFamilyMemberViewController.swift in Sources */,
+				4B6775122652245800DC7099 /* MainTabController.swift in Sources */,
+				4B6775472652250500DC7099 /* AccountViewController.swift in Sources */,
 				4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */,
 				4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */,
 				4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */,
+				4B677506265223A700DC7099 /* PasswordChange.swift in Sources */,
 				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
+				4B6775882652267200DC7099 /* AddFamilyMemberViewControllerExtension.swift in Sources */,
+				4B67752F2652250500DC7099 /* TermsAndConditionViewController.swift in Sources */,
 				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
-				4BBD1A8F2652AE690055B7BD /* HomeViewController.swift in Sources */,
+
 				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
+				4B6775842652260900DC7099 /* FamilyViewController.swift in Sources */,
+				4B677505265223A700DC7099 /* UserUpdateDetails.swift in Sources */,
 				4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */,
+				4B677576265225E200DC7099 /* ValidationChangePassword.swift in Sources */,
 				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
+				4B6775312652250500DC7099 /* ChangePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
