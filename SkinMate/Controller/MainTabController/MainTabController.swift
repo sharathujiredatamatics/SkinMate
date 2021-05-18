@@ -70,8 +70,10 @@ class MainTabController: UIViewController, UITabBarDelegate {
         else if viewId == "myappointmnet"{
             if appointmentCount == 0 {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadNoMyAppointment"), object: nil)
+                mainTabView.selectedItem = mainTabView.items![1] as UITabBarItem
             } else {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadAllMyAppointment"), object: nil)
+                mainTabView.selectedItem = mainTabView.items![1] as UITabBarItem
             }
             
         }

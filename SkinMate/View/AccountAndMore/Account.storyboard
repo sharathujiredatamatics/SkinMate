@@ -98,7 +98,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6J-p5-08w">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AccountProfile" translatesAutoresizingMaskIntoConstraints="NO" id="KNo-hu-G9a">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Member1" translatesAutoresizingMaskIntoConstraints="NO" id="KNo-hu-G9a">
                                                         <rect key="frame" x="20" y="17" width="68" height="68"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="68" id="7en-vv-qcO"/>
@@ -477,6 +477,7 @@
                         <outlet property="profilePic" destination="KNo-hu-G9a" id="wPK-Gv-U8x"/>
                         <outlet property="termsAndCondition" destination="fHL-YG-Jgm" id="3Zh-He-SpI"/>
                         <outlet property="touchId" destination="fpo-Fq-ryb" id="4le-wf-dd0"/>
+                        <outlet property="userName" destination="2zn-dZ-vZP" id="4rZ-GK-u2S"/>
                         <outlet property="viewProfile" destination="X6J-p5-08w" id="BnA-7n-aO5"/>
                     </connections>
                 </viewController>
@@ -960,7 +961,7 @@
                                     <outlet property="delegate" destination="tj8-Vs-Gpk" id="nKM-mI-oyq"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkL-l5-6r3">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkL-l5-6r3">
                                 <rect key="frame" x="270" y="673" width="65" height="65"/>
                                 <color key="backgroundColor" name="#749BAD"/>
                                 <constraints>
@@ -1856,7 +1857,7 @@
             <objects>
                 <viewController storyboardIdentifier="EditFamilyMemberViewController" modalTransitionStyle="crossDissolve" id="e4R-11-2iD" customClass="EditFamilyMemberViewController" customModule="SkinMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ebk-sS-zM0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-pc-d6X">
@@ -3266,12 +3267,12 @@
         <image name="Account TermsAndCondition" width="38" height="38"/>
         <image name="Account TouchId" width="38" height="38"/>
         <image name="AccountNext" width="9" height="15"/>
-        <image name="AccountProfile" width="68" height="68"/>
         <image name="AddMember" width="31" height="31"/>
         <image name="AddMember BackGround" width="105" height="105"/>
         <image name="AddressLocation" width="28" height="30"/>
         <image name="Group 19" width="26" height="36"/>
         <image name="Group 35" width="23" height="35"/>
+        <image name="Member1" width="50" height="50"/>
         <image name="Other" width="30" height="35"/>
         <image name="Selected" width="38" height="38"/>
         <image name="SignUpSuccess" width="47" height="48"/>

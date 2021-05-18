@@ -10,6 +10,7 @@ import UIKit
 
 class AccountViewController: UIViewController {
     @IBOutlet weak var viewProfile: UIView!
+    @IBOutlet weak var userName: UILabel!
     
     @IBOutlet weak var familyMember: UIView!
     
@@ -24,6 +25,7 @@ class AccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async {
+            userName.text = "\(UserDetails.shared.firstName) \(UserDetails.shared.lastName)"
                 FamilyMembers.shared.familyMembersData = []
                 FamilyMembers.shared.loadAllFamilyMembers()
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadFamilyViewTable"), object: nil)
