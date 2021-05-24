@@ -11,7 +11,6 @@
 		4B03C3FA264A45A800296ABE /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B03C3F9264A45A800296ABE /* FamilyViewController.swift */; };
 		4B03C3FC264A61A500296ABE /* FamilyMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B03C3FB264A61A500296ABE /* FamilyMemberTableViewCell.swift */; };
 		4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505CA26392FF100808990 /* AppDelegate.swift */; };
-		4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505CE26392FF100808990 /* MainTabController.storyboard */; };
 		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
@@ -94,6 +93,7 @@
 		4BCCF285264A798D009BA717 /* DeleteConformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCCF284264A798D009BA717 /* DeleteConformationViewController.swift */; };
 		4BCD27CD265179FC00255FD7 /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */; };
 		4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */; };
+		4BD3F7D7265BE6FE007D0C93 /* MainTabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3F7D5265BE6FE007D0C93 /* MainTabController.storyboard */; };
 		4BD9AB12264B9350002CCFC4 /* UserUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AB11264B9350002CCFC4 /* UserUpdateViewController.swift */; };
 		4BD9AB14264B9B76002CCFC4 /* UserUpdateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AB13264B9B76002CCFC4 /* UserUpdateExtension.swift */; };
 		4BE2D701264BE58000A83F02 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2D700264BE58000A83F02 /* PrivacyPolicyViewController.swift */; };
@@ -194,7 +194,6 @@
 		4B03C3FB264A61A500296ABE /* FamilyMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberTableViewCell.swift; sourceTree = "<group>"; };
 		4B3505C726392FF100808990 /* SkinMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3505CA26392FF100808990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B3505CF26392FF100808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabController.storyboard; sourceTree = "<group>"; };
 		4B3505D226392FF100808990 /* SkinMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkinMate.xcdatamodel; sourceTree = "<group>"; };
 		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -279,6 +278,7 @@
 		4BCCF284264A798D009BA717 /* DeleteConformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteConformationViewController.swift; sourceTree = "<group>"; };
 		4BCD27CC265179FC00255FD7 /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
 		4BD04D41265173FB00E28B35 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		4BD3F7D6265BE6FE007D0C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabController.storyboard; sourceTree = "<group>"; };
 		4BD9AB11264B9350002CCFC4 /* UserUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateViewController.swift; sourceTree = "<group>"; };
 		4BD9AB13264B9B76002CCFC4 /* UserUpdateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateExtension.swift; sourceTree = "<group>"; };
 		4BE2D700264BE58000A83F02 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
@@ -452,7 +452,6 @@
 				4B8964762648046300E7BC31 /* UserDetails.swift */,
 				9BEE39AC265BD69D0065B76F /* Sign Up */,
 				4B8E0A7D26450176000F3D97 /* Sign In */,
-				4B8E0A7C26450160000F3D97 /* MainTabController */,
 				9B583FC4265BE42B00848F7A /* Booking Appointments */,
 				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
 				4B8E0A7726450102000F3D97 /* AccountAndMore */,
@@ -464,11 +463,10 @@
 			isa = PBXGroup;
 			children = (
 				9BEE39A0265BD67F0065B76F /* Home */,
-				9BEE39A4265BD67F0065B76F /* MainTabController */,
 				9BEE39A2265BD67F0065B76F /* Notifications */,
 				9BEE399A265BD67E0065B76F /* Sign Up */,
 				4B3505E42639476900808990 /* Sign In */,
-				4B3505E32639473F00808990 /* MainTabController */,
+				4BD3F7D4265BE6FE007D0C93 /* MainTabController */,
 				9B583FC1265BE42000848F7A /* Booking Appointments */,
 				4B3505E8263947DA00808990 /* My Appointments */,
 				4B3505E5263947A100808990 /* AccountAndMore */,
@@ -490,14 +488,6 @@
 				4B3505EA26394AAE00808990 /* AccountAndMore */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4B3505E32639473F00808990 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505CE26392FF100808990 /* MainTabController.storyboard */,
-			);
-			path = MainTabController;
 			sourceTree = "<group>";
 		};
 		4B3505E42639476900808990 /* Sign In */ = {
@@ -684,13 +674,6 @@
 			path = "My Appoinments";
 			sourceTree = "<group>";
 		};
-		4B8E0A7C26450160000F3D97 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
 		4B8E0A7D26450176000F3D97 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +758,14 @@
 				4BCCF27D264A68CC009BA717 /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4BD3F7D4265BE6FE007D0C93 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3F7D5265BE6FE007D0C93 /* MainTabController.storyboard */,
+			);
+			path = MainTabController;
 			sourceTree = "<group>";
 		};
 		4BE2D706264BEA8E00A83F02 /* FamilyMember */ = {
@@ -938,14 +929,6 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
-		9BEE39A4265BD67F0065B76F /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MainTabController;
-			path = ../../../../SkinMate/SkinMate/View/MainTabController;
-			sourceTree = "<group>";
-		};
 		9BEE39AC265BD69D0065B76F /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,6 +1005,7 @@
 				4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */,
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
 				9BEE39A7265BD67F0065B76F /* OtpView.xib in Resources */,
+				4BD3F7D7265BE6FE007D0C93 /* MainTabController.storyboard in Resources */,
 				4B67758F265238BC00DC7099 /* MyAppointment.storyboard in Resources */,
 				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
 				9BEE39AB265BD67F0065B76F /* Notification.storyboard in Resources */,
@@ -1030,7 +1014,6 @@
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
 				9BEE39A9265BD67F0065B76F /* OtpSuccess.xib in Resources */,
 				9BEE39A8265BD67F0065B76F /* Main.storyboard in Resources */,
-				4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
 				9B583FC3265BE42000848F7A /* BookingAppointment.storyboard in Resources */,
 				4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */,
@@ -1254,20 +1237,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B3505CE26392FF100808990 /* MainTabController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B3505CF26392FF100808990 /* Base */,
-			);
-			name = MainTabController.storyboard;
-			sourceTree = "<group>";
-		};
 		4B3505D626392FF300808990 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4B3505D726392FF300808990 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4BD3F7D5265BE6FE007D0C93 /* MainTabController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD3F7D6265BE6FE007D0C93 /* Base */,
+			);
+			name = MainTabController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
