@@ -126,6 +126,42 @@
 		4BFE10D4264FA59E00395EDF /* DeleteFamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D3264FA59E00395EDF /* DeleteFamilyMember.swift */; };
 		4BFE10D6264FB3B600395EDF /* MemberInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D5264FB3B600395EDF /* MemberInformation.swift */; };
 		4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D7264FF3A200395EDF /* DatePicker.swift */; };
+		9BEE3983265BD56C0065B76F /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3968265BD5630065B76F /* NotificationTableViewCell.swift */; };
+		9BEE3984265BD56C0065B76F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3969265BD5630065B76F /* NotificationsViewController.swift */; };
+		9BEE3985265BD56C0065B76F /* ConfirmCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE396B265BD5680065B76F /* ConfirmCheckInViewController.swift */; };
+		9BEE3986265BD56C0065B76F /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE396C265BD5680065B76F /* InstructionViewController.swift */; };
+		9BEE3987265BD56C0065B76F /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE396D265BD5680065B76F /* CallViewController.swift */; };
+		9BEE3988265BD56C0065B76F /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE396E265BD5680065B76F /* CheckInViewController.swift */; };
+		9BEE3989265BD56C0065B76F /* CompleteCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE396F265BD5680065B76F /* CompleteCheckViewController.swift */; };
+		9BEE398A265BD56C0065B76F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3971265BD56B0065B76F /* SignupViewController.swift */; };
+		9BEE398B265BD56C0065B76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3972265BD56B0065B76F /* ViewController.swift */; };
+		9BEE398C265BD56C0065B76F /* SetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3973265BD56B0065B76F /* SetProfileViewController.swift */; };
+		9BEE398D265BD56C0065B76F /* OTPErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3974265BD56B0065B76F /* OTPErrorViewController.swift */; };
+		9BEE398E265BD56C0065B76F /* SeverIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3975265BD56B0065B76F /* SeverIssueViewController.swift */; };
+		9BEE398F265BD56C0065B76F /* SetupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3977265BD56B0065B76F /* SetupExtension.swift */; };
+		9BEE3990265BD56C0065B76F /* BloodGroupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3978265BD56B0065B76F /* BloodGroupExtension.swift */; };
+		9BEE3991265BD56C0065B76F /* SignUpExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3979265BD56B0065B76F /* SignUpExtension.swift */; };
+		9BEE3992265BD56C0065B76F /* OTPEnterViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE397A265BD56B0065B76F /* OTPEnterViewControllerExtension.swift */; };
+		9BEE3993265BD56C0065B76F /* SignUpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE397B265BD56B0065B76F /* SignUpSuccessViewController.swift */; };
+		9BEE3994265BD56C0065B76F /* OtpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE397C265BD56B0065B76F /* OtpSuccessViewController.swift */; };
+		9BEE3995265BD56C0065B76F /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE397D265BD56B0065B76F /* Presentation.swift */; };
+		9BEE3996265BD56C0065B76F /* OtpEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE397E265BD56B0065B76F /* OtpEnterViewController.swift */; };
+		9BEE3997265BD56C0065B76F /* BloodGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE397F265BD56B0065B76F /* BloodGroupViewController.swift */; };
+		9BEE3998265BD56C0065B76F /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3980265BD56B0065B76F /* CalenderViewController.swift */; };
+		9BEE3999265BD56C0065B76F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3982265BD56C0065B76F /* HomeViewController.swift */; };
+		9BEE39A5265BD67F0065B76F /* OtpSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE399B265BD67E0065B76F /* OtpSuccess.swift */; };
+		9BEE39A6265BD67F0065B76F /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE399C265BD67E0065B76F /* OtpView.swift */; };
+		9BEE39A7265BD67F0065B76F /* OtpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEE399D265BD67E0065B76F /* OtpView.xib */; };
+		9BEE39A8265BD67F0065B76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEE399E265BD67E0065B76F /* Main.storyboard */; };
+		9BEE39A9265BD67F0065B76F /* OtpSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEE399F265BD67E0065B76F /* OtpSuccess.xib */; };
+		9BEE39AA265BD67F0065B76F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEE39A1265BD67F0065B76F /* Home.storyboard */; };
+		9BEE39AB265BD67F0065B76F /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEE39A3265BD67F0065B76F /* Notification.storyboard */; };
+		9BEE39B3265BD69D0065B76F /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE39AD265BD69D0065B76F /* RequestAPI.swift */; };
+		9BEE39B4265BD69D0065B76F /* Varification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE39AE265BD69D0065B76F /* Varification.swift */; };
+		9BEE39B5265BD69D0065B76F /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE39AF265BD69D0065B76F /* VerifyAPI.swift */; };
+		9BEE39B6265BD69D0065B76F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE39B0265BD69D0065B76F /* Validation.swift */; };
+		9BEE39B7265BD69D0065B76F /* RegisterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE39B1265BD69D0065B76F /* RegisterAPI.swift */; };
+		9BEE39B8265BD69D0065B76F /* CreateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE39B2265BD69D0065B76F /* CreateAPI.swift */; };
 		F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */; };
 /* End PBXBuildFile section */
 
@@ -254,6 +290,42 @@
 		4BFE10D5264FB3B600395EDF /* MemberInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInformation.swift; sourceTree = "<group>"; };
 		4BFE10D7264FF3A200395EDF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
+		9BEE3968265BD5630065B76F /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		9BEE3969265BD5630065B76F /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		9BEE396B265BD5680065B76F /* ConfirmCheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCheckInViewController.swift; sourceTree = "<group>"; };
+		9BEE396C265BD5680065B76F /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		9BEE396D265BD5680065B76F /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		9BEE396E265BD5680065B76F /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		9BEE396F265BD5680065B76F /* CompleteCheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteCheckViewController.swift; sourceTree = "<group>"; };
+		9BEE3971265BD56B0065B76F /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		9BEE3972265BD56B0065B76F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BEE3973265BD56B0065B76F /* SetProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetProfileViewController.swift; sourceTree = "<group>"; };
+		9BEE3974265BD56B0065B76F /* OTPErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPErrorViewController.swift; sourceTree = "<group>"; };
+		9BEE3975265BD56B0065B76F /* SeverIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverIssueViewController.swift; sourceTree = "<group>"; };
+		9BEE3977265BD56B0065B76F /* SetupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupExtension.swift; sourceTree = "<group>"; };
+		9BEE3978265BD56B0065B76F /* BloodGroupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodGroupExtension.swift; sourceTree = "<group>"; };
+		9BEE3979265BD56B0065B76F /* SignUpExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpExtension.swift; sourceTree = "<group>"; };
+		9BEE397A265BD56B0065B76F /* OTPEnterViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPEnterViewControllerExtension.swift; sourceTree = "<group>"; };
+		9BEE397B265BD56B0065B76F /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
+		9BEE397C265BD56B0065B76F /* OtpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccessViewController.swift; sourceTree = "<group>"; };
+		9BEE397D265BD56B0065B76F /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
+		9BEE397E265BD56B0065B76F /* OtpEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpEnterViewController.swift; sourceTree = "<group>"; };
+		9BEE397F265BD56B0065B76F /* BloodGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodGroupViewController.swift; sourceTree = "<group>"; };
+		9BEE3980265BD56B0065B76F /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		9BEE3982265BD56C0065B76F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9BEE399B265BD67E0065B76F /* OtpSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccess.swift; sourceTree = "<group>"; };
+		9BEE399C265BD67E0065B76F /* OtpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		9BEE399D265BD67E0065B76F /* OtpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpView.xib; sourceTree = "<group>"; };
+		9BEE399E265BD67E0065B76F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9BEE399F265BD67E0065B76F /* OtpSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpSuccess.xib; sourceTree = "<group>"; };
+		9BEE39A1265BD67F0065B76F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9BEE39A3265BD67F0065B76F /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		9BEE39AD265BD69D0065B76F /* RequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
+		9BEE39AE265BD69D0065B76F /* Varification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Varification.swift; sourceTree = "<group>"; };
+		9BEE39AF265BD69D0065B76F /* VerifyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+		9BEE39B0265BD69D0065B76F /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		9BEE39B1265BD69D0065B76F /* RegisterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAPI.swift; sourceTree = "<group>"; };
+		9BEE39B2265BD69D0065B76F /* CreateAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAPI.swift; sourceTree = "<group>"; };
 		BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -334,6 +406,7 @@
 				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
 				4B8E0AA526452EFC000F3D97 /* SystemVerification.swift */,
 				4B8964762648046300E7BC31 /* UserDetails.swift */,
+				9BEE39AC265BD69D0065B76F /* Sign Up */,
 				4B8E0A7D26450176000F3D97 /* Sign In */,
 				4B8E0A7C26450160000F3D97 /* MainTabController */,
 				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
@@ -345,6 +418,10 @@
 		4B3505E1263946ED00808990 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9BEE39A0265BD67F0065B76F /* Home */,
+				9BEE39A4265BD67F0065B76F /* MainTabController */,
+				9BEE39A2265BD67F0065B76F /* Notifications */,
+				9BEE399A265BD67E0065B76F /* Sign Up */,
 				4B3505E42639476900808990 /* Sign In */,
 				4B3505E32639473F00808990 /* MainTabController */,
 				4B3505E8263947DA00808990 /* My Appointments */,
@@ -356,6 +433,10 @@
 		4B3505E22639470300808990 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9BEE396A265BD5680065B76F /* E-Check In */,
+				9BEE3981265BD56C0065B76F /* Home */,
+				9BEE3967265BD5630065B76F /* Notifications */,
+				9BEE3970265BD56B0065B76F /* Sign Up */,
 				4B3505F026394B4100808990 /* Sign In */,
 				4B3505EF26394B0C00808990 /* MainTabController */,
 				4B3505ED26394AEB00808990 /* My Appointments */,
@@ -672,6 +753,114 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		9BEE3967265BD5630065B76F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE3968265BD5630065B76F /* NotificationTableViewCell.swift */,
+				9BEE3969265BD5630065B76F /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		9BEE396A265BD5680065B76F /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE396B265BD5680065B76F /* ConfirmCheckInViewController.swift */,
+				9BEE396C265BD5680065B76F /* InstructionViewController.swift */,
+				9BEE396D265BD5680065B76F /* CallViewController.swift */,
+				9BEE396E265BD5680065B76F /* CheckInViewController.swift */,
+				9BEE396F265BD5680065B76F /* CompleteCheckViewController.swift */,
+			);
+			path = "E-Check In";
+			sourceTree = "<group>";
+		};
+		9BEE3970265BD56B0065B76F /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE3971265BD56B0065B76F /* SignupViewController.swift */,
+				9BEE3972265BD56B0065B76F /* ViewController.swift */,
+				9BEE3973265BD56B0065B76F /* SetProfileViewController.swift */,
+				9BEE3974265BD56B0065B76F /* OTPErrorViewController.swift */,
+				9BEE3975265BD56B0065B76F /* SeverIssueViewController.swift */,
+				9BEE3976265BD56B0065B76F /* Extension */,
+				9BEE397B265BD56B0065B76F /* SignUpSuccessViewController.swift */,
+				9BEE397C265BD56B0065B76F /* OtpSuccessViewController.swift */,
+				9BEE397D265BD56B0065B76F /* Presentation.swift */,
+				9BEE397E265BD56B0065B76F /* OtpEnterViewController.swift */,
+				9BEE397F265BD56B0065B76F /* BloodGroupViewController.swift */,
+				9BEE3980265BD56B0065B76F /* CalenderViewController.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		9BEE3976265BD56B0065B76F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE3977265BD56B0065B76F /* SetupExtension.swift */,
+				9BEE3978265BD56B0065B76F /* BloodGroupExtension.swift */,
+				9BEE3979265BD56B0065B76F /* SignUpExtension.swift */,
+				9BEE397A265BD56B0065B76F /* OTPEnterViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9BEE3981265BD56C0065B76F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE3982265BD56C0065B76F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9BEE399A265BD67E0065B76F /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE399B265BD67E0065B76F /* OtpSuccess.swift */,
+				9BEE399C265BD67E0065B76F /* OtpView.swift */,
+				9BEE399D265BD67E0065B76F /* OtpView.xib */,
+				9BEE399E265BD67E0065B76F /* Main.storyboard */,
+				9BEE399F265BD67E0065B76F /* OtpSuccess.xib */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		9BEE39A0265BD67F0065B76F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE39A1265BD67F0065B76F /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9BEE39A2265BD67F0065B76F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE39A3265BD67F0065B76F /* Notification.storyboard */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		9BEE39A4265BD67F0065B76F /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MainTabController;
+			path = ../../../../SkinMate/SkinMate/View/MainTabController;
+			sourceTree = "<group>";
+		};
+		9BEE39AC265BD69D0065B76F /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				9BEE39AD265BD69D0065B76F /* RequestAPI.swift */,
+				9BEE39AE265BD69D0065B76F /* Varification.swift */,
+				9BEE39AF265BD69D0065B76F /* VerifyAPI.swift */,
+				9BEE39B0265BD69D0065B76F /* Validation.swift */,
+				9BEE39B1265BD69D0065B76F /* RegisterAPI.swift */,
+				9BEE39B2265BD69D0065B76F /* CreateAPI.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -734,10 +923,15 @@
 			files = (
 				4BCCF281264A68CD009BA717 /* Poppins-SemiBold.ttf in Resources */,
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
+				9BEE39A7265BD67F0065B76F /* OtpView.xib in Resources */,
 				4B67758F265238BC00DC7099 /* MyAppointment.storyboard in Resources */,
 				4BCCF280264A68CD009BA717 /* Poppins-Regular.ttf in Resources */,
+				9BEE39AB265BD67F0065B76F /* Notification.storyboard in Resources */,
 				4B8964842648422A00E7BC31 /* ForgotPassword.storyboard in Resources */,
+				9BEE39AA265BD67F0065B76F /* Home.storyboard in Resources */,
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
+				9BEE39A9265BD67F0065B76F /* OtpSuccess.xib in Resources */,
+				9BEE39A8265BD67F0065B76F /* Main.storyboard in Resources */,
 				4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
 				4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */,
@@ -800,22 +994,30 @@
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
 				4BEF475A264CE8E700574AC3 /* PasswordChange.swift in Sources */,
+				9BEE3992265BD56C0065B76F /* OTPEnterViewControllerExtension.swift in Sources */,
 				4B3E0F11265B7080003FA3BF /* MyAppointmentAfternoonCollectionViewCell.swift in Sources */,
 				4B6775982652391D00DC7099 /* CanceledAppointmentViewController.swift in Sources */,
+				9BEE398C265BD56C0065B76F /* SetProfileViewController.swift in Sources */,
 				4B67759D2652391D00DC7099 /* AllApointmentViewController.swift in Sources */,
+				9BEE398D265BD56C0065B76F /* OTPErrorViewController.swift in Sources */,
 				4B65472D264994450048B9EE /* ValidationChangePassword.swift in Sources */,
 				4BF1279D26567B3E00C0CDE6 /* NewPasswordExtension.swift in Sources */,
 				4B8E0A722643F1BD000F3D97 /* SignInViewControllerExtension.swift in Sources */,
 				4B65472B2649942D0048B9EE /* ChangePasswordViewController.swift in Sources */,
+				9BEE398E265BD56C0065B76F /* SeverIssueViewController.swift in Sources */,
 				4BEF4756264CDB0D00574AC3 /* AddFamilyMember.swift in Sources */,
 				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
 				4BFAF1A0264EC05600146DB4 /* FamilyMembers.swift in Sources */,
 				4B715F142648E8E200C0B3FE /* VerifyForgotPasswordRequest.swift in Sources */,
 				4BE2D70B264BEB6A00A83F02 /* AddFamilyMemberViewController.swift in Sources */,
+				9BEE3993265BD56C0065B76F /* SignUpSuccessViewController.swift in Sources */,
 				4B89646F2647C1EF00E7BC31 /* SignInAPICall.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
 				4B3E0F13265B7080003FA3BF /* RescheduleViewController.swift in Sources */,
 				4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */,
+				9BEE3994265BD56C0065B76F /* OtpSuccessViewController.swift in Sources */,
+				9BEE39A5265BD67F0065B76F /* OtpSuccess.swift in Sources */,
+				9BEE398B265BD56C0065B76F /* ViewController.swift in Sources */,
 				4BEF475C264CE90600574AC3 /* ProfilePhotoUpload.swift in Sources */,
 				4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */,
 				4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */,
@@ -824,18 +1026,24 @@
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
 				4B3505FA2639A8EC00808990 /* SwitchTabViewController.swift in Sources */,
 				4BF1279B265677F900C0CDE6 /* SuccessForgotPasswordViewController.swift in Sources */,
+				9BEE39B8265BD69D0065B76F /* CreateAPI.swift in Sources */,
+				9BEE3987265BD56C0065B76F /* CallViewController.swift in Sources */,
 				4BEF476A264CFC9300574AC3 /* AllAppointment.swift in Sources */,
 				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
 				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
 				4B8964772648046300E7BC31 /* UserDetails.swift in Sources */,
 				4BFE10D4264FA59E00395EDF /* DeleteFamilyMember.swift in Sources */,
+				9BEE3985265BD56C0065B76F /* ConfirmCheckInViewController.swift in Sources */,
 				4B8E0AE226453574000F3D97 /* IQBarButtonItem.swift in Sources */,
+				9BEE39B4265BD69D0065B76F /* Varification.swift in Sources */,
 				4B8E0AD126453574000F3D97 /* IQNSArray+Sort.swift in Sources */,
 				4BE89DE22654E45D000755FE /* TransitionStyle.swift in Sources */,
 				4B8E0AAD26452EFC000F3D97 /* SystemVerification.swift in Sources */,
+				9BEE3990265BD56C0065B76F /* BloodGroupExtension.swift in Sources */,
 				4B03C3FA264A45A800296ABE /* FamilyViewController.swift in Sources */,
 				4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */,
 				4B89646D2647C00E00E7BC31 /* SignInAPI.swift in Sources */,
+				9BEE3989265BD56C0065B76F /* CompleteCheckViewController.swift in Sources */,
 				4B8E0A84264528C4000F3D97 /* ValidationPassword.swift in Sources */,
 				4BE2D709264BEB2F00A83F02 /* EditFamilyMemberViewController.swift in Sources */,
 				4B8E0A6D264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift in Sources */,
@@ -851,24 +1059,32 @@
 				4B8964752648023700E7BC31 /* VerifyEmailRequest.swift in Sources */,
 				4B3505FC2639BE2300808990 /* AccountViewController.swift in Sources */,
 				4B3E0F0F265B7080003FA3BF /* MyAppointmentDateTimeViewController.swift in Sources */,
+				9BEE3988265BD56C0065B76F /* CheckInViewController.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				9BEE3995265BD56C0065B76F /* Presentation.swift in Sources */,
 				4BF4EA5C264D2C1300B85B98 /* AddFamilyMemberViewControllerExtension.swift in Sources */,
 				4BE2D703264BE59400A83F02 /* TermsAndConditionViewController.swift in Sources */,
 				4B8E0A8226451AF7000F3D97 /* ValidationForgotPassword.swift in Sources */,
 				4B3E0F10265B7080003FA3BF /* MyAppointmentMorningCollectionViewCell.swift in Sources */,
+				9BEE3991265BD56C0065B76F /* SignUpExtension.swift in Sources */,
 				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
 				4B8E0A6B264295D4000F3D97 /* NewPasswordViewController.swift in Sources */,
 				4B6775992652391D00DC7099 /* NoMyAppointmentViewController.swift in Sources */,
 				4BE2D705264BE5C000A83F02 /* AddInsuranceViewController.swift in Sources */,
 				4BD9AB12264B9350002CCFC4 /* UserUpdateViewController.swift in Sources */,
+				9BEE39B6265BD69D0065B76F /* Validation.swift in Sources */,
+				9BEE3998265BD56C0065B76F /* CalenderViewController.swift in Sources */,
 				4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */,
 				4B715F122648E48800C0B3FE /* ErrorVerifyForgotPasswordViewController.swift in Sources */,
 				4BEF4758264CE2F200574AC3 /* UpdateFamilMember.swift in Sources */,
+				9BEE3983265BD56C0065B76F /* NotificationTableViewCell.swift in Sources */,
+				9BEE39B3265BD69D0065B76F /* RequestAPI.swift in Sources */,
 				4B67759B2652391D00DC7099 /* AllApointmentsTableViewCell.swift in Sources */,
 				4BEF4768264CF75F00574AC3 /* RescheduleAppoitnment.swift in Sources */,
 				4B81CD11263C0EAB001EE6AE /* SignInViewController.swift in Sources */,
 				4B8E0A692642690F000F3D97 /* ForgotPasswordViewController.swift in Sources */,
 				4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
+				9BEE39A6265BD67F0065B76F /* OtpView.swift in Sources */,
 				4BE4FF4E2655237400213691 /* AddInsuranceExtension.swift in Sources */,
 				4B89647D2648164200E7BC31 /* SuccessEmailVerificationViewController.swift in Sources */,
 				4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */,
@@ -879,29 +1095,38 @@
 				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
 				4BE2D701264BE58000A83F02 /* PrivacyPolicyViewController.swift in Sources */,
 				4BEF476E264CFCE100574AC3 /* FamilyData.swift in Sources */,
+				9BEE3999265BD56C0065B76F /* HomeViewController.swift in Sources */,
+				9BEE3984265BD56C0065B76F /* NotificationsViewController.swift in Sources */,
 				4BEF4762264CF5E700574AC3 /* MyAppointmentAPI.swift in Sources */,
 				4B8E0A6F2643EB25000F3D97 /* VerifyEmailViewController.swift in Sources */,
 				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
+				9BEE3996265BD56C0065B76F /* OtpEnterViewController.swift in Sources */,
 				4BFE10D6264FB3B600395EDF /* MemberInformation.swift in Sources */,
 				4B0041F42657AFA900AF4841 /* PostRescheduleData.swift in Sources */,
 				4B3505F22639514200808990 /* MainTabController.swift in Sources */,
 				4B03C3FC264A61A500296ABE /* FamilyMemberTableViewCell.swift in Sources */,
 				4B8E0A74264416B9000F3D97 /* ValidationSignIn.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
+				9BEE39B7265BD69D0065B76F /* RegisterAPI.swift in Sources */,
 				4BCCF285264A798D009BA717 /* DeleteConformationViewController.swift in Sources */,
 				4B8964732647FBF400E7BC31 /* FetchUserDetails.swift in Sources */,
 				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				4B67759C2652391D00DC7099 /* DeleteOrResheduleViewController.swift in Sources */,
 				4BE2D70D264BF7D600A83F02 /* SuccessfullyUpdatedViewController.swift in Sources */,
+				9BEE39B5265BD69D0065B76F /* VerifyAPI.swift in Sources */,
 				4B65472926498ECB0048B9EE /* AccountAPI.swift in Sources */,
 				4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */,
 				4BEF4754264CD58000574AC3 /* UserUpdateDetails.swift in Sources */,
 				4B67759A2652391D00DC7099 /* CancelAppointmentViewController.swift in Sources */,
+				9BEE398F265BD56C0065B76F /* SetupExtension.swift in Sources */,
 				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
 				4BD9AB14264B9B76002CCFC4 /* UserUpdateExtension.swift in Sources */,
+				9BEE3986265BD56C0065B76F /* InstructionViewController.swift in Sources */,
 				4BEE7ED72658248B00DA5C4C /* APICallExtension.swift in Sources */,
 				4BE7C362265562A2004FD54B /* AddInsurance.swift in Sources */,
 				4B65472726498DCC0048B9EE /* SignOutExtension.swift in Sources */,
+				9BEE398A265BD56C0065B76F /* SignupViewController.swift in Sources */,
+				9BEE3997265BD56C0065B76F /* BloodGroupViewController.swift in Sources */,
 				4B89647B2648161E00E7BC31 /* ErrorEmailVerificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
