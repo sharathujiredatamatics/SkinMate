@@ -52,6 +52,12 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
     @IBOutlet weak var btnProceed: UIButton!
     
     
+    var validPhone = false
+    var validEmail = false
+    var validPass = false
+    var validConPass = false
+    
+    
     
     var iconClick = false
     //let imageIcon = UIImageView()
@@ -60,15 +66,8 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         applyDesign()
-        lblPhoneError.isHidden = true
-        lblEmailError.isHidden = true
-        lblPassError.isHidden = true
-        lblConfirmError.isHidden = true
-        // btnProceed.isEnabled = true
-        
-        btnProceed.addTarget(self, action: #selector(Proceed), for: .touchUpInside)
-        
-        
+        btnProceed.addTarget(self, action: #selector(proceed), for: .touchUpInside)
+        backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
     }
     
     
@@ -80,35 +79,20 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    /*per.viewWillDisappear(animated)
-     navigationController?.setNavigationBarHidden(false, animated: animated)
-     }*/
+    
     
     //MARK:- Popping view controller
     @IBAction func Back(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        transitionFromLeft()
+        self.navigationController?.popViewController(animated: false)
     }
     
-    /*   @IBAction func Proceed(_ sender: UIButton) {
-     /*  if txtPhone.text == nil && txtEmail.text == nil && txtPassword.text == nil && txtConfirm.text == nil{
-     /*sender.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
-     let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "Enter") as! OtpEnterViewController
-     self.navigationController?.pushViewController(sec, animated: true)*/
-     sender.isEnabled =  false
-     
-     }*/
-     
-     
-     }
-     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-     PresentationController(presentedViewController: presented, presenting: presenting)
-     }*/
     
     
     //MARK:- Securing text entry on eye button click for entering Password.
     func setIcon1(_ image: UIImage) {
         let iconView = UIImageView(frame:
-            CGRect(x: 0, y: 0, width: 20, height: 20))
+            CGRect(x: 0, y: 0, width: 23, height: 14))
         iconView.image = image
         let iconContainerView: UIView = UIView(frame:
             CGRect(x: -10, y: 0, width: 30, height: 30))
@@ -128,8 +112,11 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         
         if(iconClick == true) {
             txtPassword.isSecureTextEntry = false
+            setIcon1(UIImage(named: "HidePassword")!)
+            
         } else {
             txtPassword.isSecureTextEntry = true
+            setIcon1(UIImage(named: "ShowPassword")!)
         }
         
         iconClick = !iconClick
@@ -140,7 +127,7 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
     
     func setIcon2(_ image: UIImage) {
         let iconView = UIImageView(frame:
-            CGRect(x: 0, y: 0, width: 20, height: 20))
+            CGRect(x: 0, y: 0, width: 23, height: 14))
         iconView.image = image
         let iconContainerView: UIView = UIView(frame:
             CGRect(x: -10, y: 0, width: 30, height: 30))
@@ -162,8 +149,10 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         
         if(iconClick == true) {
             txtConfirm.isSecureTextEntry = false
+            setIcon2(UIImage(named: "HidePassword")!)
         } else {
             txtConfirm.isSecureTextEntry = true
+            setIcon2(UIImage(named: "ShowPassword")!)
         }
         
         iconClick = !iconClick
@@ -174,8 +163,8 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
     
     func applyDesign() {
         
-        setIcon1(UIImage(named: "Group 3")!)
-        setIcon2(UIImage(named: "Group 3")!)
+        setIcon1(UIImage(named: "ShowPassword")!)
+        setIcon2(UIImage(named: "ShowPassword")!)
         txtConfirm.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 1)
         txtPassword.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 1)
         
@@ -183,98 +172,68 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         txtConfirm.tintColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
         txtPhone.tintColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
         txtEmail.tintColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
+    }
+    
+    
+    
+    // textField validation.
+    
+    
+    @IBAction func phoneChanged(_ sender: UITextField) {
+        checkPhone()
+    }
+    
+    
+    
+    @IBAction func emailChange(_ sender: UITextField) {
+        checkEmail()
+    }
+    
+    
+    
+    @IBAction func passChanged(_ sender: UITextField) {
+        checkPass()
+    }
+    
+    
+    
+    @IBAction func confirmChamge(_ sender: UITextField) {
+        confirmPass()
+    }
+    
+    
+    
+    @objc func proceed() {
         
-        backButton.layer.borderWidth = 1
-        backButton.layer.borderColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 0.6)
+        let pass: String = txtPassword.text!
+        print(pass)
+        print(txtPhone.text!)
+        print(txtEmail.text!)
+        print(txtConfirm.text!)
         
-        backButton.layer.masksToBounds = true
-        backButton.layer.cornerRadius = 5
-        backButton.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMaxYCorner]
+        setupPostMethod(PhoneNo: txtPhone.text!, Email: txtEmail.text!, Password: txtConfirm.text!)
+        
+        
+        
         
     }
     
-    @objc func Proceed() {
-        
-        guard  let inputPhone = txtPhone.text else { return }
-        if Validation.shared.isValidPhoneNumber(UserPhone: inputPhone) {
-            txtPhone.text = inputPhone
-            lblPhoneError.isHidden = true
-            
-        } else {
-            lblPhoneError.isHidden = false
-            
-            
-        }
-        guard let inputEmail = txtEmail.text else { return }
-        if Validation.shared.isValidEmailAddress(emailAddressString: inputEmail){
-            txtEmail.text = inputEmail
-            lblEmailError.isHidden = true
-            
-        } else {
-            lblEmailError.isHidden = false
-            
-            
-        }
-        guard let inputPass = txtPassword.text else { return }
-        if Validation.shared.isValidPass(UserPass: inputPass) {
-            txtPassword.text = inputPass
-            lblPassError.isHidden = true
-            
-        } else {
-            lblPassError.isHidden = false
-            
-            
-        }
-        guard let inputConfirm = txtConfirm.text else { return }
-        if  Validation.shared.isValidPass(UserPass: inputConfirm) == Validation.shared.isValidPass(UserPass: txtPassword.text!) {
-            txtConfirm.text = inputConfirm
-            
-            
-            
-            
-            
-        } else {
-            lblConfirmError.isHidden = false
-            
-            
-        }
-        if Validation.shared.isValidEmailAddress(emailAddressString: txtEmail.text!) && Validation.shared.isValidPass(UserPass: txtPassword.text!) && Validation.shared.isValidPhoneNumber(UserPhone: txtPhone.text!) && Validation.shared.isValidPass(UserPass: txtConfirm.text!) {
-            btnProceed.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
-            
-            let pass: String = txtPassword.text!
-            print(pass)
-            print(txtPhone.text!)
-            print(txtEmail.text!)
-            print(txtConfirm.text!)
-            
-            setupPostMethod(PhoneNo: txtPhone.text!, Email: txtEmail.text!, Password: txtConfirm.text!)
-            
-            
-            
-            let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "Enter") as! OtpEnterViewController
-            sec.text = txtPhone.text!
-            self.navigationController?.pushViewController(sec, animated: true)
-            
-        }
-    }
+    
     
     
     func setupPostMethod(PhoneNo: String,Email: String,Password: String){
-        /* guard let uid = self.txtUID.text else { return }
-         guard let title = self.txtTitle.text else { return }
-         guard let body = self.txtBody.text else { return }*/
+        var parameters = String()
+        parameters = "email=\(Email)&password=\(Password)&phone=\(PhoneNo)"
+        
+        
         // https://jsonplaceholder.typicode.com/posts/
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts"){
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            //   request.setValue(<#T##value: String?##String?#>, forHTTPHeaderField: <#T##String#>)
-            let parameters: [String : Any] = [
-                "email": Email,
-                "password": Password,
-                "phone": PhoneNo
-            ]
             
-            request.httpBody = parameters.percentEscaped().data(using: .utf8)
+            
+            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+            request.httpBody = parameters.data(using: String.Encoding.utf8)
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let data = data else {
@@ -285,18 +244,15 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
                 }
                 
                 if let response = response as? HTTPURLResponse{
-                    /* guard (200 ... 299) ~= response.statusCode else {
-                     print("Status code :- \(response.statusCode)")
-                     print(response)
-                     
-                     return
-                     }*/
                     if response.statusCode == 409 {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Error", message: "user already exist", preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Alert", message: "Account Created Already \n Please SignIn", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
                                 print("Okay")
-                                self.navigationController?.popToRootViewController(animated: true)
+                                let storyBoard:UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
+                                self.transitionFromRight()
+                                let signInVC: SignInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+                                self.present(signInVC, animated: true, completion: nil)
                             }))
                             self.present(alert,animated: true,completion: nil)
                         }
@@ -304,10 +260,10 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
                     }
                     else if response.statusCode == 406 {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Error", message: "Validation error", preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Alert", message: "Validation error", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
                                 print("Okay")
-                                self.navigationController?.popViewController(animated: true)
+                                
                             }))
                             self.present(alert,animated: true,completion: nil)
                             
@@ -316,14 +272,25 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
                     }
                     else if response.statusCode == 500 {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Error", message: "Could not register", preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Alert", message: "Could not register", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
                                 print("Okay")
-                                self.navigationController?.popViewController(animated: true)
+                                
                             }))
-                            self.present(alert,animated: true,completion: nil)
+                            self.transitionFromRight()
+                            self.present(alert,animated: false,completion: nil)
                         }
                         
+                    } else {
+                        DispatchQueue.main.async {
+                            
+                            let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "OtpEnterViewController") as! OtpEnterViewController
+                            self.transitionFromRight()
+                            sec.self.text = self.txtPhone.text!
+                            sec.modalPresentationStyle = .overCurrentContext
+                            sec.modalTransitionStyle = .crossDissolve
+                            self.present(sec,animated: false)
+                        }
                     }
                 }
                 
@@ -334,29 +301,28 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
                     
                     print(" device Id: \(json!["_id"]!)")
                     print(" token ID: \(json!["token"]!)")
-                    Varification.shared.deviceID = "\(json!["_id"]!)"
-                    Varification.shared.tokenId = "\(json!["token"]!)"
-                    // print(id)
-                    // print(token)
-                    let savePassword: Bool = KeychainWrapper.standard.set(Password, forKey: Email)
-                    let saveDeviceId: Bool = KeychainWrapper.standard.set(Varification.shared.deviceID, forKey: "deviceId\(Email)")
-                    let saveTokenId: Bool = KeychainWrapper.standard.set(Varification.shared.tokenId, forKey: "tokenId\(Email)")
+                    SystemVerification.shared.deviceId = "\(json!["_id"]!)"
+                    SystemVerification.shared.tokenId = "\(json!["token"]!)"
                     
-                    print("Succesfull\(savePassword)")
-                    print("Succesfull\(saveDeviceId)")
-                    print("Succesfull\(saveTokenId)")
-                    
-                    
-                    
-                    RequestAPI.shared.setupPostMethod(deviceID: Varification.shared.deviceID, tokenId: Varification.shared.tokenId)
-                    
-                    
+                    RequestAPI.shared.setupPostMethod(deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
                 }catch let error{
                     print(error.localizedDescription)
                 }
                 }.resume()
         }
         
+    }
+    @IBAction func signInPage(_ sender: UIButton) {
+        let storyBoard:UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
+        transitionFromRight()
+        let signInVC: SignInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+        self.present(signInVC,animated: true)
+    }
+    
+    @objc func back() {
+        transitionFromLeft()
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(view,animated: false)
     }
     
     

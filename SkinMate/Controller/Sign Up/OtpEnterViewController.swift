@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import UIKit
 
-class OtpEnterViewController: UIViewController {
+class OtpEnterViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var ContainerView: UIView!
     
@@ -23,7 +24,9 @@ class OtpEnterViewController: UIViewController {
     
     @IBOutlet weak var lblTimer: UILabel!
     
-    @IBOutlet weak var Confirm: UIButton!
+    @IBOutlet weak var btnConfirm: UIButton!
+    
+    
     
     var seconds = 120
     var otpTimer = Timer()
@@ -39,14 +42,11 @@ class OtpEnterViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    /*  override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     navigationController?.setNavigationBarHidden(false, animated: animated)
-     }*/
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        txtOTP.delegate = self
         // Do any additional setup after loading the view.
         txtOTP.defaultTextAttributes.updateValue(5.0, forKey: NSAttributedString.Key.kern)
         runTimer()
@@ -55,15 +55,27 @@ class OtpEnterViewController: UIViewController {
         lblEnterOtp.text = "Please Enter OTP sent to \(text)"
         print(lblEnterOtp.text!)
         lblEnterOtp.font = lblEnterOtp.font.withSize(15.0)
+        txtOTP.delegate = self
+        btnConfirm.isEnabled = false
         
         
+        
+        btnConfirm.addTarget(self, action: #selector(Confirm), for: .touchUpInside)
         
     }
+    
+    // Designing views.
     func applyDesign() {
         ContainerView.layer.cornerRadius = 30
         ContainerView.layer.masksToBounds = true
         ContainerView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
+        
+        txtOTP.layer.borderWidth = 0.5
+        txtOTP.layer.masksToBounds = true
+        txtOTP.layer.borderColor =  #colorLiteral(red: 0.8, green: 0.8156862745, blue: 0.8352941176, alpha: 1)
     }
+    
+    // Timer functions.
     
     func runTimer() {
         otpTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
@@ -71,6 +83,14 @@ class OtpEnterViewController: UIViewController {
     }
     
     
+    
+    @IBAction func txtOtpChanged(_ sender: UITextField) {
+        validOtp()
+    }
+    
+    
+    
+    // Updating timer.
     @objc  func updateTimer() {
         
         seconds -= 1
@@ -93,39 +113,57 @@ class OtpEnterViewController: UIViewController {
     
     
     @IBAction func Resend(_ sender: UIButton) {
-        RequestAPI.shared.setupPostMethod(deviceID: Varification.shared.deviceID, tokenId: Varification.shared.tokenId)
+        RequestAPI.shared.setupPostMethod(deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
         runTimer()
         
         
     }
     
-    @IBAction func Confirm(_ sender: UIButton) {
-        sender.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
-        let sec: OtpSuccessViewController = self.storyboard?.instantiateViewController(withIdentifier: "OTP") as! OtpSuccessViewController
-        self.navigationController?.pushViewController(sec, animated: true)
+    // Textfield validation.
+    
+    func validOtp(){
+        if txtOTP.text?.count == 6 {
+            print(txtOTP.text?.count as Any)
+            btnConfirm.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
+            btnConfirm.isEnabled = true
+            
+        } else if txtOTP.text?.count != 6{
+            btnConfirm.isEnabled = false
+        }
+    }
+    
+    // APICall for varifieing OTP.
+    
+    @objc func Confirm() {
+        
         VerifyOTP()
         
+        
     }
+    
+    
+    
+    
+    
     
     func  VerifyOTP() {
         
         let otp:Int = Int(txtOTP.text!)!
         print(otp)
+        var parameters = String()
+        parameters = "code=\(otp)&requestId=\(SystemVerification.shared.requestId)"
+        
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts/verify/phone"){
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             
-            request.setValue(Varification.shared.deviceID, forHTTPHeaderField: "device-id")
+            request.setValue(SystemVerification.shared.deviceId, forHTTPHeaderField: "device-id")
             
-            request.setValue(Varification.shared.tokenId, forHTTPHeaderField: "access-token")
-            //   request.setValue(<#T##value: String?##String?#>, forHTTPHeaderField: <#T##String#>)
-            let parameters: [String : Any] = [
-                "code": otp,
-                "requestId": Varification.shared.Id,
-                
-                ]
+            request.setValue(SystemVerification.shared.tokenId, forHTTPHeaderField: "access-token")
             
-            request.httpBody = parameters.percentEscaped().data(using: .utf8)
+            
+            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+            request.httpBody = parameters.data(using: String.Encoding.utf8)
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let data = data else {
@@ -140,14 +178,18 @@ class OtpEnterViewController: UIViewController {
                     if response.statusCode == 200 {
                         print("\(response.statusCode)")
                         DispatchQueue.main.async {
-                            let sec: OtpSuccessViewController = self.storyboard?.instantiateViewController(withIdentifier: "OTP") as! OtpSuccessViewController
-                            self.navigationController?.pushViewController(sec, animated: true)
+                            
+                            
+                            let OtpSuccessViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OtpSuccessViewController") as? OtpSuccessViewController
+                            self.present(OtpSuccessViewController!,animated: false)
                         }
                     } else {
                         print("\(response.statusCode)")
                         DispatchQueue.main.async {
-                            let sec: OTPErrorViewController = self.storyboard?.instantiateViewController(withIdentifier: "Error") as! OTPErrorViewController
-                            self.navigationController?.pushViewController(sec, animated: true)
+                            
+                            
+                            let OTPErrorViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OTPErrorViewController") as? OTPErrorViewController
+                            self.present(OTPErrorViewController!,animated: false)
                         }
                     }
                 }
@@ -174,9 +216,4 @@ class OtpEnterViewController: UIViewController {
     }
     
 }
-
-
-
-
-
 

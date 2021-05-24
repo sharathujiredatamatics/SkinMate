@@ -14,10 +14,7 @@ class RequestAPI {
     var arr = String()
     
     func setupPostMethod(deviceID: String,tokenId: String){
-        /* guard let uid = self.txtUID.text else { return }
-         guard let title = self.txtTitle.text else { return }
-         guard let body = self.txtBody.text else { return }*/
-        // https://jsonplaceholder.typicode.com/posts/
+        
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts/verify/phone"){
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
@@ -49,7 +46,7 @@ class RequestAPI {
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
                     
                     print(json!)
-                    Varification.shared.Id = "\(json!["_id"]!)"
+                    SystemVerification.shared.requestId = "\(json!["_id"]!)"
                     print(Varification.shared.Id)
                     
                     

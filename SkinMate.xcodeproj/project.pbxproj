@@ -8,45 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505CA26392FF100808990 /* AppDelegate.swift */; };
-		4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505CE26392FF100808990 /* MainTabController.storyboard */; };
 		4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */; };
 		4B3505D526392FF300808990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D426392FF300808990 /* Assets.xcassets */; };
 		4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505D626392FF300808990 /* LaunchScreen.storyboard */; };
-		4B3505F22639514200808990 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505F12639514200808990 /* MainTabController.swift */; };
-		4B3505F62639824500808990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505F52639824500808990 /* HomeViewController.swift */; };
-		4B3505F82639825E00808990 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505F72639825E00808990 /* Home.storyboard */; };
-		4B3505FA2639A8EC00808990 /* SwitchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505F92639A8EC00808990 /* SwitchTabViewController.swift */; };
-		4B3505FC2639BE2300808990 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3505FB2639BE2300808990 /* AccountViewController.swift */; };
-		4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3505FD2639BEDB00808990 /* Account.storyboard */; };
-		4B81CD0B263C0250001EE6AE /* Button Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* Button Extension.swift */; };
-		4B81CD0F263C0C97001EE6AE /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81CD0E263C0C97001EE6AE /* SignIn.storyboard */; };
-		4B81CD11263C0EAB001EE6AE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD10263C0EAB001EE6AE /* SignInViewController.swift */; };
-		4B8E0A692642690F000F3D97 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A682642690F000F3D97 /* ForgotPasswordViewController.swift */; };
-		4B8E0A6B264295D4000F3D97 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A6A264295D4000F3D97 /* NewPasswordViewController.swift */; };
-		4B8E0A6D264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A6C264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift */; };
-		4B8E0A6F2643EB25000F3D97 /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A6E2643EB25000F3D97 /* VerifyEmailViewController.swift */; };
-		4B8E0A722643F1BD000F3D97 /* SignInViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */; };
-		4B8E0A74264416B9000F3D97 /* ValidationSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A73264416B9000F3D97 /* ValidationSignIn.swift */; };
-		4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */; };
-		4B8E0A80264507E3000F3D97 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A7F264507E3000F3D97 /* NotificationsViewController.swift */; };
-		4B8E0A8226451AF7000F3D97 /* ValidationForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8126451AF7000F3D97 /* ValidationForgotPassword.swift */; };
-		4B8E0A84264528C4000F3D97 /* ValidationPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A83264528C4000F3D97 /* ValidationPassword.swift */; };
-		4B8E0A8F26452E17000F3D97 /* OTPErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8826452E16000F3D97 /* OTPErrorViewController.swift */; };
-		4B8E0A9026452E17000F3D97 /* OtpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8926452E16000F3D97 /* OtpSuccessViewController.swift */; };
-		4B8E0A9126452E17000F3D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8A26452E16000F3D97 /* ViewController.swift */; };
-		4B8E0A9226452E17000F3D97 /* OtpEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8B26452E16000F3D97 /* OtpEnterViewController.swift */; };
-		4B8E0A9326452E17000F3D97 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8C26452E16000F3D97 /* SignupViewController.swift */; };
-		4B8E0A9426452E17000F3D97 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8D26452E16000F3D97 /* Presentation.swift */; };
-		4B8E0A9526452E17000F3D97 /* SetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A8E26452E16000F3D97 /* SetProfileViewController.swift */; };
-		4B8E0A9B26452E35000F3D97 /* OtpSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A9626452E34000F3D97 /* OtpSuccess.swift */; };
-		4B8E0A9C26452E35000F3D97 /* OtpSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E0A9726452E35000F3D97 /* OtpSuccess.xib */; };
-		4B8E0A9D26452E35000F3D97 /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0A9826452E35000F3D97 /* OtpView.swift */; };
-		4B8E0A9E26452E35000F3D97 /* OtpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E0A9926452E35000F3D97 /* OtpView.xib */; };
-		4B8E0A9F26452E35000F3D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E0A9A26452E35000F3D97 /* Main.storyboard */; };
+		4B3E0EEE265B60F2003FA3BF /* BloodGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EDE265B60F1003FA3BF /* BloodGroupViewController.swift */; };
+		4B3E0EEF265B60F2003FA3BF /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EDF265B60F1003FA3BF /* CalenderViewController.swift */; };
+		4B3E0EF0265B60F2003FA3BF /* BloodGroupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE1265B60F1003FA3BF /* BloodGroupExtension.swift */; };
+		4B3E0EF1265B60F2003FA3BF /* OTPEnterViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE2265B60F1003FA3BF /* OTPEnterViewControllerExtension.swift */; };
+		4B3E0EF2265B60F2003FA3BF /* SetupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE3265B60F1003FA3BF /* SetupExtension.swift */; };
+		4B3E0EF3265B60F2003FA3BF /* SignUpExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE4265B60F1003FA3BF /* SignUpExtension.swift */; };
+		4B3E0EF4265B60F2003FA3BF /* OtpEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE5265B60F1003FA3BF /* OtpEnterViewController.swift */; };
+		4B3E0EF5265B60F2003FA3BF /* OTPErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE6265B60F1003FA3BF /* OTPErrorViewController.swift */; };
+		4B3E0EF6265B60F2003FA3BF /* OtpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE7265B60F1003FA3BF /* OtpSuccessViewController.swift */; };
+		4B3E0EF7265B60F2003FA3BF /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE8265B60F1003FA3BF /* Presentation.swift */; };
+		4B3E0EF8265B60F2003FA3BF /* SetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EE9265B60F1003FA3BF /* SetProfileViewController.swift */; };
+		4B3E0EF9265B60F2003FA3BF /* SeverIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EEA265B60F1003FA3BF /* SeverIssueViewController.swift */; };
+		4B3E0EFA265B60F2003FA3BF /* SignUpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EEB265B60F1003FA3BF /* SignUpSuccessViewController.swift */; };
+		4B3E0EFB265B60F2003FA3BF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EEC265B60F1003FA3BF /* SignupViewController.swift */; };
+		4B3E0EFC265B60F2003FA3BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EED265B60F1003FA3BF /* ViewController.swift */; };
+		4B3E0F03265B61BE003FA3BF /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EFE265B61BE003FA3BF /* CallViewController.swift */; };
+		4B3E0F04265B61BE003FA3BF /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0EFF265B61BE003FA3BF /* CheckInViewController.swift */; };
+		4B3E0F05265B61BE003FA3BF /* CompleteCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F00265B61BE003FA3BF /* CompleteCheckViewController.swift */; };
+		4B3E0F06265B61BE003FA3BF /* ConfirmCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F01265B61BE003FA3BF /* ConfirmCheckInViewController.swift */; };
+		4B3E0F07265B61BE003FA3BF /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F02265B61BE003FA3BF /* InstructionViewController.swift */; };
+		4B3E0F49265B7C91003FA3BF /* OtpSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B3E0F44265B7C8E003FA3BF /* OtpSuccess.xib */; };
+		4B3E0F4A265B7C91003FA3BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3E0F45265B7C8F003FA3BF /* Main.storyboard */; };
+		4B3E0F4B265B7C91003FA3BF /* OtpSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F46265B7C8F003FA3BF /* OtpSuccess.swift */; };
+		4B3E0F4C265B7C91003FA3BF /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F47265B7C90003FA3BF /* OtpView.swift */; };
+		4B3E0F4D265B7C91003FA3BF /* OtpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B3E0F48265B7C91003FA3BF /* OtpView.xib */; };
+		4B3E0F4F265B7CAF003FA3BF /* CheckIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3E0F4E265B7CAE003FA3BF /* CheckIn.storyboard */; };
+		4B4F8B512654BC9C00F29E04 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F8B502654BC9C00F29E04 /* Notification.storyboard */; };
+		4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */; };
+		4B8964712647FA8400E7BC31 /* Varification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8964702647FA8400E7BC31 /* Varification.swift */; };
+		4B8964772648046300E7BC31 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8964762648046300E7BC31 /* UserDetails.swift */; };
 		4B8E0AAA26452EFC000F3D97 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA226452EFB000F3D97 /* VerifyAPI.swift */; };
 		4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */; };
 		4B8E0AAC26452EFC000F3D97 /* RegisterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA426452EFB000F3D97 /* RegisterAPI.swift */; };
-		4B8E0AAD26452EFC000F3D97 /* Varification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA526452EFC000F3D97 /* Varification.swift */; };
+		4B8E0AAD26452EFC000F3D97 /* SystemVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA526452EFC000F3D97 /* SystemVerification.swift */; };
 		4B8E0AAE26452EFC000F3D97 /* CreateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA626452EFC000F3D97 /* CreateAPI.swift */; };
 		4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */; };
 		4B8E0AB026452EFC000F3D97 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AA826452EFC000F3D97 /* RequestAPI.swift */; };
@@ -74,58 +72,55 @@
 		4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */; };
 		4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0ACF26453574000F3D97 /* IQToolbar.swift */; };
 		4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */; };
+		4BC07CE9265241130002843A /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC07CE7265241120002843A /* NotificationsViewController.swift */; };
+		4BC07CEA265241130002843A /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC07CE8265241130002843A /* NotificationTableViewCell.swift */; };
+		4BE89DE22654E45D000755FE /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE89DE12654E45D000755FE /* TransitionStyle.swift */; };
+		4BEE7ED72658248B00DA5C4C /* APICallExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE7ED62658248B00DA5C4C /* APICallExtension.swift */; };
 		F6C9EF9A011C71C0573F3914 /* Pods_SkinMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2724F330B0929DFB202B96CA /* Pods-SkinMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.debug.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.debug.xcconfig"; sourceTree = "<group>"; };
-		4B019F68263AC98100864D8A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		4B019F69263AC98200864D8A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		4B019F6A263AC98300864D8A /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4B3505C726392FF100808990 /* SkinMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3505CA26392FF100808990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B3505CF26392FF100808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabController.storyboard; sourceTree = "<group>"; };
 		4B3505D226392FF100808990 /* SkinMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkinMate.xcdatamodel; sourceTree = "<group>"; };
 		4B3505D426392FF300808990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3505D726392FF300808990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3505D926392FF300808990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B3505F12639514200808990 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
-		4B3505F52639824500808990 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4B3505F72639825E00808990 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		4B3505F92639A8EC00808990 /* SwitchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTabViewController.swift; sourceTree = "<group>"; };
-		4B3505FB2639BE2300808990 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		4B3505FD2639BEDB00808990 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		4B81CD0A263C0250001EE6AE /* Button Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Extension.swift"; sourceTree = "<group>"; };
-		4B81CD0E263C0C97001EE6AE /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
-		4B81CD10263C0EAB001EE6AE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		4B8E0A67264260E0000F3D97 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		4B8E0A682642690F000F3D97 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		4B8E0A6A264295D4000F3D97 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
-		4B8E0A6C264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeSuccessPageViewController.swift; sourceTree = "<group>"; };
-		4B8E0A6E2643EB25000F3D97 /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
-		4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtension.swift; sourceTree = "<group>"; };
-		4B8E0A73264416B9000F3D97 /* ValidationSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSignIn.swift; sourceTree = "<group>"; };
-		4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
-		4B8E0A7F264507E3000F3D97 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		4B8E0A8126451AF7000F3D97 /* ValidationForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationForgotPassword.swift; sourceTree = "<group>"; };
-		4B8E0A83264528C4000F3D97 /* ValidationPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationPassword.swift; sourceTree = "<group>"; };
-		4B8E0A8526452DA8000F3D97 /* Game Over Regular 400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Game Over Regular 400.ttf"; sourceTree = "<group>"; };
-		4B8E0A8826452E16000F3D97 /* OTPErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPErrorViewController.swift; sourceTree = "<group>"; };
-		4B8E0A8926452E16000F3D97 /* OtpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccessViewController.swift; sourceTree = "<group>"; };
-		4B8E0A8A26452E16000F3D97 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B8E0A8B26452E16000F3D97 /* OtpEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpEnterViewController.swift; sourceTree = "<group>"; };
-		4B8E0A8C26452E16000F3D97 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		4B8E0A8D26452E16000F3D97 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
-		4B8E0A8E26452E16000F3D97 /* SetProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetProfileViewController.swift; sourceTree = "<group>"; };
-		4B8E0A9626452E34000F3D97 /* OtpSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccess.swift; sourceTree = "<group>"; };
-		4B8E0A9726452E35000F3D97 /* OtpSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpSuccess.xib; sourceTree = "<group>"; };
-		4B8E0A9826452E35000F3D97 /* OtpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
-		4B8E0A9926452E35000F3D97 /* OtpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpView.xib; sourceTree = "<group>"; };
-		4B8E0A9A26452E35000F3D97 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4B3E0EDE265B60F1003FA3BF /* BloodGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodGroupViewController.swift; sourceTree = "<group>"; };
+		4B3E0EDF265B60F1003FA3BF /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		4B3E0EE1265B60F1003FA3BF /* BloodGroupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodGroupExtension.swift; sourceTree = "<group>"; };
+		4B3E0EE2265B60F1003FA3BF /* OTPEnterViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPEnterViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B3E0EE3265B60F1003FA3BF /* SetupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupExtension.swift; sourceTree = "<group>"; };
+		4B3E0EE4265B60F1003FA3BF /* SignUpExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpExtension.swift; sourceTree = "<group>"; };
+		4B3E0EE5265B60F1003FA3BF /* OtpEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpEnterViewController.swift; sourceTree = "<group>"; };
+		4B3E0EE6265B60F1003FA3BF /* OTPErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPErrorViewController.swift; sourceTree = "<group>"; };
+		4B3E0EE7265B60F1003FA3BF /* OtpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccessViewController.swift; sourceTree = "<group>"; };
+		4B3E0EE8265B60F1003FA3BF /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
+		4B3E0EE9265B60F1003FA3BF /* SetProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetProfileViewController.swift; sourceTree = "<group>"; };
+		4B3E0EEA265B60F1003FA3BF /* SeverIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverIssueViewController.swift; sourceTree = "<group>"; };
+		4B3E0EEB265B60F1003FA3BF /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
+		4B3E0EEC265B60F1003FA3BF /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		4B3E0EED265B60F1003FA3BF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B3E0EFE265B61BE003FA3BF /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		4B3E0EFF265B61BE003FA3BF /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		4B3E0F00265B61BE003FA3BF /* CompleteCheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteCheckViewController.swift; sourceTree = "<group>"; };
+		4B3E0F01265B61BE003FA3BF /* ConfirmCheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCheckInViewController.swift; sourceTree = "<group>"; };
+		4B3E0F02265B61BE003FA3BF /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		4B3E0F44265B7C8E003FA3BF /* OtpSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpSuccess.xib; sourceTree = "<group>"; };
+		4B3E0F45265B7C8F003FA3BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4B3E0F46265B7C8F003FA3BF /* OtpSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpSuccess.swift; sourceTree = "<group>"; };
+		4B3E0F47265B7C90003FA3BF /* OtpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		4B3E0F48265B7C91003FA3BF /* OtpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpView.xib; sourceTree = "<group>"; };
+		4B3E0F4E265B7CAE003FA3BF /* CheckIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckIn.storyboard; sourceTree = "<group>"; };
+		4B4F8B502654BC9C00F29E04 /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		4B8964702647FA8400E7BC31 /* Varification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Varification.swift; sourceTree = "<group>"; };
+		4B8964762648046300E7BC31 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		4B8E0AA226452EFB000F3D97 /* VerifyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		4B8E0AA426452EFB000F3D97 /* RegisterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAPI.swift; sourceTree = "<group>"; };
-		4B8E0AA526452EFC000F3D97 /* Varification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Varification.swift; sourceTree = "<group>"; };
+		4B8E0AA526452EFC000F3D97 /* SystemVerification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemVerification.swift; sourceTree = "<group>"; };
 		4B8E0AA626452EFC000F3D97 /* CreateAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAPI.swift; sourceTree = "<group>"; };
 		4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		4B8E0AA826452EFC000F3D97 /* RequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
@@ -154,6 +149,10 @@
 		4B8E0ACE26453574000F3D97 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
 		4B8E0ACF26453574000F3D97 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		4B8E0AD026453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		4BC07CE7265241120002843A /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		4BC07CE8265241130002843A /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		4BE89DE12654E45D000755FE /* TransitionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionStyle.swift; sourceTree = "<group>"; };
+		4BEE7ED62658248B00DA5C4C /* APICallExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallExtension.swift; sourceTree = "<group>"; };
 		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
 		BABEA6D56282B78431C42FAF /* Pods_SkinMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,40 +186,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4B019F66263AC94900864D8A /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4B019F67263AC96300864D8A /* Fonts */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		4B019F67263AC96300864D8A /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				4B8E0A8526452DA8000F3D97 /* Game Over Regular 400.ttf */,
-				4B019F69263AC98200864D8A /* Poppins-Regular.ttf */,
-				4B019F68263AC98100864D8A /* Poppins-Medium.ttf */,
-				4B8E0A67264260E0000F3D97 /* Poppins-Bold.ttf */,
-				4B019F6A263AC98300864D8A /* Poppins-SemiBold.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		4B019F6B263AC9E600864D8A /* App Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "App Icons";
-			sourceTree = "<group>";
-		};
-		4B019F6C263ACA0C00864D8A /* App Color */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "App Color";
-			sourceTree = "<group>";
-		};
 		4B3505BE26392FF100808990 = {
 			isa = PBXGroup;
 			children = (
@@ -246,14 +211,10 @@
 				4B3505E0263946DD00808990 /* Model */,
 				4B3505E1263946ED00808990 /* View */,
 				4B3505E22639470300808990 /* Controller */,
-				4B019F66263AC94900864D8A /* Utils */,
+				4B3505D926392FF300808990 /* Info.plist */,
 				4B3505CA26392FF100808990 /* AppDelegate.swift */,
 				4B3505D426392FF300808990 /* Assets.xcassets */,
-				4B019F6C263ACA0C00864D8A /* App Color */,
-				4B019F6B263AC9E600864D8A /* App Icons */,
 				4B3505D626392FF300808990 /* LaunchScreen.storyboard */,
-				4B3505D926392FF300808990 /* Info.plist */,
-				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
 			);
 			path = SkinMate;
 			sourceTree = "<group>";
@@ -261,14 +222,10 @@
 		4B3505E0263946DD00808990 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B3505D126392FF100808990 /* SkinMate.xcdatamodeld */,
+				4B8E0AA526452EFC000F3D97 /* SystemVerification.swift */,
+				4B8964762648046300E7BC31 /* UserDetails.swift */,
 				4B8E0A7E2645017F000F3D97 /* Sign Up */,
-				4B8E0A7D26450176000F3D97 /* Sign In */,
-				4B8E0A7C26450160000F3D97 /* MainTabController */,
-				4B8E0A7B26450140000F3D97 /* Booking Appointments */,
-				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
-				4B8E0A7926450121000F3D97 /* E-Check In */,
-				4B8E0A782645010F000F3D97 /* Notifications */,
-				4B8E0A7726450102000F3D97 /* AccountAndMore */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,14 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				4B81CD0C263C0B9F001EE6AE /* Sign Up */,
-				4B3505E42639476900808990 /* Sign In */,
-				4B3505F32639820100808990 /* Home */,
-				4B3505E32639473F00808990 /* MainTabController */,
-				4B3505E9263947FE00808990 /* Booking Appointments */,
-				4B3505E8263947DA00808990 /* My Appointments */,
 				4B3505E7263947C900808990 /* E-Check In */,
 				4B3505E6263947BC00808990 /* Notifications */,
-				4B3505E5263947A100808990 /* AccountAndMore */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,46 +243,17 @@
 		4B3505E22639470300808990 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4B81CD0D263C0BAB001EE6AE /* Sign Up */,
-				4B3505F026394B4100808990 /* Sign In */,
-				4B3505F42639821400808990 /* Home */,
-				4B3505EF26394B0C00808990 /* MainTabController */,
-				4B3505EE26394AFE00808990 /* Booking Appointments */,
-				4B3505ED26394AEB00808990 /* My Appointments */,
-				4B3505EC26394ADB00808990 /* E-Check In */,
+				4B3E0EDD265B60F1003FA3BF /* Sign Up */,
+				4B3E0EFD265B61BE003FA3BF /* E-Check In */,
 				4B3505EB26394AC800808990 /* Notifications */,
-				4B3505EA26394AAE00808990 /* AccountAndMore */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4B3505E32639473F00808990 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505CE26392FF100808990 /* MainTabController.storyboard */,
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
-		4B3505E42639476900808990 /* Sign In */ = {
-			isa = PBXGroup;
-			children = (
-				4B81CD0E263C0C97001EE6AE /* SignIn.storyboard */,
-			);
-			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B3505E5263947A100808990 /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505FD2639BEDB00808990 /* Account.storyboard */,
-			);
-			path = AccountAndMore;
 			sourceTree = "<group>";
 		};
 		4B3505E6263947BC00808990 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				4B4F8B502654BC9C00F29E04 /* Notification.storyboard */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -339,105 +261,71 @@
 		4B3505E7263947C900808990 /* E-Check In */ = {
 			isa = PBXGroup;
 			children = (
+				4B3E0F4E265B7CAE003FA3BF /* CheckIn.storyboard */,
 			);
 			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B3505E8263947DA00808990 /* My Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505E9263947FE00808990 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EA26394AAE00808990 /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505FB2639BE2300808990 /* AccountViewController.swift */,
-			);
-			path = AccountAndMore;
 			sourceTree = "<group>";
 		};
 		4B3505EB26394AC800808990 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				4B8E0A7F264507E3000F3D97 /* NotificationsViewController.swift */,
+				4BC07CE7265241120002843A /* NotificationsViewController.swift */,
+				4BC07CE8265241130002843A /* NotificationTableViewCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
 		};
-		4B3505EC26394ADB00808990 /* E-Check In */ = {
+		4B3E0EDD265B60F1003FA3BF /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
+				4B3E0EDE265B60F1003FA3BF /* BloodGroupViewController.swift */,
+				4B3E0EDF265B60F1003FA3BF /* CalenderViewController.swift */,
+				4B3E0EE0265B60F1003FA3BF /* Extension */,
+				4B3E0EE5265B60F1003FA3BF /* OtpEnterViewController.swift */,
+				4B3E0EE6265B60F1003FA3BF /* OTPErrorViewController.swift */,
+				4B3E0EE7265B60F1003FA3BF /* OtpSuccessViewController.swift */,
+				4B3E0EE8265B60F1003FA3BF /* Presentation.swift */,
+				4B3E0EE9265B60F1003FA3BF /* SetProfileViewController.swift */,
+				4B3E0EEA265B60F1003FA3BF /* SeverIssueViewController.swift */,
+				4B3E0EEB265B60F1003FA3BF /* SignUpSuccessViewController.swift */,
+				4B3E0EEC265B60F1003FA3BF /* SignupViewController.swift */,
+				4B3E0EED265B60F1003FA3BF /* ViewController.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4B3E0EE0265B60F1003FA3BF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E0EE1265B60F1003FA3BF /* BloodGroupExtension.swift */,
+				4B3E0EE2265B60F1003FA3BF /* OTPEnterViewControllerExtension.swift */,
+				4B3E0EE3265B60F1003FA3BF /* SetupExtension.swift */,
+				4B3E0EE4265B60F1003FA3BF /* SignUpExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B3E0EFD265B61BE003FA3BF /* E-Check In */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E0EFE265B61BE003FA3BF /* CallViewController.swift */,
+				4B3E0EFF265B61BE003FA3BF /* CheckInViewController.swift */,
+				4B3E0F00265B61BE003FA3BF /* CompleteCheckViewController.swift */,
+				4B3E0F01265B61BE003FA3BF /* ConfirmCheckInViewController.swift */,
+				4B3E0F02265B61BE003FA3BF /* InstructionViewController.swift */,
 			);
 			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B3505ED26394AEB00808990 /* My Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EE26394AFE00808990 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B3505EF26394B0C00808990 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505F12639514200808990 /* MainTabController.swift */,
-				4B3505F92639A8EC00808990 /* SwitchTabViewController.swift */,
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
-		4B3505F026394B4100808990 /* Sign In */ = {
-			isa = PBXGroup;
-			children = (
-				4B81CD10263C0EAB001EE6AE /* SignInViewController.swift */,
-				4B8E0A682642690F000F3D97 /* ForgotPasswordViewController.swift */,
-				4B8E0A6A264295D4000F3D97 /* NewPasswordViewController.swift */,
-				4B8E0A6C264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift */,
-				4B8E0A6E2643EB25000F3D97 /* VerifyEmailViewController.swift */,
-				4B8E0A702643F176000F3D97 /* Extension */,
-			);
-			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		4B3505F32639820100808990 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505F72639825E00808990 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		4B3505F42639821400808990 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4B3505F52639824500808990 /* HomeViewController.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		4B81CD09263C0223001EE6AE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				4B8E0AB426453574000F3D97 /* IQKeyboardManagerSwift */,
-				4B81CD0A263C0250001EE6AE /* Button Extension.swift */,
-				4B8E0A7526444F3A000F3D97 /* AlertFunction.swift */,
+				4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */,
+				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
+				4B81CD0A263C0250001EE6AE /* ButtonExtension.swift */,
+				4BE89DE12654E45D000755FE /* TransitionStyle.swift */,
+				4BEE7ED62658248B00DA5C4C /* APICallExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -445,100 +333,24 @@
 		4B81CD0C263C0B9F001EE6AE /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				4B8E0A9A26452E35000F3D97 /* Main.storyboard */,
-				4B8E0A9626452E34000F3D97 /* OtpSuccess.swift */,
-				4B8E0A9726452E35000F3D97 /* OtpSuccess.xib */,
-				4B8E0A9826452E35000F3D97 /* OtpView.swift */,
-				4B8E0A9926452E35000F3D97 /* OtpView.xib */,
+				4B3E0F45265B7C8F003FA3BF /* Main.storyboard */,
+				4B3E0F46265B7C8F003FA3BF /* OtpSuccess.swift */,
+				4B3E0F44265B7C8E003FA3BF /* OtpSuccess.xib */,
+				4B3E0F47265B7C90003FA3BF /* OtpView.swift */,
+				4B3E0F48265B7C91003FA3BF /* OtpView.xib */,
 			);
 			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B81CD0D263C0BAB001EE6AE /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				4B8E0A8B26452E16000F3D97 /* OtpEnterViewController.swift */,
-				4B8E0A8826452E16000F3D97 /* OTPErrorViewController.swift */,
-				4B8E0A8926452E16000F3D97 /* OtpSuccessViewController.swift */,
-				4B8E0A8D26452E16000F3D97 /* Presentation.swift */,
-				4B8E0A8E26452E16000F3D97 /* SetProfileViewController.swift */,
-				4B8E0A8C26452E16000F3D97 /* SignupViewController.swift */,
-				4B8E0A8A26452E16000F3D97 /* ViewController.swift */,
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		4B8E0A702643F176000F3D97 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				4B8E0A712643F1BD000F3D97 /* SignInViewControllerExtension.swift */,
-				4B8E0A73264416B9000F3D97 /* ValidationSignIn.swift */,
-				4B8E0A8126451AF7000F3D97 /* ValidationForgotPassword.swift */,
-				4B8E0A83264528C4000F3D97 /* ValidationPassword.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		4B8E0A7726450102000F3D97 /* AccountAndMore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AccountAndMore;
-			sourceTree = "<group>";
-		};
-		4B8E0A782645010F000F3D97 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		4B8E0A7926450121000F3D97 /* E-Check In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "E-Check In";
-			sourceTree = "<group>";
-		};
-		4B8E0A7A2645012F000F3D97 /* My Appoinments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My Appoinments";
-			sourceTree = "<group>";
-		};
-		4B8E0A7B26450140000F3D97 /* Booking Appointments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Booking Appointments";
-			sourceTree = "<group>";
-		};
-		4B8E0A7C26450160000F3D97 /* MainTabController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabController;
-			sourceTree = "<group>";
-		};
-		4B8E0A7D26450176000F3D97 /* Sign In */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sign In";
 			sourceTree = "<group>";
 		};
 		4B8E0A7E2645017F000F3D97 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
 				4B8E0AA626452EFC000F3D97 /* CreateAPI.swift */,
-				4B8E0AA326452EFB000F3D97 /* KeychainItemAccessibility.swift */,
-				4B8E0AA726452EFC000F3D97 /* KeychainWrapper.swift */,
 				4B8E0AA426452EFB000F3D97 /* RegisterAPI.swift */,
 				4B8E0AA826452EFC000F3D97 /* RequestAPI.swift */,
 				4B8E0AA926452EFC000F3D97 /* Validation.swift */,
-				4B8E0AA526452EFC000F3D97 /* Varification.swift */,
 				4B8E0AA226452EFB000F3D97 /* VerifyAPI.swift */,
+				4B8964702647FA8400E7BC31 /* Varification.swift */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -666,15 +478,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8E0A9F26452E35000F3D97 /* Main.storyboard in Resources */,
+				4B3E0F4F265B7CAF003FA3BF /* CheckIn.storyboard in Resources */,
 				4B3505D826392FF300808990 /* LaunchScreen.storyboard in Resources */,
+				4B3E0F4A265B7C91003FA3BF /* Main.storyboard in Resources */,
+				4B3E0F4D265B7C91003FA3BF /* OtpView.xib in Resources */,
 				4B3505D526392FF300808990 /* Assets.xcassets in Resources */,
-				4B8E0A9C26452E35000F3D97 /* OtpSuccess.xib in Resources */,
-				4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */,
-				4B3505F82639825E00808990 /* Home.storyboard in Resources */,
-				4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */,
-				4B81CD0F263C0C97001EE6AE /* SignIn.storyboard in Resources */,
-				4B8E0A9E26452E35000F3D97 /* OtpView.xib in Resources */,
+				4B3E0F49265B7C91003FA3BF /* OtpSuccess.xib in Resources */,
+				4B4F8B512654BC9C00F29E04 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,78 +537,74 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3E0EF8265B60F2003FA3BF /* SetProfileViewController.swift in Sources */,
 				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
+				4B8964712647FA8400E7BC31 /* Varification.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
-				4B8E0A722643F1BD000F3D97 /* SignInViewControllerExtension.swift in Sources */,
-				4B8E0A9526452E17000F3D97 /* SetProfileViewController.swift in Sources */,
+				4B3E0F06265B61BE003FA3BF /* ConfirmCheckInViewController.swift in Sources */,
 				4B8E0AAF26452EFC000F3D97 /* KeychainWrapper.swift in Sources */,
 				4B8E0AAC26452EFC000F3D97 /* RegisterAPI.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
 				4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */,
-				4B8E0A9426452E17000F3D97 /* Presentation.swift in Sources */,
 				4B8E0AB026452EFC000F3D97 /* RequestAPI.swift in Sources */,
 				4B8E0AD426453574000F3D97 /* IQUIView+Hierarchy.swift in Sources */,
+				4B3E0EF2265B60F2003FA3BF /* SetupExtension.swift in Sources */,
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
-				4B3505FA2639A8EC00808990 /* SwitchTabViewController.swift in Sources */,
+				4B3E0EF3265B60F2003FA3BF /* SignUpExtension.swift in Sources */,
+				4B3E0F05265B61BE003FA3BF /* CompleteCheckViewController.swift in Sources */,
 				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
+				4B8964772648046300E7BC31 /* UserDetails.swift in Sources */,
+				4B3E0EFA265B60F2003FA3BF /* SignUpSuccessViewController.swift in Sources */,
 				4B8E0AE226453574000F3D97 /* IQBarButtonItem.swift in Sources */,
 				4B8E0AD126453574000F3D97 /* IQNSArray+Sort.swift in Sources */,
-				4B8E0AAD26452EFC000F3D97 /* Varification.swift in Sources */,
-				4B3505F62639824500808990 /* HomeViewController.swift in Sources */,
+				4BE89DE22654E45D000755FE /* TransitionStyle.swift in Sources */,
+				4B3E0F4B265B7C91003FA3BF /* OtpSuccess.swift in Sources */,
+				4B8E0AAD26452EFC000F3D97 /* SystemVerification.swift in Sources */,
+				4B3E0EF6265B60F2003FA3BF /* OtpSuccessViewController.swift in Sources */,
 				4B8E0ADF26453574000F3D97 /* IQKeyboardManager.swift in Sources */,
+				4B3E0EEE265B60F2003FA3BF /* BloodGroupViewController.swift in Sources */,
 				4B8E0AAA26452EFC000F3D97 /* VerifyAPI.swift in Sources */,
-				4B8E0A84264528C4000F3D97 /* ValidationPassword.swift in Sources */,
-				4B8E0A6D264302DD000F3D97 /* PasswordChangeSuccessPageViewController.swift in Sources */,
 				4B8E0AB126452EFC000F3D97 /* Validation.swift in Sources */,
 				4B8E0ADA26453574000F3D97 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
-				4B81CD0B263C0250001EE6AE /* Button Extension.swift in Sources */,
+				4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */,
+				4B3E0EF9265B60F2003FA3BF /* SeverIssueViewController.swift in Sources */,
 				4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				4B3E0EFB265B60F2003FA3BF /* SignupViewController.swift in Sources */,
 				4B8E0ADE26453574000F3D97 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
-				4B3505FC2639BE2300808990 /* AccountViewController.swift in Sources */,
-				4B8E0A8F26452E17000F3D97 /* OTPErrorViewController.swift in Sources */,
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
-				4B8E0A8226451AF7000F3D97 /* ValidationForgotPassword.swift in Sources */,
-				4B8E0A9D26452E35000F3D97 /* OtpView.swift in Sources */,
+				4B3E0EF5265B60F2003FA3BF /* OTPErrorViewController.swift in Sources */,
+				4B3E0EF1265B60F2003FA3BF /* OTPEnterViewControllerExtension.swift in Sources */,
 				4B8E0AD526453574000F3D97 /* IQUIViewController+Additions.swift in Sources */,
-				4B8E0A9226452E17000F3D97 /* OtpEnterViewController.swift in Sources */,
-				4B8E0A6B264295D4000F3D97 /* NewPasswordViewController.swift in Sources */,
+				4BC07CE9265241130002843A /* NotificationsViewController.swift in Sources */,
+				4B3E0EF4265B60F2003FA3BF /* OtpEnterViewController.swift in Sources */,
 				4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */,
-				4B8E0A9B26452E35000F3D97 /* OtpSuccess.swift in Sources */,
-				4B81CD11263C0EAB001EE6AE /* SignInViewController.swift in Sources */,
-				4B8E0A692642690F000F3D97 /* ForgotPasswordViewController.swift in Sources */,
 				4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
+				4B3E0EFC265B60F2003FA3BF /* ViewController.swift in Sources */,
 				4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */,
+				4B3E0EF0265B60F2003FA3BF /* BloodGroupExtension.swift in Sources */,
 				4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				4B3E0F03265B61BE003FA3BF /* CallViewController.swift in Sources */,
 				4B8E0AE526453574000F3D97 /* IQTitleBarButtonItem.swift in Sources */,
-				4B8E0A9026452E17000F3D97 /* OtpSuccessViewController.swift in Sources */,
+				4B3E0EF7265B60F2003FA3BF /* Presentation.swift in Sources */,
 				4B3505CB26392FF100808990 /* AppDelegate.swift in Sources */,
-				4B8E0A6F2643EB25000F3D97 /* VerifyEmailViewController.swift in Sources */,
+				4BC07CEA265241130002843A /* NotificationTableViewCell.swift in Sources */,
+				4B3E0F04265B61BE003FA3BF /* CheckInViewController.swift in Sources */,
 				4B8E0AAE26452EFC000F3D97 /* CreateAPI.swift in Sources */,
-				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
-				4B3505F22639514200808990 /* MainTabController.swift in Sources */,
-				4B8E0A74264416B9000F3D97 /* ValidationSignIn.swift in Sources */,
-				4B8E0A9126452E17000F3D97 /* ViewController.swift in Sources */,
 				4B3505D326392FF100808990 /* SkinMate.xcdatamodeld in Sources */,
 				4B8E0ADC26453574000F3D97 /* IQKeyboardManager+Toolbar.swift in Sources */,
-				4B8E0A9326452E17000F3D97 /* SignupViewController.swift in Sources */,
 				4B8E0AE126453574000F3D97 /* IQTextView.swift in Sources */,
-				4B8E0A80264507E3000F3D97 /* NotificationsViewController.swift in Sources */,
 				4B8E0AD226453574000F3D97 /* IQUIScrollView+Additions.swift in Sources */,
+				4B3E0F4C265B7C91003FA3BF /* OtpView.swift in Sources */,
+				4BEE7ED72658248B00DA5C4C /* APICallExtension.swift in Sources */,
+				4B3E0F07265B61BE003FA3BF /* InstructionViewController.swift in Sources */,
+				4B3E0EEF265B60F2003FA3BF /* CalenderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B3505CE26392FF100808990 /* MainTabController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B3505CF26392FF100808990 /* Base */,
-			);
-			name = MainTabController.storyboard;
-			sourceTree = "<group>";
-		};
 		4B3505D626392FF300808990 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

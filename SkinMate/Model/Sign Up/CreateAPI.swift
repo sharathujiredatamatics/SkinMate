@@ -14,32 +14,32 @@ class CreateAPI {
     
     var arr = String()
     
-    func setupPostMethod(Fname: String,Lname: String,Gender:String,DBirth: Date,Bgroup:String,address: String,Insur:String,Ename: String,Enumber:String,deviceID: String, tokenId: String){
+    
+    func setupPostMethod(Fname: String,Lname: String,Gender:String,DBirth: String,Bgroup:String,address: String,Insur:String,Ename: String,Enumber:String,deviceID: String, tokenId: String){
+        print(Lname)
+        // var parameters = String()
+        // parameters = "firstName=\(Fname)&lastName=\(Lname)&gender=\(Gender)&dateOfBirth=\(DBirth)&bloodGroup=\(Bgroup)&address=\(address)&insurance=\(Insur)&emergencyName=\(Ename)&emergencyNumber=\(Enumber)"
+        let parameters: [String : Any] = [
+            "firstName": Fname,
+            "lastName": Lname,
+            "gender": Gender,
+            "bloodGroup": Bgroup,
+            "address": address,
+            "insurance": Insur,
+            "emergencyName": Ename,
+            "emergencyNumber": Enumber,
+            "dateOfBirth":DBirth
+            
+        ]
         
-        // https://jsonplaceholder.typicode.com/posts/
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts"){
             var request = URLRequest(url: url)
-            
-            request.setValue(deviceID, forHTTPHeaderField: "device-id")
-            
-            request.setValue(tokenId, forHTTPHeaderField: "access-token")
-            
-            
             request.httpMethod = "PATCH"
-            //   request.setValue(<#T##value: String?##String?#>, forHTTPHeaderField: <#T##String#>)
-            let parameters: [String : Any] = [
-                "firstName": Fname,
-                "lastName": Lname,
-                "gender": Gender,
-                "dateOfBirth":DBirth,
-                "bloodGroup":Bgroup,
-                "address":address,
-                "insurance":Insur,
-                "emergencyName":Ename,
-                "emergencyNumber":Enumber
-            ]
+            request.setValue(SystemVerification.shared.deviceId, forHTTPHeaderField: "device-id")
+            request.setValue(SystemVerification.shared.tokenId, forHTTPHeaderField: "access-token")
             
             request.httpBody = parameters.percentEscaped().data(using: .utf8)
+            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let data = data else {
@@ -62,10 +62,10 @@ class CreateAPI {
                     
                     print(json!)
                     
-                    
-                    // print(id)
-                    // print(token)
-                    
+                    DispatchQueue.main.async {
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadSignUpSuccessViewController"), object: nil)
+                        //  IQKeyboardManager.shared.enable = true
+                    }
                     
                     
                 }catch let error{
@@ -75,6 +75,7 @@ class CreateAPI {
         }
     }
 }
+
 
 
 

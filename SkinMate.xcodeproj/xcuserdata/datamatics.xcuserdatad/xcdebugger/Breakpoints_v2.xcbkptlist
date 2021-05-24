@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SkinMate/Controller/Sign In/Extension/ValidationSignIn.swift"
-            timestampString = "642076152.305856"
+            timestampString = "643311549.193652"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "checkUserId()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "checkUserIdEnd()"
             landmarkType = "7">
             <Locations>
                <Location

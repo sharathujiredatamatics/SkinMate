@@ -29,32 +29,22 @@ class OtpSuccessViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    /* override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     navigationController?.setNavigationBarHidden(false, animated: animated)
-     }*/
+    
     //MARK:- Corner Radius for Containerview.
     func applyDesign() {
         ContainerView.layer.cornerRadius = 30
         ContainerView.layer.masksToBounds = true
         ContainerView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMaxYCorner]
         
-        
     }
-    
-    
     
     
     @IBAction func SetUp(_ sender: UIButton) {
-        
+        transitionFromRight()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let sec: SetProfileViewController = storyBoard.instantiateViewController(withIdentifier: "Setup") as! SetProfileViewController
-        self.navigationController?.pushViewController(sec, animated: true)
-        
-        
-        
-        
-    }
+        let setProfileViewController: SetProfileViewController = storyBoard.instantiateViewController(withIdentifier: "Setup") as! SetProfileViewController
+        self.present(setProfileViewController,animated: false)
+        }
 }
 
 

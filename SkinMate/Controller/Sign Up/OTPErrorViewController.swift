@@ -34,21 +34,20 @@ class OTPErrorViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    /* override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     navigationController?.setNavigationBarHidden(false, animated: animated)
-     }*/
+    // Designing Views.
     func applyDesign() {
         ContainerView.layer.cornerRadius = 30
         ContainerView.layer.masksToBounds = true
         ContainerView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMaxYCorner]
         
-        
     }
+    // Resend OTP function
     
     @IBAction func btnRetry(_ sender: UIButton) {
         
-        RequestAPI.shared.setupPostMethod(deviceID: Varification.shared.deviceID, tokenId: Varification.shared.tokenId)
-        self.navigationController?.popViewController(animated: true)
+        RequestAPI.shared.setupPostMethod(deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
+        transitionFromLeft()
+        let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "OtpEnterViewController") as! OtpEnterViewController
+        self.present(sec,animated: false)
     }
 }

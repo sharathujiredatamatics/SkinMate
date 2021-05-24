@@ -8,10 +8,14 @@
 
 import UIKit
 import CoreLocation
-import DropDown
 
 
-class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocationManagerDelegate{
+
+class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocationManagerDelegate,dataPass,passData{
+    
+    
+    
+    
     
     //MARK:- Outlets for UIComponents.
     
@@ -113,17 +117,59 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     
     var locationManager: CLLocationManager!
     
+    var validPhone = false
+    var validFirstName = false
+    var valilidLastName = false
+    var validRelationship = false
+    var validGender = false
+    var validEName = false
+    var validInsurance = false
+    var activeTextField : UITextField? = nil
+    
+    let sec = BloodGroupViewController()
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        IQKeyboardManager.shared.enable = false
         txtAddress.delegate = self
+        txtFirst.delegate = self
+        txtLast.delegate = self
+        txtBlood.delegate = self
+        txtAddress.delegate = self
+        txtDate.delegate = self
+        txtInsur.delegate = self
+        txtContact.delegate = self
+        txtNumber.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(SetProfileViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        // call the 'keyboardWillHide' function when the view controlelr receive notification that keyboard is going to be hidden
+        NotificationCenter.default.addObserver(self, selector: #selector(SetProfileViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         applyDesign()
-        lblContactError.isHidden = true
+        NotificationCenter.default.addObserver(self, selector: #selector(loadSignUpSuccessView), name: NSNotification.Name(rawValue: "loadSignUpSuccessViewController"), object: nil)
         
         // Getting user permision for accessing location
         btnLocation.addTarget(self, action: #selector(Enable), for: .touchUpInside)
+        btnCreate.addTarget(self, action: #selector(createAccount), for: .touchUpInside)
+        //  self.txtDate.setInputViewDatePicker(target: self, selector: #selector(tapDone))
+        
         
         
     }
+    // Hiding Navigation bar
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    // DataPass functions.
+    func dataPassing(bGroup: String) {
+        txtBlood.text = bGroup
+    }
+    func datePass(calDate: String) {
+        txtDate.text = calDate
+    }
+    
+    
+    
     
     //MARK:- Check location permission.
     func checkPermission() {
@@ -158,21 +204,50 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         present(alert,animated: true,completion: nil)
     }
     
-    //MARK:- Hiding navigationbar from view controller.
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+    
+    
+    
+    
+    // textFields validation.
+    
+    
+    @IBAction func firstName(_ sender: UITextField) {
+        checkFirstName()
     }
     
-    /* override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     navigationController?.setNavigationBarHidden(false, animated: animated)
-     }*/
+    
+    
+    @IBAction func lastName(_ sender: UITextField) {
+        checkLastName()
+    }
+    
+    
+    
+    @IBAction func checkInsur(_ sender: UITextField) {
+        checkInsurance()
+    }
+    
+    
+    
+    
+    @IBAction func changeName(_ sender: UITextField) {
+        checkEmerganceName()
+    }
+    
+    
+    
+    @IBAction func changePhone(_ sender: UITextField) {
+        checkPhone()
+    }
     
     
     @IBAction func btnBack1(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        transitionFromLeft()
+        let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let viewController: ViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(viewController, animated: false, completion: nil)
     }
     
     
@@ -186,12 +261,13 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
             CGRect(x: 0, y: 0, width: 20, height: 20))
         iconView.image = image
         let iconContainerView: UIView = UIView(frame:
-            CGRect(x: -10, y: 0, width: 30, height: 30))
+            CGRect(x: -10, y: 0, width: 40, height: 30))
         iconContainerView.addSubview(iconView)
         
         
         txtDate.rightView = iconContainerView
         txtDate.rightViewMode = .always
+        IQKeyboardManager.shared.enable = false
         
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(iconClicked1(tapGestureRecognizer:)))
@@ -201,37 +277,20 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     }
     @objc func iconClicked1(tapGestureRecognizer: UITapGestureRecognizer){
         
+        let CalenderViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CalenderViewController") as? CalenderViewController
         
-        createDatePicker()
+        CalenderViewController?.delegate = self
+        
+        CalenderViewController!.modalPresentationStyle = .overCurrentContext
+        CalenderViewController!.modalTransitionStyle = .crossDissolve
+        self.present(CalenderViewController!, animated: false, completion: nil)
+        
         
     }
     
-    //MARK:- Creating DatePicker.
     
     
-    func createDatePicker() {
-        
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        let Done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
-        toolBar.setItems([Done], animated: true)
-        txtDate.inputAccessoryView = toolBar
-        txtDate.inputView = datePicker
-        
-        datePicker.datePickerMode = .date
-    }
-    
-    @objc func donePressed() {
-        
-        formatter.timeStyle = .none
-        formatter.dateFormat = " MM-dd-yyyy"
-        
-        
-        txtDate.text = formatter.string(from: datePicker.date)
-        self.view.endEditing(true)
-        
-    }
+    // Blood group popup.
     
     
     func setIcon2(_ image: UIImage) {
@@ -240,7 +299,7 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         iconView.image = image
         
         let iconContainerView: UIView = UIView(frame:
-            CGRect(x: -10, y: 0, width: 30, height: 30))
+            CGRect(x: -10, y: 0, width: 40, height: 30))
         iconContainerView.addSubview(iconView)
         
         
@@ -257,34 +316,13 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     }
     @objc func iconClicked2(tapGestureRecognizer: UITapGestureRecognizer){
         //  let tappedImage = tapGestureRecognizer.view as! UIImageView
+        let BloodGroupViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BloodGroupViewController") as? BloodGroupViewController
         
-        let dropDown = DropDown()
+        BloodGroupViewController?.delegate = self
         
-        
-        // The view to which the drop down will appear on
-        dropDown.anchorView = DropDownView // UIView or UIBarButtonItem
-        
-        
-        
-        let Blood = ["A+","A-" ,"B+","B-", "AB+","AB-","O+","O-"]
-        
-        // The list of items to display. Can be changed dynamically
-        dropDown.dataSource = Blood
-        
-        // Top of drop down will be below the anchorView
-        dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
-        
-        // When drop down is displayed with `Direction.top`, it will be above the anchorView
-        dropDown.topOffset = CGPoint(x: 0, y:-(dropDown.anchorView?.plainView.bounds.height)!)
-        
-        // Action triggered on selection
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            print("Selected item: \(item) at index: \(index)")
-            self.txtBlood.text = Blood[index]
-        }
-        
-        dropDown.show()
-        dropDown.direction = .bottom
+        BloodGroupViewController!.modalPresentationStyle = .overCurrentContext
+        BloodGroupViewController!.modalTransitionStyle = .crossDissolve
+        self.present(BloodGroupViewController!, animated: false, completion: nil)
         
     }
     //MARK:- Customizing UIComponents.
@@ -308,8 +346,9 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         //Specifieng border color and width to the address textview up button.
         txtAddress.layer.borderWidth = 1
         txtAddress.layer.borderColor = #colorLiteral(red: 0.8, green: 0.8156862745, blue: 0.8352941176, alpha: 1)
-        txtAddress.text = "Enter Mailing Address"
-        txtAddress.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 0.2040346747)
+        txtAddress.toolbarPlaceholder = "Enter the address"
+        
+        txtAddress.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 1)
         
         //Corner radius for male, female, oher views.
         MaleView.layer.borderWidth = 1
@@ -332,14 +371,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         OtherView.layer.masksToBounds = true
         OtherView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMaxYCorner]
         
-        btnBack.layer.borderWidth = 1
-        btnBack.layer.borderColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 0.6)
-        
-        btnBack.layer.masksToBounds = true
-        btnBack.layer.cornerRadius = 5
-        btnBack.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMaxYCorner]
-        
-        
         
     }
     
@@ -353,8 +384,11 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     }
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            textView.text = "Enter Mailing Address"
+            textView.toolbarPlaceholder = "Please Enter Address"
             textView.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 0.2040346747)
+        }
+        else{
+            textView.textColor = #colorLiteral(red: 0.007843137255, green: 0.07058823529, blue: 0.1725490196, alpha: 1)
         }
     }
     
@@ -365,7 +399,7 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         self.imgSelected.isHidden = false
         //  btnFemale.isEnabled = false
         // btnOther.isEnabled = false
-        Varification.shared.gender = "Male"
+        Varification.shared.gender = "male"
         MaleView.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.7490196078, blue: 0.7215686275, alpha: 1)
         if self.OtherSelected.isHidden == false || self.FemaleSelected.isHidden == false {
             self.OtherSelected.isHidden = true
@@ -381,7 +415,7 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         //btnMale.isEnabled = false
         //btnOther.isEnabled = false
         FemaleView.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.7490196078, blue: 0.7215686275, alpha: 1)
-        Varification.shared.gender = "Female"
+        Varification.shared.gender = "female"
         
         if self.imgSelected.isHidden == false || self.OtherSelected.isHidden == false {
             self.imgSelected.isHidden = true
@@ -397,7 +431,7 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         // btnMale.isEnabled = false
         // btnFemale.isEnabled = false
         OtherView.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.7490196078, blue: 0.7215686275, alpha: 1)
-        Varification.shared.gender = "Other"
+        Varification.shared.gender = "other"
         if self.imgSelected.isHidden == false || self.FemaleSelected.isHidden == false {
             self.imgSelected.isHidden = true
             self.FemaleSelected.isHidden = true
@@ -407,45 +441,41 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         
     }
     @IBAction func btnPrev(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        transitionFromLeft()
+        
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(view,animated: true)
     }
     
+    // Create Account function.
     
-    
-    @IBAction func btnCreate(_ sender: UIButton) {
-        sender.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
+    @objc func createAccount() {
+        
         guard  let inputPhone = txtNumber.text else { return }
-        if Validation.shared.isValidPhoneNumber(UserPhone: inputPhone) {
-            txtNumber.text = inputPhone
-            print(txtFirst.text!)
-            print(txtLast.text!)
-            print(Varification.shared.gender)
-            print(txtBlood.text!)
-            // print(txtDate.text!)
-            print(txtInsur.text!)
-            print(txtAddress.text!)
-            print(txtContact.text!)
-            print(txtNumber.text!)
-            formatter.timeStyle = .none
-            formatter.dateFormat = " MM-dd-yyyy"
-            
-            let Dob = formatter.date(from: txtDate.text!)
-            print(Dob!)
-            CreateAPI.shared.setupPostMethod(Fname: txtFirst.text!, Lname: txtLast.text!, Gender: Varification.shared.gender, DBirth: Dob!, Bgroup:txtBlood.text!, address: txtAddress.text!, Insur: txtInsur.text!, Ename: txtContact.text!, Enumber: txtNumber.text!, deviceID: Varification.shared.deviceID, tokenId: Varification.shared.tokenId)
-            
-            
-            self.navigationController?.popToRootViewController(animated: true)
-            showAlert(withTitle: "Setup Done", message: "Please sign IN")
-            
-            
-            
-            lblContactError.isHidden = true
-            
-        } else {
-            lblContactError.isHidden = false
-            
-        }
+        
+        txtNumber.text = inputPhone
+        print(txtFirst.text!)
+        print(txtLast.text!)
+        print(Varification.shared.gender)
+        print(txtBlood.text!)
+        print(txtDate.text!)
+        print(txtInsur.text!)
+        print(txtAddress.text!)
+        print(txtContact.text!)
+        print(txtNumber.text!)
+        formatter.timeStyle = .none
+        formatter.dateFormat = " dd MMM YYYY "
+        
+        //let Dob = formatter.date(from: txtDate.text!)
+        //print(Dob!)
+        CreateAPI.shared.setupPostMethod(Fname: txtFirst.text!, Lname: txtLast.text!, Gender: Varification.shared.gender, DBirth: txtDate.text!, Bgroup:txtBlood.text!, address: txtAddress.text!, Insur: txtInsur.text!, Ename: txtContact.text!, Enumber: txtNumber.text!, deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
     }
+    @objc func loadSignUpSuccessView(notification: NSNotification){
+        let signInViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignUpSuccessViewController") as? SignUpSuccessViewController
+        self.present(signInViewController!, animated: true, completion: nil)
+        
+    }
+    
     
     
     //MARK:- Getting user address.

@@ -49,30 +49,27 @@ class ViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    /*  override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     navigationController?.setNavigationBarHidden(false, animated: animated)
-     }*/
     
     
     
     //MARK:- Navigation to the SignUp page.
     
     @IBAction func Signup(_ sender: UIButton) {
-        
+        transitionFromRight()
         let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let SignupVC: SignupViewController = storyBoard.instantiateViewController(withIdentifier: "SignUp") as! SignupViewController
+        let signupVC: SignupViewController = storyBoard.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
         
-        self.navigationController?.pushViewController(SignupVC, animated: true)
+        self.present(signupVC,animated: false)
         
         
     }
     @IBAction func signIn(_ sender: UIButton) {
+        transitionFromRight()
         let storyBoard:UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
         
         let signInVC: SignInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
-        self.present(signInVC, animated: true, completion: nil)
+        self.present(signInVC,animated: false)
         
     }
     //MARK:- function for animating views.
