@@ -1,0 +1,6 @@
+framework module Pods_SkinMate {
+  umbrella header "Pods-SkinMate-umbrella.h"
+
+  export *
+  module * { export * }
+}
