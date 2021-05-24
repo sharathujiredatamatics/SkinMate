@@ -126,6 +126,28 @@
 		4BFE10D4264FA59E00395EDF /* DeleteFamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D3264FA59E00395EDF /* DeleteFamilyMember.swift */; };
 		4BFE10D6264FB3B600395EDF /* MemberInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D5264FB3B600395EDF /* MemberInformation.swift */; };
 		4BFE10D8264FF3A200395EDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE10D7264FF3A200395EDF /* DatePicker.swift */; };
+		9B583FB5265BE40400848F7A /* AppointFamilyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FA8265BE40400848F7A /* AppointFamilyMemberViewController.swift */; };
+		9B583FB6265BE40400848F7A /* DateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FA9265BE40400848F7A /* DateTimeViewController.swift */; };
+		9B583FB7265BE40400848F7A /* InsuranceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FAA265BE40400848F7A /* InsuranceDetailsViewController.swift */; };
+		9B583FB8265BE40400848F7A /* ScheduleConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FAB265BE40400848F7A /* ScheduleConfirmViewController.swift */; };
+		9B583FB9265BE40400848F7A /* SelectDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FAC265BE40400848F7A /* SelectDoctorViewController.swift */; };
+		9B583FBA265BE40400848F7A /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FAD265BE40400848F7A /* ServiceViewController.swift */; };
+		9B583FBB265BE40400848F7A /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FAE265BE40400848F7A /* SummaryViewController.swift */; };
+		9B583FBC265BE40400848F7A /* AfternoonTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FB0265BE40400848F7A /* AfternoonTimeCollectionViewCell.swift */; };
+		9B583FBD265BE40400848F7A /* BookingFamilyMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FB1265BE40400848F7A /* BookingFamilyMemberTableViewCell.swift */; };
+		9B583FBE265BE40400848F7A /* DoctorSlectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FB2265BE40400848F7A /* DoctorSlectionTableViewCell.swift */; };
+		9B583FBF265BE40400848F7A /* InsuranceTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FB3265BE40400848F7A /* InsuranceTabelViewCell.swift */; };
+		9B583FC0265BE40400848F7A /* MorningTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FB4265BE40400848F7A /* MorningTimeCollectionViewCell.swift */; };
+		9B583FC3265BE42000848F7A /* BookingAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B583FC2265BE42000848F7A /* BookingAppointment.storyboard */; };
+		9B583FCE265BE42B00848F7A /* BookAppointmentViewId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FC5265BE42B00848F7A /* BookAppointmentViewId.swift */; };
+		9B583FCF265BE42B00848F7A /* BookingAppointmentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FC6265BE42B00848F7A /* BookingAppointmentAPI.swift */; };
+		9B583FD0265BE42B00848F7A /* ComformationAppointmentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FC7265BE42B00848F7A /* ComformationAppointmentDetails.swift */; };
+		9B583FD1265BE42B00848F7A /* DesignColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FC8265BE42B00848F7A /* DesignColor.swift */; };
+		9B583FD2265BE42B00848F7A /* DoctorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FC9265BE42B00848F7A /* DoctorDetails.swift */; };
+		9B583FD3265BE42B00848F7A /* DoctorFetchDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FCA265BE42B00848F7A /* DoctorFetchDetails.swift */; };
+		9B583FD4265BE42B00848F7A /* DoctorJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FCB265BE42B00848F7A /* DoctorJsonData.swift */; };
+		9B583FD5265BE42B00848F7A /* InsuranceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FCC265BE42B00848F7A /* InsuranceDetails.swift */; };
+		9B583FD6265BE42B00848F7A /* PostAppointmentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B583FCD265BE42B00848F7A /* PostAppointmentDetails.swift */; };
 		9BEE3983265BD56C0065B76F /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3968265BD5630065B76F /* NotificationTableViewCell.swift */; };
 		9BEE3984265BD56C0065B76F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE3969265BD5630065B76F /* NotificationsViewController.swift */; };
 		9BEE3985265BD56C0065B76F /* ConfirmCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE396B265BD5680065B76F /* ConfirmCheckInViewController.swift */; };
@@ -290,6 +312,28 @@
 		4BFE10D5264FB3B600395EDF /* MemberInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInformation.swift; sourceTree = "<group>"; };
 		4BFE10D7264FF3A200395EDF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		669EB8871C452773E9277110 /* Pods-SkinMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinMate.release.xcconfig"; path = "Target Support Files/Pods-SkinMate/Pods-SkinMate.release.xcconfig"; sourceTree = "<group>"; };
+		9B583FA8265BE40400848F7A /* AppointFamilyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointFamilyMemberViewController.swift; sourceTree = "<group>"; };
+		9B583FA9265BE40400848F7A /* DateTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeViewController.swift; sourceTree = "<group>"; };
+		9B583FAA265BE40400848F7A /* InsuranceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceDetailsViewController.swift; sourceTree = "<group>"; };
+		9B583FAB265BE40400848F7A /* ScheduleConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleConfirmViewController.swift; sourceTree = "<group>"; };
+		9B583FAC265BE40400848F7A /* SelectDoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDoctorViewController.swift; sourceTree = "<group>"; };
+		9B583FAD265BE40400848F7A /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		9B583FAE265BE40400848F7A /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		9B583FB0265BE40400848F7A /* AfternoonTimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfternoonTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B583FB1265BE40400848F7A /* BookingFamilyMemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingFamilyMemberTableViewCell.swift; sourceTree = "<group>"; };
+		9B583FB2265BE40400848F7A /* DoctorSlectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorSlectionTableViewCell.swift; sourceTree = "<group>"; };
+		9B583FB3265BE40400848F7A /* InsuranceTabelViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceTabelViewCell.swift; sourceTree = "<group>"; };
+		9B583FB4265BE40400848F7A /* MorningTimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorningTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B583FC2265BE42000848F7A /* BookingAppointment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookingAppointment.storyboard; sourceTree = "<group>"; };
+		9B583FC5265BE42B00848F7A /* BookAppointmentViewId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewId.swift; sourceTree = "<group>"; };
+		9B583FC6265BE42B00848F7A /* BookingAppointmentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingAppointmentAPI.swift; sourceTree = "<group>"; };
+		9B583FC7265BE42B00848F7A /* ComformationAppointmentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComformationAppointmentDetails.swift; sourceTree = "<group>"; };
+		9B583FC8265BE42B00848F7A /* DesignColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignColor.swift; sourceTree = "<group>"; };
+		9B583FC9265BE42B00848F7A /* DoctorDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorDetails.swift; sourceTree = "<group>"; };
+		9B583FCA265BE42B00848F7A /* DoctorFetchDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorFetchDetails.swift; sourceTree = "<group>"; };
+		9B583FCB265BE42B00848F7A /* DoctorJsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorJsonData.swift; sourceTree = "<group>"; };
+		9B583FCC265BE42B00848F7A /* InsuranceDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceDetails.swift; sourceTree = "<group>"; };
+		9B583FCD265BE42B00848F7A /* PostAppointmentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAppointmentDetails.swift; sourceTree = "<group>"; };
 		9BEE3968265BD5630065B76F /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		9BEE3969265BD5630065B76F /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		9BEE396B265BD5680065B76F /* ConfirmCheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCheckInViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +453,7 @@
 				9BEE39AC265BD69D0065B76F /* Sign Up */,
 				4B8E0A7D26450176000F3D97 /* Sign In */,
 				4B8E0A7C26450160000F3D97 /* MainTabController */,
+				9B583FC4265BE42B00848F7A /* Booking Appointments */,
 				4B8E0A7A2645012F000F3D97 /* My Appoinments */,
 				4B8E0A7726450102000F3D97 /* AccountAndMore */,
 			);
@@ -424,6 +469,7 @@
 				9BEE399A265BD67E0065B76F /* Sign Up */,
 				4B3505E42639476900808990 /* Sign In */,
 				4B3505E32639473F00808990 /* MainTabController */,
+				9B583FC1265BE42000848F7A /* Booking Appointments */,
 				4B3505E8263947DA00808990 /* My Appointments */,
 				4B3505E5263947A100808990 /* AccountAndMore */,
 			);
@@ -439,6 +485,7 @@
 				9BEE3970265BD56B0065B76F /* Sign Up */,
 				4B3505F026394B4100808990 /* Sign In */,
 				4B3505EF26394B0C00808990 /* MainTabController */,
+				9B583FA7265BE40400848F7A /* Booking Appointments */,
 				4B3505ED26394AEB00808990 /* My Appointments */,
 				4B3505EA26394AAE00808990 /* AccountAndMore */,
 			);
@@ -753,6 +800,57 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		9B583FA7265BE40400848F7A /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				9B583FA8265BE40400848F7A /* AppointFamilyMemberViewController.swift */,
+				9B583FA9265BE40400848F7A /* DateTimeViewController.swift */,
+				9B583FAA265BE40400848F7A /* InsuranceDetailsViewController.swift */,
+				9B583FAB265BE40400848F7A /* ScheduleConfirmViewController.swift */,
+				9B583FAC265BE40400848F7A /* SelectDoctorViewController.swift */,
+				9B583FAD265BE40400848F7A /* ServiceViewController.swift */,
+				9B583FAE265BE40400848F7A /* SummaryViewController.swift */,
+				9B583FAF265BE40400848F7A /* Table Cells */,
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
+		9B583FAF265BE40400848F7A /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B583FB0265BE40400848F7A /* AfternoonTimeCollectionViewCell.swift */,
+				9B583FB1265BE40400848F7A /* BookingFamilyMemberTableViewCell.swift */,
+				9B583FB2265BE40400848F7A /* DoctorSlectionTableViewCell.swift */,
+				9B583FB3265BE40400848F7A /* InsuranceTabelViewCell.swift */,
+				9B583FB4265BE40400848F7A /* MorningTimeCollectionViewCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		9B583FC1265BE42000848F7A /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				9B583FC2265BE42000848F7A /* BookingAppointment.storyboard */,
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
+		9B583FC4265BE42B00848F7A /* Booking Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				9B583FC5265BE42B00848F7A /* BookAppointmentViewId.swift */,
+				9B583FC6265BE42B00848F7A /* BookingAppointmentAPI.swift */,
+				9B583FC7265BE42B00848F7A /* ComformationAppointmentDetails.swift */,
+				9B583FC8265BE42B00848F7A /* DesignColor.swift */,
+				9B583FC9265BE42B00848F7A /* DoctorDetails.swift */,
+				9B583FCA265BE42B00848F7A /* DoctorFetchDetails.swift */,
+				9B583FCB265BE42B00848F7A /* DoctorJsonData.swift */,
+				9B583FCC265BE42B00848F7A /* InsuranceDetails.swift */,
+				9B583FCD265BE42B00848F7A /* PostAppointmentDetails.swift */,
+			);
+			path = "Booking Appointments";
+			sourceTree = "<group>";
+		};
 		9BEE3967265BD5630065B76F /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -934,6 +1032,7 @@
 				9BEE39A8265BD67F0065B76F /* Main.storyboard in Resources */,
 				4B3505D026392FF100808990 /* MainTabController.storyboard in Resources */,
 				4BCCF27E264A68CD009BA717 /* Poppins-Bold.ttf in Resources */,
+				9B583FC3265BE42000848F7A /* BookingAppointment.storyboard in Resources */,
 				4B3505FE2639BEDB00808990 /* Account.storyboard in Resources */,
 				4BCCF27F264A68CD009BA717 /* Poppins-Medium.ttf in Resources */,
 				4B81CD0F263C0C97001EE6AE /* SignIn.storyboard in Resources */,
@@ -993,7 +1092,10 @@
 				4B8E0AD626453574000F3D97 /* IQKeyboardManagerConstants.swift in Sources */,
 				4B8E0AAB26452EFC000F3D97 /* KeychainItemAccessibility.swift in Sources */,
 				4B8E0AE626453574000F3D97 /* IQToolbar.swift in Sources */,
+				9B583FD4265BE42B00848F7A /* DoctorJsonData.swift in Sources */,
 				4BEF475A264CE8E700574AC3 /* PasswordChange.swift in Sources */,
+				9B583FCF265BE42B00848F7A /* BookingAppointmentAPI.swift in Sources */,
+				9B583FBB265BE40400848F7A /* SummaryViewController.swift in Sources */,
 				9BEE3992265BD56C0065B76F /* OTPEnterViewControllerExtension.swift in Sources */,
 				4B3E0F11265B7080003FA3BF /* MyAppointmentAfternoonCollectionViewCell.swift in Sources */,
 				4B6775982652391D00DC7099 /* CanceledAppointmentViewController.swift in Sources */,
@@ -1013,6 +1115,7 @@
 				9BEE3993265BD56C0065B76F /* SignUpSuccessViewController.swift in Sources */,
 				4B89646F2647C1EF00E7BC31 /* SignInAPICall.swift in Sources */,
 				4B8E0AE426453574000F3D97 /* IQPreviousNextView.swift in Sources */,
+				9B583FB8265BE40400848F7A /* ScheduleConfirmViewController.swift in Sources */,
 				4B3E0F13265B7080003FA3BF /* RescheduleViewController.swift in Sources */,
 				4B8E0AD926453574000F3D97 /* IQKeyboardManager+Internal.swift in Sources */,
 				9BEE3994265BD56C0065B76F /* OtpSuccessViewController.swift in Sources */,
@@ -1026,11 +1129,18 @@
 				4B8E0AD826453574000F3D97 /* IQKeyboardManager+Debug.swift in Sources */,
 				4B3505FA2639A8EC00808990 /* SwitchTabViewController.swift in Sources */,
 				4BF1279B265677F900C0CDE6 /* SuccessForgotPasswordViewController.swift in Sources */,
+				9B583FD0265BE42B00848F7A /* ComformationAppointmentDetails.swift in Sources */,
 				9BEE39B8265BD69D0065B76F /* CreateAPI.swift in Sources */,
+				9B583FCE265BE42B00848F7A /* BookAppointmentViewId.swift in Sources */,
+				9B583FBF265BE40400848F7A /* InsuranceTabelViewCell.swift in Sources */,
 				9BEE3987265BD56C0065B76F /* CallViewController.swift in Sources */,
 				4BEF476A264CFC9300574AC3 /* AllAppointment.swift in Sources */,
+				9B583FB7265BE40400848F7A /* InsuranceDetailsViewController.swift in Sources */,
+				9B583FB9265BE40400848F7A /* SelectDoctorViewController.swift in Sources */,
 				4BD04D42265173FB00E28B35 /* TextFieldExtension.swift in Sources */,
 				4B8E0AD326453574000F3D97 /* IQUITextFieldView+Additions.swift in Sources */,
+				9B583FBC265BE40400848F7A /* AfternoonTimeCollectionViewCell.swift in Sources */,
+				9B583FB5265BE40400848F7A /* AppointFamilyMemberViewController.swift in Sources */,
 				4B8964772648046300E7BC31 /* UserDetails.swift in Sources */,
 				4BFE10D4264FA59E00395EDF /* DeleteFamilyMember.swift in Sources */,
 				9BEE3985265BD56C0065B76F /* ConfirmCheckInViewController.swift in Sources */,
@@ -1052,6 +1162,7 @@
 				4B81CD0B263C0250001EE6AE /* ButtonExtension.swift in Sources */,
 				4B3E0F0E265B7080003FA3BF /* MyAppointmentEveningCollectionViewCell.swift in Sources */,
 				4B8E0AE026453574000F3D97 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				9B583FD1265BE42B00848F7A /* DesignColor.swift in Sources */,
 				4BEF4766264CF73E00574AC3 /* CancelAppointment.swift in Sources */,
 				4B89647F26483A8300E7BC31 /* ForgotPasswordViewControllerExtension.swift in Sources */,
 				4B3E0F12265B7080003FA3BF /* RescheduleConfirmViewController.swift in Sources */,
@@ -1063,6 +1174,7 @@
 				4B8E0AE726453574000F3D97 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				9BEE3995265BD56C0065B76F /* Presentation.swift in Sources */,
 				4BF4EA5C264D2C1300B85B98 /* AddFamilyMemberViewControllerExtension.swift in Sources */,
+				9B583FD3265BE42B00848F7A /* DoctorFetchDetails.swift in Sources */,
 				4BE2D703264BE59400A83F02 /* TermsAndConditionViewController.swift in Sources */,
 				4B8E0A8226451AF7000F3D97 /* ValidationForgotPassword.swift in Sources */,
 				4B3E0F10265B7080003FA3BF /* MyAppointmentMorningCollectionViewCell.swift in Sources */,
@@ -1074,6 +1186,7 @@
 				4BD9AB12264B9350002CCFC4 /* UserUpdateViewController.swift in Sources */,
 				9BEE39B6265BD69D0065B76F /* Validation.swift in Sources */,
 				9BEE3998265BD56C0065B76F /* CalenderViewController.swift in Sources */,
+				9B583FBE265BE40400848F7A /* DoctorSlectionTableViewCell.swift in Sources */,
 				4B8E0AE326453574000F3D97 /* IQInvocation.swift in Sources */,
 				4B715F122648E48800C0B3FE /* ErrorVerifyForgotPasswordViewController.swift in Sources */,
 				4BEF4758264CE2F200574AC3 /* UpdateFamilMember.swift in Sources */,
@@ -1085,9 +1198,11 @@
 				4B8E0A692642690F000F3D97 /* ForgotPasswordViewController.swift in Sources */,
 				4B8E0ADD26453574000F3D97 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				9BEE39A6265BD67F0065B76F /* OtpView.swift in Sources */,
+				9B583FB6265BE40400848F7A /* DateTimeViewController.swift in Sources */,
 				4BE4FF4E2655237400213691 /* AddInsuranceExtension.swift in Sources */,
 				4B89647D2648164200E7BC31 /* SuccessEmailVerificationViewController.swift in Sources */,
 				4B8E0ADB26453574000F3D97 /* IQKeyboardManager+Position.swift in Sources */,
+				9B583FD6265BE42B00848F7A /* PostAppointmentDetails.swift in Sources */,
 				4B8E0AD726453574000F3D97 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				4BEF476C264CFCBC00574AC3 /* AppointmentsData.swift in Sources */,
 				4BEF475E264CECF800574AC3 /* ProfilePictureUploadViewController.swift in Sources */,
@@ -1097,10 +1212,14 @@
 				4BEF476E264CFCE100574AC3 /* FamilyData.swift in Sources */,
 				9BEE3999265BD56C0065B76F /* HomeViewController.swift in Sources */,
 				9BEE3984265BD56C0065B76F /* NotificationsViewController.swift in Sources */,
+				9B583FBA265BE40400848F7A /* ServiceViewController.swift in Sources */,
 				4BEF4762264CF5E700574AC3 /* MyAppointmentAPI.swift in Sources */,
+				9B583FD2265BE42B00848F7A /* DoctorDetails.swift in Sources */,
 				4B8E0A6F2643EB25000F3D97 /* VerifyEmailViewController.swift in Sources */,
 				4B8E0A7626444F3A000F3D97 /* AlertFunction.swift in Sources */,
+				9B583FBD265BE40400848F7A /* BookingFamilyMemberTableViewCell.swift in Sources */,
 				9BEE3996265BD56C0065B76F /* OtpEnterViewController.swift in Sources */,
+				9B583FC0265BE40400848F7A /* MorningTimeCollectionViewCell.swift in Sources */,
 				4BFE10D6264FB3B600395EDF /* MemberInformation.swift in Sources */,
 				4B0041F42657AFA900AF4841 /* PostRescheduleData.swift in Sources */,
 				4B3505F22639514200808990 /* MainTabController.swift in Sources */,
@@ -1127,6 +1246,7 @@
 				4B65472726498DCC0048B9EE /* SignOutExtension.swift in Sources */,
 				9BEE398A265BD56C0065B76F /* SignupViewController.swift in Sources */,
 				9BEE3997265BD56C0065B76F /* BloodGroupViewController.swift in Sources */,
+				9B583FD5265BE42B00848F7A /* InsuranceDetails.swift in Sources */,
 				4B89647B2648161E00E7BC31 /* ErrorEmailVerificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
