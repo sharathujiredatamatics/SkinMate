@@ -15,6 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
+        // Getting user login status.
+        let userLoginStatus = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        let deviceId: String? = KeychainWrapper.standard.string(forKey: "deviceId")
+        let tokenId: String? = KeychainWrapper.standard.string(forKey: "tokenId")
+        
+        // If user already logged and not logged out using this device then open Home screen.
+        if(userLoginStatus)
+        {
+            FetchUserDetails.shared.fetchUserDetails(tokenId: tokenId!, deviceId: deviceId!)
+            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "MainTabController", bundle: nil)
+            let mainTabController = mainStoryboardIpad.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+            mainTabController.viewId = "home"
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = mainTabController
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
     

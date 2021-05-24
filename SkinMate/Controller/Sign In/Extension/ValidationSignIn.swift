@@ -6,46 +6,100 @@
 //  Copyright © 2021 Datamatics. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import LocalAuthentication
+// Sign In ViewControoler Extension for validating the userId and userPassword.
 extension SignInViewController {
-    
-    func checkUserId() {
+    func checkUserIdEnd() {
+        passwordError.text = ""
+        let isValidPhone = validPhone(phone: signInPhoneNumberFiled.text!)
+        let isValidEmail = validEmail(email: signInPhoneNumberFiled.text!)
         if signInPhoneNumberFiled.text == "" {
             phoneNumberError.text = "Please Enter Phone Number or Email"
+            signInPhoneNumberFiled.layer.borderWidth = 1.0
+            signInPhoneNumberFiled.layer.masksToBounds = true
+            signInPhoneNumberFiled.layer.borderColor = UIColor.red.cgColor
             validUserId = false
             validUserPassword()
-        } else if let validData = signInPhoneNumberFiled.text, validData.isValidPhone() == true || validData.isValidEmail() == true {
-            phoneNumberError.text = " "
+        }
+        else if isValidPhone == true || isValidEmail == true {
+            phoneNumberError.text = ""
+            signInPhoneNumberFiled.layer.borderWidth = 1.0
+            signInPhoneNumberFiled.layer.masksToBounds = true
+            signInPhoneNumberFiled.layer.borderColor = UIColor.lightGray.cgColor
             validUserId = true
             validUserPassword()
             return
-        }
-        else{
+        }else{
             phoneNumberError.text = "Please Enter Valid Phone Number or Email"
+            signInPhoneNumberFiled.layer.borderWidth = 1.0
+            signInPhoneNumberFiled.layer.masksToBounds = true
+            signInPhoneNumberFiled.layer.borderColor = UIColor.red.cgColor
             validUserId = false
             validUserPassword()
+            return
         }
     }
+    func checkUserId(){
+        phoneNumberError.text = ""
+        signInPhoneNumberFiled.layer.borderWidth = 1.0
+        signInPhoneNumberFiled.layer.masksToBounds = true
+        signInPhoneNumberFiled.layer.borderColor = UIColor.lightGray.cgColor
+        validUserId = false
+        validUserPassword()
+    }
     func checkPassword(){
+        passwordError.text = ""
+        signInPasswordField.layer.borderWidth = 1.0
+        signInPasswordField.layer.masksToBounds = true
+        signInPasswordField.layer.borderColor = UIColor.lightGray.cgColor
+        validPassword = false
+        validUserPassword()
+    }
+    func checkPasswordEnd(){
         let isValidPassword = validPassword(password: signInPasswordField.text!)
+        
         if signInPasswordField.text == "" {
             passwordError.text = "Enter password"
+            signInPasswordField.layer.borderWidth = 1.0
+            signInPasswordField.layer.masksToBounds = true
+            signInPasswordField.layer.borderColor = UIColor.red.cgColor
             validPassword = false
             validUserPassword()
         } else if (isValidPassword == true) {
             passwordError.text = ""
+            signInPasswordField.layer.borderWidth = 1.0
+            signInPasswordField.layer.masksToBounds = true
+            signInPasswordField.layer.borderColor = UIColor.lightGray.cgColor
             validPassword = true
             
             validUserPassword()
             return
         }else{
             passwordError.text = "Invalid Phone Number/Password Combination"
+            signInPasswordField.layer.borderWidth = 1.0
+            signInPasswordField.layer.masksToBounds = true
+            signInPasswordField.layer.borderColor = UIColor.red.cgColor
             validPassword = false
             validUserPassword()
         }
     }
+    public func validPhone(phone: String) -> Bool {
+        let phno = "^[0-9]\\d{9}$"
+        let trimmedString = phone.trimmingCharacters(in: .whitespaces)
+        let validatePhone = NSPredicate(format: "SELF MATCHES %@", phno)
+        let isValidPhone = validatePhone.evaluate(with: trimmedString)
+        return isValidPhone
+    }
+    public func validEmail(email: String) -> Bool {
+        let emailId = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,3})$"
+        let trimmedString = email.trimmingCharacters(in: .whitespaces)
+        let validateEmail = NSPredicate(format: "SELF MATCHES %@", emailId)
+        let isValidEmail = validateEmail.evaluate(with: trimmedString)
+        return isValidEmail
+    }
     public func validPassword(password: String) -> Bool {
-        let pass = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$"
+        let pass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
         let trimmedString = password.trimmingCharacters(in: .whitespaces)
         let validatePass = NSPredicate(format: "SELF MATCHES %@", pass)
         let isValidPassword = validatePass.evaluate(with: trimmedString)
@@ -57,33 +111,49 @@ extension SignInViewController {
             signInButton.alpha  = 1.0
         }
         else{
+            
             signInButton.isEnabled = false
             signInButton.alpha  = 0.5
         }
     }
-    
-}
-
-extension String {
-    func isValidEmail() -> Bool {
-        let regex = try! NSRegularExpression(pattern: "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,3})$", options: .caseInsensitive)
-        let valid = regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
-        print("Email validation \(valid)")
-        return valid
+    func checkPhoneOrEmail(){
+        if let validData = signInPhoneNumberFiled.text, validData.isDigit(){
+            userIdPhone =  signInPhoneNumberFiled.text!
+            userIdEmail = ""
+        }
+        else{
+            userIdEmail =  signInPhoneNumberFiled.text!
+            userIdPhone = ""
+        }
     }
     
-    // vrify Valid PhoneNumber or Not
-    func isValidPhone() -> Bool {
+    func authenticate(){
+        let userId: String? = KeychainWrapper.standard.string(forKey: "userId")
+        let userPassword: String? = KeychainWrapper.standard.string(forKey: "userPassword")
+        let context = LAContext()
+        var error: NSError?
         
-        let regex = try! NSRegularExpression(pattern: "^[0-9]\\d{9}$", options: .caseInsensitive)
-        let valid = regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
-        print("Mobile validation \(valid)")
-        return valid
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself!"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [weak self] success, authenticationError in
+                
+                DispatchQueue.main.async {
+                    if success {
+                        self?.signIn(userIdEmail: "", userIdPhone: userId!, password: userPassword!)
+                    } else {
+                        self?.alert(tittle:"Alert", message: "FingerPrint Authenication Failed")
+                    }
+                }
+            }
+        } else {
+            self.alert(tittle:"Alert", message: "Finger Print Authntication Not Found")
+        }
     }
-    //    func isValidPassword() -> Bool {
-    //        let regex = try! NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$", options: .caseInsensitive)
-    //        let valid = regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
-    //        return valid
-    //    }
-    
+}
+extension String{
+    func isDigit() -> Bool {
+        return !isEmpty && range(of: "[^0-9]", options: .regularExpression) == nil
+    }
 }

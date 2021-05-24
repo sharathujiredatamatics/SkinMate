@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// Extension for all UIController to use alert function if needed.
 extension UIViewController{
     // Function for creating alert message.
     func alert(tittle:String, message:String) {
