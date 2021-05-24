@@ -7,4 +7,5 @@ target 'SkinMate' do
 
   # Pods for SkinMate
    pod 'DropDown'
+   pod 'FSCalendar'
 end
