@@ -11,13 +11,9 @@ protocol dataPass {
     func dataPassing(bGroup: String)
     
 }
-
 class BloodGroupViewController: UIViewController {
     
-    
     @IBOutlet weak var parentView: UIView!
-    
-    
     
     @IBOutlet weak var firstView: UIView!
     
@@ -63,8 +59,6 @@ class BloodGroupViewController: UIViewController {
         applyDesign()
         gestureHandler()
         
-        
-        // Do any additional setup after loading the view.
     }
     
     func applyDesign() {

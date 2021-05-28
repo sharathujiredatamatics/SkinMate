@@ -9,13 +9,7 @@
 import UIKit
 import CoreLocation
 
-
-
-class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocationManagerDelegate,dataPass,passData{
-    
-    
-    
-    
+class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocationManagerDelegate,dataPass,passData {
     
     //MARK:- Outlets for UIComponents.
     
@@ -110,7 +104,7 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     @IBOutlet weak var btnCreate: UIButton!
     
     @IBOutlet weak var lblContactError: UILabel!
-    let datePicker = UIDatePicker()
+    
     var iconClick = false
     
     let formatter = DateFormatter()
@@ -150,9 +144,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         // Getting user permision for accessing location
         btnLocation.addTarget(self, action: #selector(Enable), for: .touchUpInside)
         btnCreate.addTarget(self, action: #selector(createAccount), for: .touchUpInside)
-        //  self.txtDate.setInputViewDatePicker(target: self, selector: #selector(tapDone))
-        
-        
         
     }
     // Hiding Navigation bar
@@ -203,34 +194,18 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         Actions.forEach({alert.addAction($0)})
         present(alert,animated: true,completion: nil)
     }
-    
-    
-    
-    
-    
-    
     // textFields validation.
     
     
     @IBAction func firstName(_ sender: UITextField) {
         checkFirstName()
     }
-    
-    
-    
     @IBAction func lastName(_ sender: UITextField) {
         checkLastName()
     }
-    
-    
-    
     @IBAction func checkInsur(_ sender: UITextField) {
         checkInsurance()
     }
-    
-    
-    
-    
     @IBAction func changeName(_ sender: UITextField) {
         checkEmerganceName()
     }
@@ -249,12 +224,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         let viewController: ViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         self.present(viewController, animated: false, completion: nil)
     }
-    
-    
-    
-    
-    
-    
     //MARK:- Calender button inside Date of birth textfield.
     func setIcon1(_ image: UIImage) {
         let iconView = UIImageView(frame:
@@ -281,15 +250,12 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         
         CalenderViewController?.delegate = self
         
-        CalenderViewController!.modalPresentationStyle = .overCurrentContext
+        CalenderViewController!.modalPresentationStyle = .overFullScreen
         CalenderViewController!.modalTransitionStyle = .crossDissolve
         self.present(CalenderViewController!, animated: false, completion: nil)
         
         
     }
-    
-    
-    
     // Blood group popup.
     
     
@@ -315,12 +281,12 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         
     }
     @objc func iconClicked2(tapGestureRecognizer: UITapGestureRecognizer){
-        //  let tappedImage = tapGestureRecognizer.view as! UIImageView
+        
         let BloodGroupViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BloodGroupViewController") as? BloodGroupViewController
         
         BloodGroupViewController?.delegate = self
         
-        BloodGroupViewController!.modalPresentationStyle = .overCurrentContext
+        BloodGroupViewController!.modalPresentationStyle = .overFullScreen
         BloodGroupViewController!.modalTransitionStyle = .crossDissolve
         self.present(BloodGroupViewController!, animated: false, completion: nil)
         
@@ -397,8 +363,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     
     @IBAction func btnMaleClick(_ sender: UIButton) {
         self.imgSelected.isHidden = false
-        //  btnFemale.isEnabled = false
-        // btnOther.isEnabled = false
         Varification.shared.gender = "male"
         MaleView.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.7490196078, blue: 0.7215686275, alpha: 1)
         if self.OtherSelected.isHidden == false || self.FemaleSelected.isHidden == false {
@@ -412,8 +376,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     
     @IBAction func btnFemClick(_ sender: UIButton) {
         self.FemaleSelected.isHidden = false
-        //btnMale.isEnabled = false
-        //btnOther.isEnabled = false
         FemaleView.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.7490196078, blue: 0.7215686275, alpha: 1)
         Varification.shared.gender = "female"
         
@@ -428,8 +390,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
     
     @IBAction func btnOtherClick(_ sender: UIButton) {
         self.OtherSelected.isHidden = false
-        // btnMale.isEnabled = false
-        // btnFemale.isEnabled = false
         OtherView.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.7490196078, blue: 0.7215686275, alpha: 1)
         Varification.shared.gender = "other"
         if self.imgSelected.isHidden == false || self.FemaleSelected.isHidden == false {
@@ -444,7 +404,7 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         transitionFromLeft()
         
         let view = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        self.present(view,animated: true)
+        navigationController?.popToViewController(view, animated: true)
     }
     
     // Create Account function.
@@ -465,9 +425,6 @@ class SetProfileViewController: UIViewController, UITextViewDelegate, CLLocation
         print(txtNumber.text!)
         formatter.timeStyle = .none
         formatter.dateFormat = " dd MMM YYYY "
-        
-        //let Dob = formatter.date(from: txtDate.text!)
-        //print(Dob!)
         CreateAPI.shared.setupPostMethod(Fname: txtFirst.text!, Lname: txtLast.text!, Gender: Varification.shared.gender, DBirth: txtDate.text!, Bgroup:txtBlood.text!, address: txtAddress.text!, Insur: txtInsur.text!, Ename: txtContact.text!, Enumber: txtNumber.text!, deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
     }
     @objc func loadSignUpSuccessView(notification: NSNotification){

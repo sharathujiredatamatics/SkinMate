@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 class RequestAPI {
     static let shared = RequestAPI()
     
@@ -18,13 +17,10 @@ class RequestAPI {
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts/verify/phone"){
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
-            //   request.setValue(<#T##value: String?##String?#>, forHTTPHeaderField: <#T##String#>)
+            
             request.setValue(deviceID, forHTTPHeaderField: "device-id")
             
             request.setValue(tokenId, forHTTPHeaderField: "access-token")
-            
-            // request.httpBody = parameters.percentEscaped().data(using: .utf8)
-            
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let data = data else {
                     if error == nil{
@@ -48,10 +44,6 @@ class RequestAPI {
                     print(json!)
                     SystemVerification.shared.requestId = "\(json!["_id"]!)"
                     print(Varification.shared.Id)
-                    
-                    
-                    
-                    
                 }catch let error{
                     print(error.localizedDescription)
                 }
@@ -63,26 +55,6 @@ class RequestAPI {
 
 
 
-/*extension Dictionary {
- func percentEscaped() -> String {
- return map { (key, value) in
- let escapedKey = "\(key)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
- let escapedValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
- return escapedKey + "=" + escapedValue
- }
- .joined(separator: "&")
- }
- }
- 
- extension CharacterSet {
- static let urlQueryValueAllowed: CharacterSet = {
- let generalDelimitersToEncode = ":#[]@" // does not include "?" or "/" due to RFC 3986 - Section 3.4
- let subDelimitersToEncode = "!$&'()*+,;="
- 
- var allowed = CharacterSet.urlQueryAllowed
- allowed.remove(charactersIn: "\(generalDelimitersToEncode)\(subDelimitersToEncode)")
- return allowed
- }()
- }*/
+
 
 

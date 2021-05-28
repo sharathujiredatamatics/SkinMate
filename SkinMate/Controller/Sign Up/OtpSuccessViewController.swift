@@ -19,6 +19,8 @@ class OtpSuccessViewController: UIViewController {
     
     @IBOutlet weak var btnOkay: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         applyDesign()
@@ -43,8 +45,8 @@ class OtpSuccessViewController: UIViewController {
         transitionFromRight()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let setProfileViewController: SetProfileViewController = storyBoard.instantiateViewController(withIdentifier: "Setup") as! SetProfileViewController
-        self.present(setProfileViewController,animated: false)
-        }
+        navigationController?.pushViewController(setProfileViewController, animated: true)
+    }
 }
 
 

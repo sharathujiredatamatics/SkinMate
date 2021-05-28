@@ -186,13 +186,13 @@ class ConfirmCheckInViewController: UIViewController {
     @objc func confoirm(){
         transitionFromRight()
         let CompleteCheckViewController = UIStoryboard.init(name: "CheckIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "CompleteCheckViewController") as? CompleteCheckViewController
-        self.present(CompleteCheckViewController!,animated: true)
+        self.navigationController?.pushViewController(CompleteCheckViewController!, animated: true)
     }
     
     @objc func loadCheckIntPage(_sender: UIButton){
         transitionFromLeft()
-        let CheckInViewController = UIStoryboard.init(name: "CheckIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "CheckInViewController") as? CheckInViewController
-        self.present(CheckInViewController!,animated: true,completion: nil)
+        self.navigationController?.popViewController(animated: true)
+        
     }
     
     

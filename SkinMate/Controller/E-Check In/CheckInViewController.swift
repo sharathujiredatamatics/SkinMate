@@ -141,13 +141,13 @@ class CheckInViewController: UIViewController {
     @objc func checkIn(){
         transitionFromRight()
         let ConfirmCheckInViewController = UIStoryboard.init(name: "CheckIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "ConfirmCheckInViewController") as? ConfirmCheckInViewController
-        self.present(ConfirmCheckInViewController!,animated: true)
+        self.navigationController?.pushViewController(ConfirmCheckInViewController!, animated: true)
     }
     @objc func back(){
         transitionFromLeft()
         let mainTabController = UIStoryboard.init(name: "MainTabController", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainTabController") as? MainTabController
         mainTabController?.viewId = "allappointments"
-        self.present(mainTabController!, animated: false, completion: nil)
+        self.present(mainTabController!, animated: true, completion: nil)
         
     }
     

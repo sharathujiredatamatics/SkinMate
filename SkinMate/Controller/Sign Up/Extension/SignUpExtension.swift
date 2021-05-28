@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 extension  SignupViewController {
     
     //MARK:- TextField Validations

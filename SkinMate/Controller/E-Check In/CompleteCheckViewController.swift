@@ -101,6 +101,7 @@ class CompleteCheckViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
     // Hide navigation bar.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -146,8 +147,7 @@ class CompleteCheckViewController: UIViewController {
     
     @objc func checkIn(){
         transitionFromLeft()
-        let ConfirmCheckInViewController = UIStoryboard.init(name: "CheckIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "ConfirmCheckInViewController") as? ConfirmCheckInViewController
-        self.present(ConfirmCheckInViewController!, animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     // Gesture handler functions.
     func  gestureHandler(){
@@ -161,8 +161,6 @@ class CompleteCheckViewController: UIViewController {
         let InstructionViewController = UIStoryboard.init(name: "CheckIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "InstructionViewController") as? InstructionViewController
         InstructionViewController!.modalPresentationStyle = .overCurrentContext
         InstructionViewController!.modalTransitionStyle = .crossDissolve
-        
-        
         self.present(InstructionViewController!,animated: true)
         
     }

@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-
 class CreateAPI {
     static let shared = CreateAPI()
     
@@ -17,8 +15,7 @@ class CreateAPI {
     
     func setupPostMethod(Fname: String,Lname: String,Gender:String,DBirth: String,Bgroup:String,address: String,Insur:String,Ename: String,Enumber:String,deviceID: String, tokenId: String){
         print(Lname)
-        // var parameters = String()
-        // parameters = "firstName=\(Fname)&lastName=\(Lname)&gender=\(Gender)&dateOfBirth=\(DBirth)&bloodGroup=\(Bgroup)&address=\(address)&insurance=\(Insur)&emergencyName=\(Ename)&emergencyNumber=\(Enumber)"
+        
         let parameters: [String : Any] = [
             "firstName": Fname,
             "lastName": Lname,

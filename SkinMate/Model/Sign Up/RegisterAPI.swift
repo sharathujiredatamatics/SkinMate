@@ -10,28 +10,24 @@ import Foundation
 import UIKit
 
 class RegisterAPI {
+    
+    var delegate: navigate!
+    
     static let shared = RegisterAPI()
     
-    let vc = SignupViewController()
-    
-    var arr = String()
-    
     func setupPostMethod(PhoneNo: String,Email: String,Password: String){
-        /* guard let uid = self.txtUID.text else { return }
-         guard let title = self.txtTitle.text else { return }
-         guard let body = self.txtBody.text else { return }*/
+        var parameters = String()
+        parameters = "email=\(Email)&password=\(Password)&phone=\(PhoneNo)"
+        
+        
         // https://jsonplaceholder.typicode.com/posts/
         if let url = URL(string: "https://skinmate.herokuapp.com/accounts"){
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            //   request.setValue(<#T##value: String?##String?#>, forHTTPHeaderField: <#T##String#>)
-            let parameters: [String : Any] = [
-                "email": Email,
-                "password": Password,
-                "phone": PhoneNo
-            ]
             
-            request.httpBody = parameters.percentEscaped().data(using: .utf8)
+            
+            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+            request.httpBody = parameters.data(using: String.Encoding.utf8)
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let data = data else {
@@ -42,42 +38,29 @@ class RegisterAPI {
                 }
                 
                 if let response = response as? HTTPURLResponse{
-                    /* guard (200 ... 299) ~= response.statusCode else {
-                     print("Status code :- \(response.statusCode)")
-                     print(response)
-                     
-                     return
-                     }*/
                     if response.statusCode == 409 {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Error", message: "user already exist", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
-                                print("Okay")
-                            }))
-                            self.vc.present(alert,animated: true,completion: nil)
+                            self.delegate.existAlert()
                         }
                         
                     }
                     else if response.statusCode == 406 {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Error", message: "Validation error", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
-                                print("Okay")
-                            }))
-                            self.vc.present(alert,animated: true,completion: nil)
+                            self.delegate.errorAlert()
                             
                         }
                         
                     }
                     else if response.statusCode == 500 {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Error", message: "Could not register", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
-                                print("Okay")
-                            }))
-                            self.vc.present(alert,animated: true,completion: nil)
+                            self.delegate.validationAlert()
                         }
                         
+                    } else {
+                        DispatchQueue.main.async {
+                            
+                            self.delegate.pushToOtpController()
+                        }
                     }
                 }
                 
@@ -88,23 +71,10 @@ class RegisterAPI {
                     
                     print(" device Id: \(json!["_id"]!)")
                     print(" token ID: \(json!["token"]!)")
-                    Varification.shared.deviceID = "\(json!["_id"]!)"
-                    Varification.shared.tokenId = "\(json!["token"]!)"
-                    // print(id)
-                    // print(token)
-                    let savePassword: Bool = KeychainWrapper.standard.set(Password, forKey: Email)
-                    let saveDeviceId: Bool = KeychainWrapper.standard.set(Varification.shared.deviceID, forKey: "deviceId\(Email)")
-                    let saveTokenId: Bool = KeychainWrapper.standard.set(Varification.shared.tokenId, forKey: "tokenId\(Email)")
+                    SystemVerification.shared.deviceId = "\(json!["_id"]!)"
+                    SystemVerification.shared.tokenId = "\(json!["token"]!)"
                     
-                    print("Succesfull\(savePassword)")
-                    print("Succesfull\(saveDeviceId)")
-                    print("Succesfull\(saveTokenId)")
-                    
-                    
-                    
-                    RequestAPI.shared.setupPostMethod(deviceID: Varification.shared.deviceID, tokenId: Varification.shared.tokenId)
-                    
-                    
+                    RequestAPI.shared.setupPostMethod(deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
                 }catch let error{
                     print(error.localizedDescription)
                 }
@@ -112,7 +82,6 @@ class RegisterAPI {
         }
         
     }
-    
     
 }
 

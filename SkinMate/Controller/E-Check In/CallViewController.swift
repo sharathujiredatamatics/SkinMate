@@ -20,13 +20,14 @@ class CallViewController: UIViewController {
         super.viewDidLoad()
         applyDesign()
         
-        // Do any additional setup after loading the view.
     }
     // Hide navigation bar.
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+    
     // applying design to views.
     
     func applyDesign() {
@@ -36,19 +37,12 @@ class CallViewController: UIViewController {
         
     }
     
-    
-    
     @IBAction func buttonOkay(_ sender: UIButton) {
         transitionFromLeft()
         
         let mainTabController = UIStoryboard.init(name: "MainTabController", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainTabController") as? MainTabController
-        mainTabController?.viewId = "home"
-        mainTabController!.view.frame = self.view.bounds
-        self.view.addSubview(mainTabController!.view)
-        self.addChild(mainTabController!)
-        mainTabController!.didMove(toParent: self)
-        
-        
+        mainTabController?.viewId = "allappointments"
+        self.present(mainTabController!, animated: true, completion: nil)
     }
     
 }

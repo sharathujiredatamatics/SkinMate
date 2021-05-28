@@ -8,7 +8,16 @@
 import Foundation
 import UIKit
 
-class SignupViewController: UIViewController, UIViewControllerTransitioningDelegate, UITextFieldDelegate{
+protocol navigate {
+    func existAlert()
+    func errorAlert()
+    func validationAlert()
+    func pushToOtpController()
+}
+
+class SignupViewController: UIViewController, UIViewControllerTransitioningDelegate, UITextFieldDelegate,navigate{
+    
+    
     
     @IBOutlet weak var SignScroll: UIScrollView!
     
@@ -51,16 +60,13 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
     
     @IBOutlet weak var btnProceed: UIButton!
     
-    
+    var delegate: navigate!
     var validPhone = false
     var validEmail = false
     var validPass = false
     var validConPass = false
-    
-    
-    
     var iconClick = false
-    //let imageIcon = UIImageView()
+    
     
     
     override func viewDidLoad() {
@@ -70,6 +76,51 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
     }
     
+    
+    // Implementation of delegate methods.
+    
+    func validationAlert() {
+        
+        let alert = UIAlertController(title: "Alert", message: "Validation error", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Okay")
+            
+        }))
+        self.present(alert,animated: true,completion: nil)
+    }
+    
+    func pushToOtpController() {
+        
+        let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "OtpEnterViewController") as! OtpEnterViewController
+        self.transitionFromRight()
+        sec.self.text = self.txtPhone.text!
+        sec.modalPresentationStyle = .overCurrentContext
+        sec.modalTransitionStyle = .crossDissolve
+        sec.delegate = self
+        self.present(sec, animated: true, completion: nil)
+    }
+    
+    func existAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Account Created Already \n Please SignIn", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Okay")
+            let storyBoard:UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
+            self.transitionFromRight()
+            let signInVC: SignInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+            self.present(signInVC, animated: true, completion: nil)
+        }))
+        self.present(alert,animated: true,completion: nil)
+    }
+    
+    func errorAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Could not register", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Okay")
+            
+        }))
+        self.transitionFromRight()
+        self.present(alert,animated: false,completion: nil)
+    }
     
     
     //MARK:- Hiding navigationbar from first view controller.
@@ -108,8 +159,6 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         
     }
     @objc func iconClicked1(tapGestureRecognizer: UITapGestureRecognizer){
-        //  let tappedImage = tapGestureRecognizer.view as! UIImageView
-        
         if(iconClick == true) {
             txtPassword.isSecureTextEntry = false
             setIcon1(UIImage(named: "HidePassword")!)
@@ -211,107 +260,15 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
         print(txtEmail.text!)
         print(txtConfirm.text!)
         
-        setupPostMethod(PhoneNo: txtPhone.text!, Email: txtEmail.text!, Password: txtConfirm.text!)
-        
-        
-        
+        RegisterAPI.shared.delegate = self
+        RegisterAPI.shared.setupPostMethod(PhoneNo: txtPhone.text!, Email: txtEmail.text!, Password: txtPassword.text!)
         
     }
     
     
     
     
-    func setupPostMethod(PhoneNo: String,Email: String,Password: String){
-        var parameters = String()
-        parameters = "email=\(Email)&password=\(Password)&phone=\(PhoneNo)"
-        
-        
-        // https://jsonplaceholder.typicode.com/posts/
-        if let url = URL(string: "https://skinmate.herokuapp.com/accounts"){
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            
-            
-            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
-            request.httpBody = parameters.data(using: String.Encoding.utf8)
-            
-            URLSession.shared.dataTask(with: request) { (data, response, error) in
-                guard let data = data else {
-                    if error == nil{
-                        print(error?.localizedDescription ?? "Unknown Error")
-                    }
-                    return
-                }
-                
-                if let response = response as? HTTPURLResponse{
-                    if response.statusCode == 409 {
-                        DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Alert", message: "Account Created Already \n Please SignIn", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
-                                print("Okay")
-                                let storyBoard:UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
-                                self.transitionFromRight()
-                                let signInVC: SignInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
-                                self.present(signInVC, animated: true, completion: nil)
-                            }))
-                            self.present(alert,animated: true,completion: nil)
-                        }
-                        
-                    }
-                    else if response.statusCode == 406 {
-                        DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Alert", message: "Validation error", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
-                                print("Okay")
-                                
-                            }))
-                            self.present(alert,animated: true,completion: nil)
-                            
-                        }
-                        
-                    }
-                    else if response.statusCode == 500 {
-                        DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Alert", message: "Could not register", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { (action: UIAlertAction!) in
-                                print("Okay")
-                                
-                            }))
-                            self.transitionFromRight()
-                            self.present(alert,animated: false,completion: nil)
-                        }
-                        
-                    } else {
-                        DispatchQueue.main.async {
-                            
-                            let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "OtpEnterViewController") as! OtpEnterViewController
-                            self.transitionFromRight()
-                            sec.self.text = self.txtPhone.text!
-                            sec.modalPresentationStyle = .overCurrentContext
-                            sec.modalTransitionStyle = .crossDissolve
-                            self.present(sec,animated: false)
-                        }
-                    }
-                }
-                
-                do{
-                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                    
-                    print(json!)
-                    
-                    print(" device Id: \(json!["_id"]!)")
-                    print(" token ID: \(json!["token"]!)")
-                    SystemVerification.shared.deviceId = "\(json!["_id"]!)"
-                    SystemVerification.shared.tokenId = "\(json!["token"]!)"
-                    
-                    RequestAPI.shared.setupPostMethod(deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
-                }catch let error{
-                    print(error.localizedDescription)
-                }
-                }.resume()
-        }
-        
-    }
+    
     @IBAction func signInPage(_ sender: UIButton) {
         let storyBoard:UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
         transitionFromRight()
@@ -321,8 +278,7 @@ class SignupViewController: UIViewController, UIViewControllerTransitioningDeleg
     
     @objc func back() {
         transitionFromLeft()
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        self.present(view,animated: false)
+        navigationController?.popViewController(animated: true)
     }
     
     

@@ -12,7 +12,6 @@ import FSCalendar
 protocol passData {
     func datePass(calDate: String)
 }
-
 class CalenderViewController: UIViewController,FSCalendarDelegate {
     
     @IBOutlet var calender: FSCalendar!
@@ -34,14 +33,12 @@ class CalenderViewController: UIViewController,FSCalendarDelegate {
         print("\(detail)")
         delegate.datePass(calDate: detail)
         self.dismiss(animated: true, completion: nil)
-        
-        
     }
     
     func applyDessign() {
         calender.layer.masksToBounds = true
         calender.layer.cornerRadius = 40
-        calender.layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMinXMinYCorner]
+        calender.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMinYCorner]
     }
     
 }

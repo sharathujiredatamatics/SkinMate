@@ -7,9 +7,16 @@
 //
 
 import UIKit
-import UIKit
 
-class OtpEnterViewController: UIViewController, UITextFieldDelegate {
+protocol navigation {
+    func pushToSuccessController()
+    func pushToInvalidController()
+    func dismiss()
+}
+class OtpEnterViewController: UIViewController, UITextFieldDelegate,navigation {
+    
+    
+    
     
     @IBOutlet weak var ContainerView: UIView!
     
@@ -27,12 +34,15 @@ class OtpEnterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnConfirm: UIButton!
     
     
-    
     var seconds = 120
     var otpTimer = Timer()
     var isRunning = false
     
     var text = String()
+    
+    
+    var delegate1: navigation!
+    var delegate: navigate!
     
     
     
@@ -62,6 +72,32 @@ class OtpEnterViewController: UIViewController, UITextFieldDelegate {
         
         btnConfirm.addTarget(self, action: #selector(Confirm), for: .touchUpInside)
         
+    }
+    
+    // Delegation methods for presenting view controllers.
+    
+    func pushToSuccessController() {
+        
+        let OtpSuccessViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OtpSuccessViewController") as? OtpSuccessViewController
+        let navController = UINavigationController(rootViewController: OtpSuccessViewController!)
+        OtpSuccessViewController!.modalPresentationStyle = .overCurrentContext
+        OtpSuccessViewController!.modalTransitionStyle = .crossDissolve
+        self.present(navController,animated: true , completion: nil)
+    }
+    
+    func pushToInvalidController() {
+        
+        let OTPErrorViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OTPErrorViewController") as? OTPErrorViewController
+        OTPErrorViewController!.modalPresentationStyle = .overCurrentContext
+        OTPErrorViewController!.modalTransitionStyle = .crossDissolve
+        let navController = UINavigationController(rootViewController: OTPErrorViewController! )
+        self.present(navController,animated: true , completion: nil)
+        
+        
+    }
+    
+    func dismiss() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     // Designing views.
@@ -109,7 +145,7 @@ class OtpEnterViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    
+    // Button for resending Otp
     
     
     @IBAction func Resend(_ sender: UIButton) {
@@ -126,93 +162,18 @@ class OtpEnterViewController: UIViewController, UITextFieldDelegate {
             print(txtOTP.text?.count as Any)
             btnConfirm.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0.6078431373, blue: 0.6784313725, alpha: 1)
             btnConfirm.isEnabled = true
-            
         } else if txtOTP.text?.count != 6{
             btnConfirm.isEnabled = false
         }
     }
     
+    
     // APICall for varifieing OTP.
     
     @objc func Confirm() {
         
-        VerifyOTP()
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    func  VerifyOTP() {
-        
-        let otp:Int = Int(txtOTP.text!)!
-        print(otp)
-        var parameters = String()
-        parameters = "code=\(otp)&requestId=\(SystemVerification.shared.requestId)"
-        
-        if let url = URL(string: "https://skinmate.herokuapp.com/accounts/verify/phone"){
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            
-            request.setValue(SystemVerification.shared.deviceId, forHTTPHeaderField: "device-id")
-            
-            request.setValue(SystemVerification.shared.tokenId, forHTTPHeaderField: "access-token")
-            
-            
-            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
-            request.httpBody = parameters.data(using: String.Encoding.utf8)
-            
-            URLSession.shared.dataTask(with: request) { (data, response, error) in
-                guard let data = data else {
-                    if error == nil{
-                        print(error?.localizedDescription ?? "Unknown Error")
-                    }
-                    return
-                }
-                
-                if let response = response as? HTTPURLResponse{
-                    
-                    if response.statusCode == 200 {
-                        print("\(response.statusCode)")
-                        DispatchQueue.main.async {
-                            
-                            
-                            let OtpSuccessViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OtpSuccessViewController") as? OtpSuccessViewController
-                            self.present(OtpSuccessViewController!,animated: false)
-                        }
-                    } else {
-                        print("\(response.statusCode)")
-                        DispatchQueue.main.async {
-                            
-                            
-                            let OTPErrorViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OTPErrorViewController") as? OTPErrorViewController
-                            self.present(OTPErrorViewController!,animated: false)
-                        }
-                    }
-                }
-                
-                
-                do{
-                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? String
-                    
-                    
-                    print(json!)
-                    
-                    // print(" device Id: \(json!["_id"]!)")
-                    //    print(" token ID: \(json!["token"]!)")
-                    
-                    
-                    
-                }catch let error{
-                    print(error.localizedDescription)
-                    
-                }
-                }.resume()
-            
-        }
+        VerifyAPI.shared.delegate1 = self
+        VerifyAPI.shared.setupPostMethod(Code: Int(txtOTP.text!)!, Id: SystemVerification.shared.requestId, deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
     }
     
 }

@@ -40,17 +40,12 @@ class ViewController: UIViewController {
         applyDesign()
         
     }
-    
-    
     //MARK:- Hiding navigationbar from first view controller.
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
-    
-    
     
     //MARK:- Navigation to the SignUp page.
     
@@ -60,7 +55,7 @@ class ViewController: UIViewController {
         
         let signupVC: SignupViewController = storyBoard.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
         
-        self.present(signupVC,animated: false)
+        navigationController?.pushViewController(signupVC, animated: true)
         
         
     }
@@ -73,10 +68,11 @@ class ViewController: UIViewController {
         
     }
     //MARK:- function for animating views.
+    
     func applyDesign() {
         // Making top to corners of RegistrationView round.
-        let blur: CGFloat = 26
         
+        let blur: CGFloat = 26
         RegistrationView.layer.cornerRadius = 30
         RegistrationView.layer.masksToBounds = true
         RegistrationView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]

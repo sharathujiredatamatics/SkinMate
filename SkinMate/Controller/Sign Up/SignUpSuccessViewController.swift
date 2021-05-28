@@ -18,6 +18,8 @@ class SignUpSuccessViewController: UIViewController {
     
     @IBOutlet weak var btnOkay: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         applyDesign()

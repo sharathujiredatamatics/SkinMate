@@ -8,13 +8,8 @@
 
 import Foundation
 import UIKit
-
-
 extension BloodGroupViewController {
-    
     //  MARK:- Gestures Handler
-    
-    
     func gestureHandler(){
         let First = UITapGestureRecognizer(target: self, action:  #selector(firstSelected(sender:)))
         firstView.isUserInteractionEnabled = true

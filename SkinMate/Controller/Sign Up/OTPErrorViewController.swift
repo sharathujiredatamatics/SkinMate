@@ -22,6 +22,8 @@ class OTPErrorViewController: UIViewController {
     
     
     @IBOutlet weak var btnRetry: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,10 +46,8 @@ class OTPErrorViewController: UIViewController {
     // Resend OTP function
     
     @IBAction func btnRetry(_ sender: UIButton) {
-        
-        RequestAPI.shared.setupPostMethod(deviceID: SystemVerification.shared.deviceId, tokenId: SystemVerification.shared.tokenId)
         transitionFromLeft()
-        let sec: OtpEnterViewController = self.storyboard?.instantiateViewController(withIdentifier: "OtpEnterViewController") as! OtpEnterViewController
-        self.present(sec,animated: false)
+        let sec: SignupViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        self.navigationController?.present(sec, animated: false, completion: nil)
     }
 }

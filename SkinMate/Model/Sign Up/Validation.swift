@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 class  Validation {
     
     static let shared = Validation()
